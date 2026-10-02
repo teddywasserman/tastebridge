@@ -18,3 +18,14 @@ describe("autopilot agent (no LLM, mock Qloo)", () => {
     expect(events.at(-1)?.type).toBe("done");
   });
 });
+
+describe("concept handling", () => {
+  it("accepts a concept id in place of the label", async () => {
+    const { TasteSession, lookupTags, findEquivalents } = await import("../src/lib/agent/tools");
+    const { QlooClient } = await import("../src/lib/qloo/client");
+    const s = new TasteSession(new QlooClient(undefined), "Gothenburg", "Toronto", "test");
+    await lookupTags(s, "natural wine");
+    await findEquivalents(s, { concept: "concept:natural-wine" });
+    expect([...s.sources.values()][0].name).toBe("natural wine");
+  });
+});

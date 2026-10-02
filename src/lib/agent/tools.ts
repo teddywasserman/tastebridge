@@ -190,7 +190,8 @@ export async function findEquivalents(s: TasteSession, args: Record<string, unkn
     source = s.entities.get(String(args.source_entity_id));
     if (!source) return { result: { error: "Unknown source_entity_id; call search_entities first." }, summary: "Unknown source id" };
   } else {
-    const label = String(args.concept ?? "something you love");
+    const rawLabel = String(args.concept ?? "something you love");
+    const label = rawLabel.startsWith("concept:") ? s.concepts.get(rawLabel)?.label ?? rawLabel.slice(8).replace(/-/g, " ") : rawLabel;
     const id = `concept:${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
     const known = s.concepts.get(id);
     const ids = (args.tag_ids as string[] | undefined)?.length ? (args.tag_ids as string[]) : known?.tags.map((t) => t.id) ?? [];

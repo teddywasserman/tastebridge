@@ -11,7 +11,7 @@ club, a cinema, an artist, or a habit like "Sunday flea markets". It then:
 
 You can watch every step of the agent's reasoning as it works.
 
-**Live demo:** https://tastebridge.vercel.app. It needs no login. Three pre-baked journeys replay instantly, and you
+**Live demo:** https://tastebridge-teal.vercel.app. It needs no login. Three pre-baked journeys replay instantly, and you
 can also build your own.
 
 Built for the [Qloo Agentic Hackathon](https://qloo.devpost.com/) (2026).

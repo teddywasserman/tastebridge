@@ -42,4 +42,7 @@ next-env.d.ts
 
 # generated: maplibre worker copied at build time
 /public/maplibre/
+
+.vercel
+.env*
 !.env.example
