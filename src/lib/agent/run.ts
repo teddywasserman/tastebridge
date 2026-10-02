@@ -24,7 +24,7 @@ You have tools backed by the Qloo taste graph. Work like this:
 2. For every resolved love call find_equivalents (source_entity_id, or concept + tag_ids). Several calls in one turn are fine.
 3. Call find_taste_matches once, then rank_neighbourhoods once.
 4. Call submit_plan: one match per source (choose the best equivalent, not always the first, considering shared tags and affinity), a one-sentence grounded "why" each, and a 7-day first-week plan (Mon..Sun, 1-3 items/day, realistic times, cluster items by neighbourhood, start the week in the best-fit neighbourhood).
-Rules: before each batch of tool calls write ONE short sentence (max 20 words) saying what you are doing and why. Only use entity ids returned by tools. Qloo results are aggregate affinities, never claims about the individual. Be concise and warm. Never ask the user questions.`;
+Rules: before each batch of tool calls write ONE short sentence (max 20 words) saying what you are doing and why. Only use entity ids returned by tools. In notes and whys, describe the vibe using the Qloo tags you saw; do not state unverifiable facts (founding years, 'oldest', awards, specific menu items). Qloo results are aggregate affinities, never claims about the individual. Be concise and warm. Never ask the user questions.`;
 }
 
 async function gemini(contents: Content[], system: string): Promise<Part[]> {

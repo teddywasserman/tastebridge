@@ -12,7 +12,7 @@
   "Feskekôrka",
   "Hey Jazz Club"
  ],
- "recordedAt": "2026-10-02T12:55:55.803Z",
+ "recordedAt": "2026-10-02T13:04:38.222Z",
  "events": [
   {
    "at": 0,
@@ -33,27 +33,27 @@
    }
   },
   {
-   "at": 1945,
+   "at": 2088,
    "e": {
     "type": "thought",
-    "text": "I am resolving your Gothenburg favorites to map their cultural profiles into the taste graph."
+    "text": "I am resolving your favorite Gothenburg spots in the taste graph to understand your cultural footprint."
    }
   },
   {
-   "at": 1946,
+   "at": 2088,
    "e": {
     "type": "tool_call",
     "id": "t1",
     "name": "search_entities",
     "label": "Qloo /search · “Da Matteo”",
     "args": {
-     "city": "Gothenburg",
-     "query": "Da Matteo"
+     "query": "Da Matteo",
+     "city": "Gothenburg"
     }
    }
   },
   {
-   "at": 1947,
+   "at": 2089,
    "e": {
     "type": "tool_result",
     "id": "t1",
@@ -62,14 +62,7 @@
    }
   },
   {
-   "at": 3576,
-   "e": {
-    "type": "thought",
-    "text": "I am looking up your remaining Gothenburg favorites to find their unique taste profiles."
-   }
-  },
-  {
-   "at": 3576,
+   "at": 2089,
    "e": {
     "type": "tool_call",
     "id": "t2",
@@ -82,7 +75,7 @@
    }
   },
   {
-   "at": 3577,
+   "at": 2090,
    "e": {
     "type": "tool_result",
     "id": "t2",
@@ -91,7 +84,7 @@
    }
   },
   {
-   "at": 3577,
+   "at": 2090,
    "e": {
     "type": "tool_call",
     "id": "t3",
@@ -104,7 +97,7 @@
    }
   },
   {
-   "at": 3578,
+   "at": 2091,
    "e": {
     "type": "tool_result",
     "id": "t3",
@@ -113,7 +106,7 @@
    }
   },
   {
-   "at": 3578,
+   "at": 2091,
    "e": {
     "type": "tool_call",
     "id": "t4",
@@ -126,7 +119,7 @@
    }
   },
   {
-   "at": 3578,
+   "at": 2092,
    "e": {
     "type": "tool_result",
     "id": "t4",
@@ -135,7 +128,7 @@
    }
   },
   {
-   "at": 3578,
+   "at": 2092,
    "e": {
     "type": "tool_call",
     "id": "t5",
@@ -148,7 +141,7 @@
    }
   },
   {
-   "at": 3579,
+   "at": 2092,
    "e": {
     "type": "tool_result",
     "id": "t5",
@@ -157,7 +150,7 @@
    }
   },
   {
-   "at": 3579,
+   "at": 2092,
    "e": {
     "type": "tool_call",
     "id": "t6",
@@ -170,7 +163,7 @@
    }
   },
   {
-   "at": 3579,
+   "at": 2093,
    "e": {
     "type": "tool_result",
     "id": "t6",
@@ -179,14 +172,14 @@
    }
   },
   {
-   "at": 6468,
+   "at": 4907,
    "e": {
     "type": "thought",
-    "text": "I am searching for Toronto taste equivalents for each of your Gothenburg spots."
+    "text": "I am finding taste-equivalent venues in Toronto for each of your Gothenburg favorites."
    }
   },
   {
-   "at": 6468,
+   "at": 4907,
    "e": {
     "type": "tool_call",
     "id": "t7",
@@ -198,7 +191,7 @@
    }
   },
   {
-   "at": 6469,
+   "at": 4908,
    "e": {
     "type": "tool_result",
     "id": "t7",
@@ -207,7 +200,7 @@
    }
   },
   {
-   "at": 6469,
+   "at": 4908,
    "e": {
     "type": "tool_call",
     "id": "t8",
@@ -219,7 +212,7 @@
    }
   },
   {
-   "at": 6470,
+   "at": 4908,
    "e": {
     "type": "tool_result",
     "id": "t8",
@@ -228,7 +221,7 @@
    }
   },
   {
-   "at": 6470,
+   "at": 4908,
    "e": {
     "type": "tool_call",
     "id": "t9",
@@ -240,7 +233,7 @@
    }
   },
   {
-   "at": 6471,
+   "at": 4908,
    "e": {
     "type": "tool_result",
     "id": "t9",
@@ -249,7 +242,7 @@
    }
   },
   {
-   "at": 6471,
+   "at": 4908,
    "e": {
     "type": "tool_call",
     "id": "t10",
@@ -261,7 +254,7 @@
    }
   },
   {
-   "at": 6471,
+   "at": 4908,
    "e": {
     "type": "tool_result",
     "id": "t10",
@@ -270,7 +263,7 @@
    }
   },
   {
-   "at": 6471,
+   "at": 4909,
    "e": {
     "type": "tool_call",
     "id": "t11",
@@ -282,7 +275,7 @@
    }
   },
   {
-   "at": 6472,
+   "at": 4909,
    "e": {
     "type": "tool_result",
     "id": "t11",
@@ -291,7 +284,7 @@
    }
   },
   {
-   "at": 6472,
+   "at": 4909,
    "e": {
     "type": "tool_call",
     "id": "t12",
@@ -303,7 +296,7 @@
    }
   },
   {
-   "at": 6472,
+   "at": 4909,
    "e": {
     "type": "tool_result",
     "id": "t12",
@@ -312,14 +305,14 @@
    }
   },
   {
-   "at": 7726,
+   "at": 6413,
    "e": {
     "type": "thought",
-    "text": "I am retrieving broader taste matches across Toronto to complement your personalized profile."
+    "text": "I am querying broader taste recommendations across Toronto based on your combined cultural profile."
    }
   },
   {
-   "at": 7726,
+   "at": 6414,
    "e": {
     "type": "tool_call",
     "id": "t13",
@@ -331,7 +324,7 @@
    }
   },
   {
-   "at": 7728,
+   "at": 6416,
    "e": {
     "type": "tool_result",
     "id": "t13",
@@ -340,14 +333,14 @@
    }
   },
   {
-   "at": 9219,
+   "at": 7480,
    "e": {
     "type": "thought",
-    "text": "I am ranking Toronto neighborhoods to see where your cultural preferences cluster most strongly."
+    "text": "I am ranking Toronto's neighbourhoods to see where your cultural tastes concentrate geographically."
    }
   },
   {
-   "at": 9219,
+   "at": 7481,
    "e": {
     "type": "tool_call",
     "id": "t14",
@@ -357,7 +350,7 @@
    }
   },
   {
-   "at": 9228,
+   "at": 7489,
    "e": {
     "type": "tool_result",
     "id": "t14",
@@ -366,177 +359,177 @@
    }
   },
   {
-   "at": 29555,
+   "at": 30103,
    "e": {
     "type": "thought",
-    "text": "I am submitting your Gothenburg-to-Toronto cultural matches and tailored first-week itinerary."
+    "text": "I am submitting your Gothenburg-to-Toronto cultural bridge and your tailored first-week itinerary."
    }
   },
   {
-   "at": 29556,
+   "at": 30104,
    "e": {
     "type": "tool_call",
     "id": "t15",
     "name": "submit_plan",
     "label": "Composing then → now matches and first-week plan",
     "args": {
-     "matches": [
-      {
-       "target_id": "377A224D-C344-4332-A377-C344332A377A",
-       "why": "Like Da Matteo, Pilot Coffee Roasters pairs an in-house roastery and third-wave specialty brewing with an airy industrial aesthetic.",
-       "source_id": "0155E037-2E2F-4BF7-A015-2E2FBF7C0155"
-      },
-      {
-       "source_id": "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D",
-       "why": "Echoing Café Husaren's historic charm and fika culture, Dineen Coffee Co. is a beloved downtown institution known for exceptional baked goods and heritage architecture.",
-       "target_id": "776F176F-4FE1-4ACA-A776-4FE1ACA4776F"
-      },
-      {
-       "target_id": "0A36CE28-1F46-45B5-A0A3-1F465B510A36",
-       "why": "Sharing Pustervik's storied indie spirit, Horseshoe Tavern is a legendary live music venue and unpretentious neighborhood bar.",
-       "source_id": "C4E4C777-4825-4C93-AC4E-4825C93CC4E4"
-      },
-      {
-       "why": "Stephen Bulger Gallery mirrors Röda Sten Konsthall's dedication to thought-provoking contemporary visual storytelling within an engaging gallery setting.",
-       "source_id": "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6",
-       "target_id": "7572FC12-1503-4012-A757-150301237572"
-      },
-      {
-       "why": "Much like Feskekôrka, St. Lawrence Market is a celebrated historic culinary landmark renowned for fresh seafood and vibrant local food purveyors.",
-       "source_id": "48B60019-B082-45B4-A48B-B0825B4E48B6",
-       "target_id": "E4B4A4D0-FB5F-4AA8-AE4B-FB5FAA89E4B4"
-      },
-      {
-       "why": "Sharing Hey Jazz Club's intimate late-night atmosphere, The Rex is Toronto's premier institution for nightly live jazz performances.",
-       "target_id": "320D19A1-4C9F-427A-A320-4C9F27A6320D",
-       "source_id": "E42B7365-7666-4773-AE42-76667732E42B"
-      }
-     ],
      "week": [
       {
+       "day": "Mon",
+       "title": "Indie Roots in Kensington Market",
        "items": [
         {
-         "time": "14:30",
-         "note": "Stroll through the vibrant bohemian streets, vintage stalls, and food shops.",
+         "time": "15:00",
+         "note": "Explore eclectic vintage stalls and street food in this vibrant bohemian market hub.",
          "entity_id": "2F32FE22-4E45-4DB9-A2F3-4E45DB932F32"
         },
         {
-         "note": "Catch live indie music and enjoy a pint at this historic music haunt.",
-         "entity_id": "0A36CE28-1F46-45B5-A0A3-1F465B510A36",
-         "time": "20:30"
-        },
-        {
-         "entity_id": "1E31D94C-F779-449B-A1E3-F77949BD1E31",
-         "note": "Unwind with late-night cocktails tucked away in the market alleyways.",
-         "time": "23:00"
+         "note": "Catch an indie live music set at this storied bar and local music institution.",
+         "time": "20:30",
+         "entity_id": "0A36CE28-1F46-45B5-A0A3-1F465B510A36"
         }
-       ],
-       "title": "Kensington Market Immersion",
-       "day": "Mon"
+       ]
       },
       {
+       "day": "Tue",
+       "title": "Downtown Heritage & Live Jazz",
        "items": [
         {
-         "time": "09:30",
          "entity_id": "776F176F-4FE1-4ACA-A776-4FE1ACA4776F",
-         "note": "Start your morning with artisan espresso and fresh pastries in a historic landmark building."
+         "time": "10:00",
+         "note": "Enjoy specialty coffee and fresh pastries in an elegant historic café setting."
         },
         {
          "entity_id": "320D19A1-4C9F-427A-A320-4C9F27A6320D",
-         "note": "Settle in for an evening of world-class live jazz at Toronto's premier jazz hub.",
+         "note": "Settle in for evening sets at this classic, open-late downtown jazz club institution.",
          "time": "20:00"
         }
-       ],
-       "title": "Downtown Heritage & Jazz",
-       "day": "Tue"
+       ]
       },
       {
+       "title": "Design & Bakery Culture along Queen West",
        "items": [
         {
-         "note": "Browse fresh seafood, artisanal breads, and local fare inside the historic hall.",
-         "time": "11:30",
-         "entity_id": "E4B4A4D0-FB5F-4AA8-AE4B-FB5FAA89E4B4"
+         "entity_id": "8707B086-361B-413B-A870-361B13BF8707",
+         "note": "Pick up artisanal Italian pastries and espresso in a warm, design-forward bakery café.",
+         "time": "11:00"
         },
         {
-         "note": "Recharge with precision-roasted specialty coffee in the cobblestone Distillery District.",
-         "entity_id": "377A224D-C344-4332-A377-C344332A377A",
-         "time": "14:30"
+         "entity_id": "20FB574E-58AA-4A09-A20F-58AAA09720FB",
+         "time": "15:00",
+         "note": "Browse curated indie art and literary selections in this design-led bookstore."
         }
        ],
-       "title": "Old Town Flavors & Roastery",
        "day": "Wed"
       },
       {
+       "title": "Patio Life & Evening Plates in Little Italy",
        "items": [
         {
-         "note": "Grab a meticulously pulled morning espresso at this minimalist neighborhood bar.",
-         "time": "10:00",
-         "entity_id": "3288A36C-DC19-4155-A328-DC19155D3288"
+         "note": "Relax on the bustling sidewalk patio of this cherished Italian café institution.",
+         "time": "15:30",
+         "entity_id": "7BA5F762-E744-43B5-A7BA-E7443B537BA5"
         },
         {
          "time": "19:30",
          "entity_id": "D6A8A519-257C-41A4-AD6A-257C1A4ED6A8",
-         "note": "Enjoy inventive Spanish small plates and drinks in a cozy, buzzing tavern."
+         "note": "Share savory small plates and drinks in this atmospheric, open-late neighborhood tavern."
         }
        ],
-       "title": "Annex Coffee & Little Italy Dining",
        "day": "Thu"
       },
       {
        "day": "Fri",
-       "items": [
-        {
-         "time": "15:00",
-         "entity_id": "20FB574E-58AA-4A09-A20F-58AAA09720FB",
-         "note": "Explore curated contemporary literature, art monographs, and design zines."
-        },
-        {
-         "note": "Sample artisanal Italian sourdough baked goods and traditional espresso.",
-         "time": "17:00",
-         "entity_id": "8707B086-361B-413B-A870-361B13BF8707"
-        }
-       ],
-       "title": "Queen West Art & Bakeries"
-      },
-      {
+       "title": "Visual Arts & Nightlife by Trinity Bellwoods",
        "items": [
         {
          "entity_id": "7572FC12-1503-4012-A757-150301237572",
-         "time": "14:00",
-         "note": "Explore cutting-edge contemporary documentary and fine-art photography exhibits."
+         "time": "16:00",
+         "note": "Take in fine art photography exhibitions at this intimate neighborhood gallery."
         },
         {
-         "time": "21:00",
          "entity_id": "DB28F094-B872-4F01-ADB2-B872F015DB28",
-         "note": "Head down to the Drake Underground for live sets, followed by rooftop evening drinks."
+         "note": "Sip cocktails on the rooftop terrace before enjoying live music downstairs.",
+         "time": "20:30"
+        }
+       ]
+      },
+      {
+       "day": "Sat",
+       "items": [
+        {
+         "entity_id": "E4B4A4D0-FB5F-4AA8-AE4B-FB5FAA89E4B4",
+         "time": "10:30",
+         "note": "Wander through aisles of fresh seafood and specialty vendors in this historic food hall."
+        },
+        {
+         "note": "Taste third-wave espresso roasted on-site in an expansive industrial brick space.",
+         "entity_id": "377A224D-C344-4332-A377-C344332A377A",
+         "time": "14:00"
         }
        ],
-       "title": "West End Galleries & Live Stages",
-       "day": "Sat"
+       "title": "Historic Markets & Industrial Roasteries"
       },
       {
        "items": [
         {
-         "time": "13:00",
-         "entity_id": "2F9D3118-2F74-47FE-A2F9-2F747FE12F9D",
-         "note": "Take in bold contemporary installations inside a beautifully restored industrial tower."
+         "entity_id": "3288A36C-DC19-4155-A328-DC19155D3288",
+         "time": "10:30",
+         "note": "Grab a precision-pulled third-wave coffee in a sleek, minimalist interior bar."
         },
         {
-         "note": "Catch an arthouse film screening paired with a craft cocktail in an art-deco theatre.",
-         "time": "17:30",
-         "entity_id": "C1458D42-A17D-48FB-AC14-A17D8FB3C145"
+         "note": "Explore multi-floor contemporary art exhibitions housed in a striking industrial space.",
+         "time": "14:00",
+         "entity_id": "2F9D3118-2F74-47FE-A2F9-2F747FE12F9D"
+        },
+        {
+         "time": "18:30",
+         "entity_id": "C1458D42-A17D-48FB-AC14-A17D8FB3C145",
+         "note": "Wrap up your first week with an arthouse film and craft cocktails in a restored historic venue."
         }
        ],
-       "title": "Junction Triangle Culture & Cinema",
+       "title": "Contemporary Arts & Cinema in the West End",
        "day": "Sun"
       }
      ],
-     "summary": "Your taste combines third-wave coffee mastery and classic café culture with historic market stalls, contemporary art spaces, and vibrant indie and jazz venues. Toronto echoes these Gothenburg staples with a lively network of heritage institutions, roasteries, and live performance rooms. Start your transition in Kensington Market and the Downtown Core, where live music, bohemian streets, and historic coffee halls immediately feel familiar."
+     "summary": "Your Gothenburg tastes revolve around meticulous roasteries, historic café culture, fresh market halls, and intimate indie and jazz live music venues. In Toronto, you will feel an immediate affinity with bohemian Kensington Market and the historic Downtown Core, where storied stages and bustling markets echo Gothenburg's harbor-city charm.",
+     "matches": [
+      {
+       "why": "Both share a deep dedication to third-wave specialty coffee roasted in-house within stylish industrial café spaces.",
+       "target_id": "377A224D-C344-4332-A377-C344332A377A",
+       "source_id": "0155E037-2E2F-4BF7-A015-2E2FBF7C0155"
+      },
+      {
+       "why": "Both stand as beloved local institutions celebrated for great pastries and cozy gatherings inside historic café settings.",
+       "source_id": "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D",
+       "target_id": "776F176F-4FE1-4ACA-A776-4FE1ACA4776F"
+      },
+      {
+       "why": "Both are iconic music venue institutions that anchor the indie scene with a classic bar atmosphere and live music.",
+       "target_id": "0A36CE28-1F46-45B5-A0A3-1F465B510A36",
+       "source_id": "C4E4C777-4825-4C93-AC4E-4825C93CC4E4"
+      },
+      {
+       "why": "Both champion expressive visual culture and photography within thoughtfully curated, community-centered art gallery spaces.",
+       "source_id": "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6",
+       "target_id": "7572FC12-1503-4012-A757-150301237572"
+      },
+      {
+       "target_id": "E4B4A4D0-FB5F-4AA8-AE4B-FB5FAA89E4B4",
+       "source_id": "48B60019-B082-45B4-A48B-B0825B4E48B6",
+       "why": "Both are historic market landmarks revered as essential local institutions for fresh seafood and market stalls."
+      },
+      {
+       "source_id": "E42B7365-7666-4773-AE42-76667732E42B",
+       "why": "Both deliver an authentic, open-late jazz club experience fueled by nightly live music and timeless community character.",
+       "target_id": "320D19A1-4C9F-427A-A320-4C9F27A6320D"
+      }
+     ]
     }
    }
   },
   {
-   "at": 29557,
+   "at": 30104,
    "e": {
     "type": "tool_result",
     "id": "t15",
@@ -545,13 +538,13 @@
    }
   },
   {
-   "at": 29557,
+   "at": 30104,
    "e": {
     "type": "result",
     "plan": {
      "fromCity": "Gothenburg",
      "toCity": "Toronto",
-     "summary": "Your taste combines third-wave coffee mastery and classic café culture with historic market stalls, contemporary art spaces, and vibrant indie and jazz venues. Toronto echoes these Gothenburg staples with a lively network of heritage institutions, roasteries, and live performance rooms. Start your transition in Kensington Market and the Downtown Core, where live music, bohemian streets, and historic coffee halls immediately feel familiar.",
+     "summary": "Your Gothenburg tastes revolve around meticulous roasteries, historic café culture, fresh market halls, and intimate indie and jazz live music venues. In Toronto, you will feel an immediate affinity with bohemian Kensington Market and the historic Downtown Core, where storied stages and bustling markets echo Gothenburg's harbor-city charm.",
      "sources": [
       {
        "id": "0155E037-2E2F-4BF7-A015-2E2FBF7C0155",
@@ -854,7 +847,7 @@
         "third wave"
        ],
        "affinity": 0.6627,
-       "why": "Like Da Matteo, Pilot Coffee Roasters pairs an in-house roastery and third-wave specialty brewing with an airy industrial aesthetic.",
+       "why": "Both share a deep dedication to third-wave specialty coffee roasted in-house within stylish industrial café spaces.",
        "alternatives": [
         {
          "id": "3288A36C-DC19-4155-A328-DC19155D3288",
@@ -1019,7 +1012,7 @@
         "local institution"
        ],
        "affinity": 0.7315,
-       "why": "Echoing Café Husaren's historic charm and fika culture, Dineen Coffee Co. is a beloved downtown institution known for exceptional baked goods and heritage architecture.",
+       "why": "Both stand as beloved local institutions celebrated for great pastries and cozy gatherings inside historic café settings.",
        "alternatives": [
         {
          "id": "8707B086-361B-413B-A870-361B13BF8707",
@@ -1189,7 +1182,7 @@
         "Bar"
        ],
        "affinity": 0.6848,
-       "why": "Sharing Pustervik's storied indie spirit, Horseshoe Tavern is a legendary live music venue and unpretentious neighborhood bar.",
+       "why": "Both are iconic music venue institutions that anchor the indie scene with a classic bar atmosphere and live music.",
        "alternatives": [
         {
          "id": "DB28F094-B872-4F01-ADB2-B872F015DB28",
@@ -1304,7 +1297,7 @@
         "Art Gallery"
        ],
        "affinity": 0.497,
-       "why": "Weak signal — treat as a starting point. Stephen Bulger Gallery mirrors Röda Sten Konsthall's dedication to thought-provoking contemporary visual storytelling within an engaging gallery setting.",
+       "why": "Weak signal — treat as a starting point. Both champion expressive visual culture and photography within thoughtfully curated, community-centered art gallery spaces.",
        "alternatives": []
       },
       {
@@ -1389,7 +1382,7 @@
         "historic"
        ],
        "affinity": 0.8112,
-       "why": "Much like Feskekôrka, St. Lawrence Market is a celebrated historic culinary landmark renowned for fresh seafood and vibrant local food purveyors.",
+       "why": "Both are historic market landmarks revered as essential local institutions for fresh seafood and market stalls.",
        "alternatives": [
         {
          "id": "2F32FE22-4E45-4DB9-A2F3-4E45DB932F32",
@@ -1517,7 +1510,7 @@
         "open late"
        ],
        "affinity": 0.7391,
-       "why": "Sharing Hey Jazz Club's intimate late-night atmosphere, The Rex is Toronto's premier institution for nightly live jazz performances.",
+       "why": "Both deliver an authentic, open-late jazz club experience fueled by nightly live music and timeless community character.",
        "alternatives": []
       }
      ],
@@ -1592,10 +1585,10 @@
      "week": [
       {
        "day": "Mon",
-       "title": "Kensington Market Immersion",
+       "title": "Indie Roots in Kensington Market",
        "items": [
         {
-         "time": "14:30",
+         "time": "15:00",
          "entity": {
           "id": "2F32FE22-4E45-4DB9-A2F3-4E45DB932F32",
           "name": "Kensington Market",
@@ -1633,7 +1626,7 @@
           },
           "neighbourhood": "Kensington Market"
          },
-         "note": "Stroll through the vibrant bohemian streets, vintage stalls, and food shops."
+         "note": "Explore eclectic vintage stalls and street food in this vibrant bohemian market hub."
         },
         {
          "time": "20:30",
@@ -1684,62 +1677,16 @@
           },
           "neighbourhood": "Kensington Market"
          },
-         "note": "Catch live indie music and enjoy a pint at this historic music haunt."
-        },
-        {
-         "time": "23:00",
-         "entity": {
-          "id": "1E31D94C-F779-449B-A1E3-F77949BD1E31",
-          "name": "Cold Tea",
-          "type": "urn:entity:place",
-          "address": "60 Kensington Avenue, Toronto",
-          "city": "Toronto",
-          "lat": 43.654,
-          "lon": -79.4,
-          "tags": [
-           {
-            "id": "urn:tag:genre:place:bar",
-            "name": "Bar",
-            "kind": "category"
-           },
-           {
-            "id": "urn:tag:keyword:place:cocktails",
-            "name": "cocktails",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:late_night",
-            "name": "open late",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:indie",
-            "name": "indie",
-            "kind": "keyword"
-           }
-          ],
-          "popularity": 0.871,
-          "affinity": 0.5991,
-          "explain": {
-           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0.5,
-           "E42B7365-7666-4773-AE42-76667732E42B": 0.143,
-           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
-           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0,
-           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
-           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0
-          },
-          "neighbourhood": "Kensington Market"
-         },
-         "note": "Unwind with late-night cocktails tucked away in the market alleyways."
+         "note": "Catch an indie live music set at this storied bar and local music institution."
         }
        ]
       },
       {
        "day": "Tue",
-       "title": "Downtown Heritage & Jazz",
+       "title": "Downtown Heritage & Live Jazz",
        "items": [
         {
-         "time": "09:30",
+         "time": "10:00",
          "entity": {
           "id": "776F176F-4FE1-4ACA-A776-4FE1ACA4776F",
           "name": "Dineen Coffee Co.",
@@ -1782,7 +1729,7 @@
           },
           "neighbourhood": "Downtown Core"
          },
-         "note": "Start your morning with artisan espresso and fresh pastries in a historic landmark building."
+         "note": "Enjoy specialty coffee and fresh pastries in an elegant historic café setting."
         },
         {
          "time": "20:00",
@@ -1833,253 +1780,16 @@
           },
           "neighbourhood": "Downtown Core"
          },
-         "note": "Settle in for an evening of world-class live jazz at Toronto's premier jazz hub."
+         "note": "Settle in for evening sets at this classic, open-late downtown jazz club institution."
         }
        ]
       },
       {
        "day": "Wed",
-       "title": "Old Town Flavors & Roastery",
+       "title": "Design & Bakery Culture along Queen West",
        "items": [
         {
-         "time": "11:30",
-         "entity": {
-          "id": "E4B4A4D0-FB5F-4AA8-AE4B-FB5FAA89E4B4",
-          "name": "St. Lawrence Market",
-          "type": "urn:entity:place",
-          "address": "93 Front Street East, Toronto",
-          "city": "Toronto",
-          "lat": 43.6487,
-          "lon": -79.3715,
-          "tags": [
-           {
-            "id": "urn:tag:genre:place:market",
-            "name": "Market",
-            "kind": "category"
-           },
-           {
-            "id": "urn:tag:keyword:place:seafood",
-            "name": "seafood",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:local_institution",
-            "name": "local institution",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:historic",
-            "name": "historic",
-            "kind": "keyword"
-           }
-          ],
-          "popularity": 0.9410000000000001,
-          "affinity": 0.8112,
-          "explain": {
-           "48B60019-B082-45B4-A48B-B0825B4E48B6": 1,
-           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.286,
-           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
-           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
-           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
-           "E42B7365-7666-4773-AE42-76667732E42B": 0
-          },
-          "neighbourhood": "St. Lawrence"
-         },
-         "note": "Browse fresh seafood, artisanal breads, and local fare inside the historic hall."
-        },
-        {
-         "time": "14:30",
-         "entity": {
-          "id": "377A224D-C344-4332-A377-C344332A377A",
-          "name": "Pilot Coffee Roasters",
-          "type": "urn:entity:place",
-          "address": "Tankhouse Lane, Distillery District, Toronto",
-          "city": "Toronto",
-          "lat": 43.6503,
-          "lon": -79.3596,
-          "tags": [
-           {
-            "id": "urn:tag:genre:place:cafe",
-            "name": "Café",
-            "kind": "category"
-           },
-           {
-            "id": "urn:tag:keyword:place:specialty_coffee",
-            "name": "specialty coffee",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:roastery",
-            "name": "in-house roastery",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:industrial",
-            "name": "industrial space",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:third_wave",
-            "name": "third wave",
-            "kind": "keyword"
-           }
-          ],
-          "popularity": 0.922,
-          "affinity": 0.6627,
-          "explain": {
-           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0.667,
-           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0.125,
-           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.111,
-           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
-           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0,
-           "E42B7365-7666-4773-AE42-76667732E42B": 0
-          },
-          "neighbourhood": "Distillery & Corktown"
-         },
-         "note": "Recharge with precision-roasted specialty coffee in the cobblestone Distillery District."
-        }
-       ]
-      },
-      {
-       "day": "Thu",
-       "title": "Annex Coffee & Little Italy Dining",
-       "items": [
-        {
-         "time": "10:00",
-         "entity": {
-          "id": "3288A36C-DC19-4155-A328-DC19155D3288",
-          "name": "Sam James Coffee Bar",
-          "type": "urn:entity:place",
-          "address": "297 Harbord Street, Toronto",
-          "city": "Toronto",
-          "lat": 43.662,
-          "lon": -79.403,
-          "tags": [
-           {
-            "id": "urn:tag:genre:place:cafe",
-            "name": "Café",
-            "kind": "category"
-           },
-           {
-            "id": "urn:tag:keyword:place:specialty_coffee",
-            "name": "specialty coffee",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:third_wave",
-            "name": "third wave",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:minimalist",
-            "name": "minimalist interior",
-            "kind": "keyword"
-           }
-          ],
-          "popularity": 0.8470000000000001,
-          "affinity": 0.5996,
-          "explain": {
-           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0.5,
-           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.125,
-           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
-           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
-           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0,
-           "E42B7365-7666-4773-AE42-76667732E42B": 0
-          },
-          "neighbourhood": "The Annex"
-         },
-         "note": "Grab a meticulously pulled morning espresso at this minimalist neighborhood bar."
-        },
-        {
-         "time": "19:30",
-         "entity": {
-          "id": "D6A8A519-257C-41A4-AD6A-257C1A4ED6A8",
-          "name": "Bar Isabel",
-          "type": "urn:entity:place",
-          "address": "797 College Street, Toronto",
-          "city": "Toronto",
-          "lat": 43.6555,
-          "lon": -79.42,
-          "tags": [
-           {
-            "id": "urn:tag:genre:place:restaurant",
-            "name": "Restaurant",
-            "kind": "category"
-           },
-           {
-            "id": "urn:tag:keyword:place:small_plates",
-            "name": "small plates",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:late_night",
-            "name": "open late",
-            "kind": "keyword"
-           }
-          ],
-          "popularity": 0.802,
-          "affinity": 0.5039,
-          "explain": {
-           "E42B7365-7666-4773-AE42-76667732E42B": 0.167,
-           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0.143,
-           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
-           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0,
-           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
-           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0
-          },
-          "neighbourhood": "Little Italy"
-         },
-         "note": "Enjoy inventive Spanish small plates and drinks in a cozy, buzzing tavern."
-        }
-       ]
-      },
-      {
-       "day": "Fri",
-       "title": "Queen West Art & Bakeries",
-       "items": [
-        {
-         "time": "15:00",
-         "entity": {
-          "id": "20FB574E-58AA-4A09-A20F-58AAA09720FB",
-          "name": "Type Books",
-          "type": "urn:entity:place",
-          "address": "883 Queen Street West, Toronto",
-          "city": "Toronto",
-          "lat": 43.646,
-          "lon": -79.412,
-          "tags": [
-           {
-            "id": "urn:tag:genre:place:bookshop",
-            "name": "Bookstore",
-            "kind": "category"
-           },
-           {
-            "id": "urn:tag:keyword:place:design",
-            "name": "design-led",
-            "kind": "keyword"
-           },
-           {
-            "id": "urn:tag:keyword:place:indie",
-            "name": "indie",
-            "kind": "keyword"
-           }
-          ],
-          "popularity": 0.895,
-          "affinity": 0.4891,
-          "explain": {
-           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0.143,
-           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
-           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0,
-           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
-           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0,
-           "E42B7365-7666-4773-AE42-76667732E42B": 0
-          },
-          "neighbourhood": "Queen West"
-         },
-         "note": "Explore curated contemporary literature, art monographs, and design zines."
-        },
-        {
-         "time": "17:00",
+         "time": "11:00",
          "entity": {
           "id": "8707B086-361B-413B-A870-361B13BF8707",
           "name": "Forno Cultura",
@@ -2122,16 +1832,150 @@
           },
           "neighbourhood": "Queen West"
          },
-         "note": "Sample artisanal Italian sourdough baked goods and traditional espresso."
+         "note": "Pick up artisanal Italian pastries and espresso in a warm, design-forward bakery café."
+        },
+        {
+         "time": "15:00",
+         "entity": {
+          "id": "20FB574E-58AA-4A09-A20F-58AAA09720FB",
+          "name": "Type Books",
+          "type": "urn:entity:place",
+          "address": "883 Queen Street West, Toronto",
+          "city": "Toronto",
+          "lat": 43.646,
+          "lon": -79.412,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:bookshop",
+            "name": "Bookstore",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:indie",
+            "name": "indie",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.895,
+          "affinity": 0.4891,
+          "explain": {
+           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0.143,
+           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
+           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0,
+           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
+           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0,
+           "E42B7365-7666-4773-AE42-76667732E42B": 0
+          },
+          "neighbourhood": "Queen West"
+         },
+         "note": "Browse curated indie art and literary selections in this design-led bookstore."
         }
        ]
       },
       {
-       "day": "Sat",
-       "title": "West End Galleries & Live Stages",
+       "day": "Thu",
+       "title": "Patio Life & Evening Plates in Little Italy",
        "items": [
         {
-         "time": "14:00",
+         "time": "15:30",
+         "entity": {
+          "id": "7BA5F762-E744-43B5-A7BA-E7443B537BA5",
+          "name": "Café Diplomatico",
+          "type": "urn:entity:place",
+          "address": "594 College Street, Toronto",
+          "city": "Toronto",
+          "lat": 43.655,
+          "lon": -79.414,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:patio",
+            "name": "patio",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:italian",
+            "name": "Italian",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9850000000000001,
+          "affinity": 0.5488,
+          "explain": {
+           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.286,
+           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0.143,
+           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0.125,
+           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
+           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
+           "E42B7365-7666-4773-AE42-76667732E42B": 0
+          },
+          "neighbourhood": "Little Italy"
+         },
+         "note": "Relax on the bustling sidewalk patio of this cherished Italian café institution."
+        },
+        {
+         "time": "19:30",
+         "entity": {
+          "id": "D6A8A519-257C-41A4-AD6A-257C1A4ED6A8",
+          "name": "Bar Isabel",
+          "type": "urn:entity:place",
+          "address": "797 College Street, Toronto",
+          "city": "Toronto",
+          "lat": 43.6555,
+          "lon": -79.42,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:restaurant",
+            "name": "Restaurant",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:small_plates",
+            "name": "small plates",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:late_night",
+            "name": "open late",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.802,
+          "affinity": 0.5039,
+          "explain": {
+           "E42B7365-7666-4773-AE42-76667732E42B": 0.167,
+           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0.143,
+           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
+           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0,
+           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
+           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0
+          },
+          "neighbourhood": "Little Italy"
+         },
+         "note": "Share savory small plates and drinks in this atmospheric, open-late neighborhood tavern."
+        }
+       ]
+      },
+      {
+       "day": "Fri",
+       "title": "Visual Arts & Nightlife by Trinity Bellwoods",
+       "items": [
+        {
+         "time": "16:00",
          "entity": {
           "id": "7572FC12-1503-4012-A757-150301237572",
           "name": "Stephen Bulger Gallery",
@@ -2164,10 +2008,10 @@
           },
           "neighbourhood": "Trinity Bellwoods & Ossington"
          },
-         "note": "Explore cutting-edge contemporary documentary and fine-art photography exhibits."
+         "note": "Take in fine art photography exhibitions at this intimate neighborhood gallery."
         },
         {
-         "time": "21:00",
+         "time": "20:30",
          "entity": {
           "id": "DB28F094-B872-4F01-ADB2-B872F015DB28",
           "name": "The Drake Hotel",
@@ -2215,16 +2059,165 @@
           },
           "neighbourhood": "Trinity Bellwoods & Ossington"
          },
-         "note": "Head down to the Drake Underground for live sets, followed by rooftop evening drinks."
+         "note": "Sip cocktails on the rooftop terrace before enjoying live music downstairs."
+        }
+       ]
+      },
+      {
+       "day": "Sat",
+       "title": "Historic Markets & Industrial Roasteries",
+       "items": [
+        {
+         "time": "10:30",
+         "entity": {
+          "id": "E4B4A4D0-FB5F-4AA8-AE4B-FB5FAA89E4B4",
+          "name": "St. Lawrence Market",
+          "type": "urn:entity:place",
+          "address": "93 Front Street East, Toronto",
+          "city": "Toronto",
+          "lat": 43.6487,
+          "lon": -79.3715,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:market",
+            "name": "Market",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:seafood",
+            "name": "seafood",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:historic",
+            "name": "historic",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9410000000000001,
+          "affinity": 0.8112,
+          "explain": {
+           "48B60019-B082-45B4-A48B-B0825B4E48B6": 1,
+           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.286,
+           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0,
+           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
+           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
+           "E42B7365-7666-4773-AE42-76667732E42B": 0
+          },
+          "neighbourhood": "St. Lawrence"
+         },
+         "note": "Wander through aisles of fresh seafood and specialty vendors in this historic food hall."
+        },
+        {
+         "time": "14:00",
+         "entity": {
+          "id": "377A224D-C344-4332-A377-C344332A377A",
+          "name": "Pilot Coffee Roasters",
+          "type": "urn:entity:place",
+          "address": "Tankhouse Lane, Distillery District, Toronto",
+          "city": "Toronto",
+          "lat": 43.6503,
+          "lon": -79.3596,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:roastery",
+            "name": "in-house roastery",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:industrial",
+            "name": "industrial space",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:third_wave",
+            "name": "third wave",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.922,
+          "affinity": 0.6627,
+          "explain": {
+           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0.667,
+           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0.125,
+           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.111,
+           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
+           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0,
+           "E42B7365-7666-4773-AE42-76667732E42B": 0
+          },
+          "neighbourhood": "Distillery & Corktown"
+         },
+         "note": "Taste third-wave espresso roasted on-site in an expansive industrial brick space."
         }
        ]
       },
       {
        "day": "Sun",
-       "title": "Junction Triangle Culture & Cinema",
+       "title": "Contemporary Arts & Cinema in the West End",
        "items": [
         {
-         "time": "13:00",
+         "time": "10:30",
+         "entity": {
+          "id": "3288A36C-DC19-4155-A328-DC19155D3288",
+          "name": "Sam James Coffee Bar",
+          "type": "urn:entity:place",
+          "address": "297 Harbord Street, Toronto",
+          "city": "Toronto",
+          "lat": 43.662,
+          "lon": -79.403,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:third_wave",
+            "name": "third wave",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:minimalist",
+            "name": "minimalist interior",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8470000000000001,
+          "affinity": 0.5996,
+          "explain": {
+           "0155E037-2E2F-4BF7-A015-2E2FBF7C0155": 0.5,
+           "1F2D9981-B6C8-4DA0-A1F2-B6C8DA061F2D": 0.125,
+           "C4E4C777-4825-4C93-AC4E-4825C93CC4E4": 0,
+           "92B6CA59-6FC0-4BE0-A92B-6FC0BE0E92B6": 0,
+           "48B60019-B082-45B4-A48B-B0825B4E48B6": 0,
+           "E42B7365-7666-4773-AE42-76667732E42B": 0
+          },
+          "neighbourhood": "The Annex"
+         },
+         "note": "Grab a precision-pulled third-wave coffee in a sleek, minimalist interior bar."
+        },
+        {
+         "time": "14:00",
          "entity": {
           "id": "2F9D3118-2F74-47FE-A2F9-2F747FE12F9D",
           "name": "Museum of Contemporary Art Toronto",
@@ -2262,10 +2255,10 @@
           },
           "neighbourhood": "Junction Triangle"
          },
-         "note": "Take in bold contemporary installations inside a beautifully restored industrial tower."
+         "note": "Explore multi-floor contemporary art exhibitions housed in a striking industrial space."
         },
         {
-         "time": "17:30",
+         "time": "18:30",
          "entity": {
           "id": "C1458D42-A17D-48FB-AC14-A17D8FB3C145",
           "name": "Paradise Theatre",
@@ -2313,7 +2306,7 @@
           },
           "neighbourhood": "Junction Triangle"
          },
-         "note": "Catch an arthouse film screening paired with a craft cocktail in an art-deco theatre."
+         "note": "Wrap up your first week with an arthouse film and craft cocktails in a restored historic venue."
         }
        ]
       }
@@ -2702,7 +2695,7 @@
    }
   },
   {
-   "at": 29557,
+   "at": 30104,
    "e": {
     "type": "done"
    }

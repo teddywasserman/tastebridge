@@ -28,6 +28,8 @@ export default function TasteBridgeApp() {
   const [selected, setSelected] = useState<string | undefined>();
   const runId = useRef(0);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const mapRef = useRef<HTMLDivElement>(null);
+  const showMap = () => mapRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
 
   useEffect(() => {
     fetch("/api/status").then((r) => r.json()).then(setStatus).catch(() => setStatus({ qloo: "mock", llm: "autopilot" }));
@@ -195,7 +197,7 @@ export default function TasteBridgeApp() {
           <div className="grid gap-5 lg:grid-cols-[380px_1fr]">
             <AgentTrail events={events} running={phase === "running"} />
             <div className="flex flex-col gap-5">
-              <div className="relative h-[420px] overflow-hidden rounded-3xl border border-line bg-paper-2 sm:h-[520px]">
+              <div ref={mapRef} className="relative h-[420px] overflow-hidden rounded-3xl border border-line bg-paper-2 sm:h-[520px]">
                 <TasteMap city={city} plan={plan} focusIds={dayFocus} selectedId={selected} onSelect={setSelected} />
                 {!plan && (
                   <div className="pointer-events-none absolute inset-x-0 bottom-4 mx-auto w-fit rounded-full bg-card/90 px-4 py-2 text-sm text-ink-2 shadow">
@@ -213,10 +215,10 @@ export default function TasteBridgeApp() {
           </div>
           {plan && (
             <div className="mt-10 flex flex-col gap-12">
-              <MatchCards plan={plan} onSelect={(id) => { setDay(null); setSelected(id); }} />
+              <MatchCards plan={plan} onSelect={(id) => { setDay(null); setSelected(id); showMap(); }} />
               <div className="grid gap-8 lg:grid-cols-[1fr_1.3fr]">
                 <Neighbourhoods plan={plan} />
-                <WeekPlan plan={plan} day={day} onDay={(d) => { setSelected(undefined); setDay(d); }} />
+                <WeekPlan plan={plan} day={day} onDay={(d) => { setSelected(undefined); setDay(d); if (d !== null) showMap(); }} />
               </div>
               <Provenance plan={plan} />
             </div>
