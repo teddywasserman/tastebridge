@@ -1,0 +1,2839 @@
+{
+ "id": "stockholm-berlin",
+ "title": "Stockholm → Berlin",
+ "persona": "Erasmus student who lives for music",
+ "fromCity": "Stockholm",
+ "toCity": "Berlin",
+ "loves": [
+  "Café Pascal",
+  "Under Bron",
+  "Moderna Museet",
+  "Science Fiction Bokhandeln",
+  "Robyn",
+  "Akkurat"
+ ],
+ "recordedAt": "2026-10-02T12:55:26.242Z",
+ "events": [
+  {
+   "at": 0,
+   "e": {
+    "type": "start",
+    "qlooMode": "mock",
+    "llm": "gemini-3.8-flash",
+    "fromCity": "Stockholm",
+    "toCity": "Berlin",
+    "loves": [
+     "Café Pascal",
+     "Under Bron",
+     "Moderna Museet",
+     "Science Fiction Bokhandeln",
+     "Robyn",
+     "Akkurat"
+    ]
+   }
+  },
+  {
+   "at": 2383,
+   "e": {
+    "type": "thought",
+    "text": "Resolving your Stockholm favorites across coffee, music, art, books, and nightlife into Qloo entities."
+   }
+  },
+  {
+   "at": 2383,
+   "e": {
+    "type": "tool_call",
+    "id": "t1",
+    "name": "search_entities",
+    "label": "Qloo /search · “Café Pascal”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Café Pascal"
+    }
+   }
+  },
+  {
+   "at": 2387,
+   "e": {
+    "type": "tool_result",
+    "id": "t1",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Café Pascal"
+   }
+  },
+  {
+   "at": 2388,
+   "e": {
+    "type": "tool_call",
+    "id": "t2",
+    "name": "search_entities",
+    "label": "Qloo /search · “Under Bron”",
+    "args": {
+     "query": "Under Bron",
+     "city": "Stockholm"
+    }
+   }
+  },
+  {
+   "at": 2389,
+   "e": {
+    "type": "tool_result",
+    "id": "t2",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Under Bron"
+   }
+  },
+  {
+   "at": 2390,
+   "e": {
+    "type": "tool_call",
+    "id": "t3",
+    "name": "search_entities",
+    "label": "Qloo /search · “Moderna Museet”",
+    "args": {
+     "query": "Moderna Museet",
+     "city": "Stockholm"
+    }
+   }
+  },
+  {
+   "at": 2391,
+   "e": {
+    "type": "tool_result",
+    "id": "t3",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Moderna Museet"
+   }
+  },
+  {
+   "at": 2391,
+   "e": {
+    "type": "tool_call",
+    "id": "t4",
+    "name": "search_entities",
+    "label": "Qloo /search · “Science Fiction Bokhandeln”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Science Fiction Bokhandeln"
+    }
+   }
+  },
+  {
+   "at": 2392,
+   "e": {
+    "type": "tool_result",
+    "id": "t4",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Science Fiction Bokhandeln"
+   }
+  },
+  {
+   "at": 2392,
+   "e": {
+    "type": "tool_call",
+    "id": "t5",
+    "name": "search_entities",
+    "label": "Qloo /search · “Robyn”",
+    "args": {
+     "query": "Robyn"
+    }
+   }
+  },
+  {
+   "at": 2392,
+   "e": {
+    "type": "tool_result",
+    "id": "t5",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Robyn"
+   }
+  },
+  {
+   "at": 2392,
+   "e": {
+    "type": "tool_call",
+    "id": "t6",
+    "name": "search_entities",
+    "label": "Qloo /search · “Akkurat”",
+    "args": {
+     "query": "Akkurat",
+     "city": "Stockholm"
+    }
+   }
+  },
+  {
+   "at": 2393,
+   "e": {
+    "type": "tool_result",
+    "id": "t6",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Akkurat"
+   }
+  },
+  {
+   "at": 7383,
+   "e": {
+    "type": "thought",
+    "text": "Finding taste-equivalent Berlin spots for each of your Stockholm favorites."
+   }
+  },
+  {
+   "at": 7383,
+   "e": {
+    "type": "tool_call",
+    "id": "t7",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Café Pascal in Berlin",
+    "args": {
+     "source_entity_id": "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3"
+    }
+   }
+  },
+  {
+   "at": 7384,
+   "e": {
+    "type": "tool_result",
+    "id": "t7",
+    "name": "find_equivalents",
+    "summary": "5 places; top: Five Elephant (83% affinity)"
+   }
+  },
+  {
+   "at": 7384,
+   "e": {
+    "type": "tool_call",
+    "id": "t8",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Under Bron in Berlin",
+    "args": {
+     "source_entity_id": "7F153658-8964-4C3A-A7F1-8964C3A17F15"
+    }
+   }
+  },
+  {
+   "at": 7384,
+   "e": {
+    "type": "tool_result",
+    "id": "t8",
+    "name": "find_equivalents",
+    "summary": "2 places; top: Berghain (94% affinity)"
+   }
+  },
+  {
+   "at": 7384,
+   "e": {
+    "type": "tool_call",
+    "id": "t9",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Moderna Museet in Berlin",
+    "args": {
+     "source_entity_id": "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007"
+    }
+   }
+  },
+  {
+   "at": 7384,
+   "e": {
+    "type": "tool_result",
+    "id": "t9",
+    "name": "find_equivalents",
+    "summary": "2 places; top: Neue Nationalgalerie (84% affinity)"
+   }
+  },
+  {
+   "at": 7384,
+   "e": {
+    "type": "tool_call",
+    "id": "t10",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Science Fiction Bokhandeln in Berlin",
+    "args": {
+     "source_entity_id": "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6"
+    }
+   }
+  },
+  {
+   "at": 7385,
+   "e": {
+    "type": "tool_result",
+    "id": "t10",
+    "name": "find_equivalents",
+    "summary": "3 places; top: Comic Combo Berlin (74% affinity)"
+   }
+  },
+  {
+   "at": 7385,
+   "e": {
+    "type": "tool_call",
+    "id": "t11",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Robyn in Berlin",
+    "args": {
+     "source_entity_id": "A420122C-6D7C-46D9-AA42-6D7C6D9DA420"
+    }
+   }
+  },
+  {
+   "at": 7385,
+   "e": {
+    "type": "tool_result",
+    "id": "t11",
+    "name": "find_equivalents",
+    "summary": "6 places; top: Kater Blau (48% affinity)"
+   }
+  },
+  {
+   "at": 7386,
+   "e": {
+    "type": "tool_call",
+    "id": "t12",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Akkurat in Berlin",
+    "args": {
+     "source_entity_id": "449D3CAE-9086-451F-A449-908651F7449D"
+    }
+   }
+  },
+  {
+   "at": 7389,
+   "e": {
+    "type": "tool_result",
+    "id": "t12",
+    "name": "find_equivalents",
+    "summary": "6 places; top: Markthalle Neun (59% affinity)"
+   }
+  },
+  {
+   "at": 8516,
+   "e": {
+    "type": "thought",
+    "text": "Finding broader Berlin taste matches based on your collective cultural profile."
+   }
+  },
+  {
+   "at": 8516,
+   "e": {
+    "type": "tool_call",
+    "id": "t13",
+    "name": "find_taste_matches",
+    "label": "Qloo /v2/insights · whole-profile picks in Berlin",
+    "args": {
+     "take": 15
+    }
+   }
+  },
+  {
+   "at": 8518,
+   "e": {
+    "type": "tool_result",
+    "id": "t13",
+    "name": "find_taste_matches",
+    "summary": "15 profile-wide picks (9 new)"
+   }
+  },
+  {
+   "at": 10151,
+   "e": {
+    "type": "thought",
+    "text": "Ranking Berlin neighbourhoods by overall taste affinity to guide your first-week exploration."
+   }
+  },
+  {
+   "at": 10151,
+   "e": {
+    "type": "tool_call",
+    "id": "t14",
+    "name": "rank_neighbourhoods",
+    "label": "Qloo heatmap · neighbourhood fit in Berlin",
+    "args": {}
+   }
+  },
+  {
+   "at": 10176,
+   "e": {
+    "type": "tool_result",
+    "id": "t14",
+    "name": "rank_neighbourhoods",
+    "summary": "Best fit: Mitte 96, Friedrichshain 78, Tiergarten & Moabit 72"
+   }
+  },
+  {
+   "at": 28999,
+   "e": {
+    "type": "thought",
+    "text": "Submitting your personalized Stockholm-to-Berlin cultural bridge and your neighborhood-clustered first-week itinerary."
+   }
+  },
+  {
+   "at": 28999,
+   "e": {
+    "type": "tool_call",
+    "id": "t15",
+    "name": "submit_plan",
+    "label": "Composing then → now matches and first-week plan",
+    "args": {
+     "week": [
+      {
+       "title": "Mitte Design & Coffee Kickoff",
+       "day": "Mon",
+       "items": [
+        {
+         "time": "10:00",
+         "note": "Settle in with a flat white and brunch in this tranquil Mitte courtyard.",
+         "entity_id": "7ACB3C77-A1EF-4F83-A7AC-A1EFF83C7ACB"
+        },
+        {
+         "note": "Browse international art, architecture, and indie publications along Auguststraße.",
+         "time": "14:00",
+         "entity_id": "D3F12965-EAA3-4F93-AD3F-EAA3F932D3F1"
+        }
+       ]
+      },
+      {
+       "day": "Tue",
+       "items": [
+        {
+         "entity_id": "596FDBF1-9D17-40B9-A596-9D170B96596F",
+         "note": "Taste uncompromising third-wave single-origin roasts in the heart of Mitte.",
+         "time": "10:30"
+        },
+        {
+         "time": "15:00",
+         "note": "Explore multi-story collections of literature, vinyl, and sheet music.",
+         "entity_id": "B1353411-28C1-42AB-AB13-28C12AB6B135"
+        },
+        {
+         "entity_id": "CBF6F3B6-AAC1-4738-ACBF-AAC1738FCBF6",
+         "time": "19:30",
+         "note": "Catch an arthouse screening at this historic 1920s cinema on Rosa-Luxemburg-Platz."
+        }
+       ],
+       "title": "Culture & Pages in Central Berlin"
+      },
+      {
+       "title": "Museums & Architecture in Tiergarten & Moabit",
+       "day": "Wed",
+       "items": [
+        {
+         "entity_id": "66B9E02A-BF9B-4AE2-A66B-BF9BAE2B66B9",
+         "time": "11:00",
+         "note": "Experience classic salon culture and traditional pastries in a grand 19th-century villa."
+        },
+        {
+         "time": "14:00",
+         "note": "Immerse yourself in 20th-century masterpieces within Mies van der Rohe's steel-and-glass temple.",
+         "entity_id": "B236C799-463C-469C-AB23-463C69CEB236"
+        },
+        {
+         "time": "17:00",
+         "note": "Wander cutting-edge contemporary exhibits in Moabit's converted historic train terminus.",
+         "entity_id": "ADE45A70-117A-430A-AADE-117A30A9ADE4"
+        }
+       ]
+      },
+      {
+       "items": [
+        {
+         "time": "10:00",
+         "note": "Start the morning with specialty espresso along leafy Oderberger Straße.",
+         "entity_id": "BE963529-1075-47EB-ABE9-10757EBEBE96"
+        },
+        {
+         "entity_id": "2F17C016-5763-4936-A2F1-5763936F2F17",
+         "time": "18:00",
+         "note": "Unwind under the chestnut trees at Berlin's oldest beer garden with local brews."
+        }
+       ],
+       "day": "Thu",
+       "title": "Leafy Streets & Breweries in Prenzlauer Berg"
+      },
+      {
+       "day": "Fri",
+       "title": "Sci-Fi & Graphic Lore in Charlottenburg",
+       "items": [
+        {
+         "time": "15:00",
+         "note": "Comb through shelves of comics, graphic novels, and sci-fi imports in West Berlin.",
+         "entity_id": "EBD46928-4A61-45C5-AEBD-4A615C51EBD4"
+        }
+       ]
+      },
+      {
+       "items": [
+        {
+         "entity_id": "78AA80C0-D768-4E55-A78A-D768E55978AA",
+         "note": "Sample regional craft beers and market street food stalls in a lively historic hall.",
+         "time": "13:00"
+        },
+        {
+         "entity_id": "7D6844B3-FB23-4EEB-A7D6-FB23EEB07D68",
+         "note": "Dive into Berlin's ultimate temple of techno and electronic club culture.",
+         "time": "23:30"
+        }
+       ],
+       "day": "Sat",
+       "title": "Craft Beer & Nightlife in Friedrichshain"
+      },
+      {
+       "items": [
+        {
+         "time": "11:30",
+         "note": "Pair top-tier pour-over coffee with their iconic cheesecake in Neukölln.",
+         "entity_id": "C8374496-E401-428E-AC83-E40128EFC837"
+        },
+        {
+         "entity_id": "C9723E10-51D7-4EA4-AC97-51D7EA49C972",
+         "note": "Dance to euphoric electronic sets along the Spree riverfront to close out the week.",
+         "time": "17:00"
+        }
+       ],
+       "day": "Sun",
+       "title": "Riverside Rhythms & Coffee Retreat"
+      }
+     ],
+     "matches": [
+      {
+       "target_id": "C8374496-E401-428E-AC83-E40128EFC837",
+       "source_id": "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3",
+       "why": "Like Café Pascal, Five Elephant combines meticulously sourced specialty coffee with extraordinary in-house baking in a warm, neighborhood-rooted setting."
+      },
+      {
+       "source_id": "7F153658-8964-4C3A-A7F1-8964C3A17F15",
+       "why": "Berghain captures the uncompromising, industrial electronic music devotion and late-night stamina that define Under Bron.",
+       "target_id": "7D6844B3-FB23-4EEB-A7D6-FB23EEB07D68"
+      },
+      {
+       "why": "Both Moderna Museet and Neue Nationalgalerie pair world-class modern and contemporary art with monumental, design-led modernist architecture.",
+       "target_id": "B236C799-463C-469C-AB23-463C69CEB236",
+       "source_id": "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007"
+      },
+      {
+       "target_id": "EBD46928-4A61-45C5-AEBD-4A615C51EBD4",
+       "why": "Comic Combo Berlin serves as the city's dedicated indie sanctuary for speculative fiction, graphic storytelling, and comic culture.",
+       "source_id": "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6"
+      },
+      {
+       "why": "Kater Blau channels Robyn's vibrant, euphoric electronic energy with its colorful riverside dancefloors and playful club culture.",
+       "target_id": "C9723E10-51D7-4EA4-AC97-51D7EA49C972",
+       "source_id": "A420122C-6D7C-46D9-AA42-6D7C6D9DA420"
+      },
+      {
+       "target_id": "78AA80C0-D768-4E55-A78A-D768E55978AA",
+       "why": "Markthalle Neun matches Akkurat's status as a beloved communal gathering point anchored by excellent craft beer and artisanal fare.",
+       "source_id": "449D3CAE-9086-451F-A449-908651F7449D"
+      }
+     ],
+     "summary": "Your taste seamlessly blends precision specialty coffee, vibrant electronic and dance music, modern design, and convivial community institutions. Berlin's creative core will feel immediately familiar, and you should kick off your journey in gallery- and café-rich Mitte. From there, branch out into the club landscapes and historic cultural hubs of Friedrichshain and Tiergarten."
+    }
+   }
+  },
+  {
+   "at": 29000,
+   "e": {
+    "type": "tool_result",
+    "id": "t15",
+    "name": "submit_plan",
+    "summary": "6 matches, 7-day plan"
+   }
+  },
+  {
+   "at": 29001,
+   "e": {
+    "type": "result",
+    "plan": {
+     "fromCity": "Stockholm",
+     "toCity": "Berlin",
+     "summary": "Your taste seamlessly blends precision specialty coffee, vibrant electronic and dance music, modern design, and convivial community institutions. Berlin's creative core will feel immediately familiar, and you should kick off your journey in gallery- and café-rich Mitte. From there, branch out into the club landscapes and historic cultural hubs of Friedrichshain and Tiergarten.",
+     "sources": [
+      {
+       "id": "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3",
+       "name": "Café Pascal",
+       "type": "urn:entity:place",
+       "address": "Norrtullsgatan 4, Vasastan, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3443,
+       "lon": 18.0478,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:brunch",
+         "name": "brunch",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:cozy",
+         "name": "cozy",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:pastries",
+         "name": "great pastries",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8180000000000001
+      },
+      {
+       "id": "7F153658-8964-4C3A-A7F1-8964C3A17F15",
+       "name": "Under Bron",
+       "type": "urn:entity:place",
+       "address": "Hammarby Slussväg 2, Södermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3196,
+       "lon": 18.0817,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:nightclub",
+         "name": "Nightclub",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:techno",
+         "name": "techno",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:electronic",
+         "name": "electronic",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:late_night",
+         "name": "open late",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:industrial",
+         "name": "industrial space",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.98
+      },
+      {
+       "id": "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007",
+       "name": "Moderna Museet",
+       "type": "urn:entity:place",
+       "address": "Exercisplan 4, Skeppsholmen, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.326,
+       "lon": 18.0848,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:museum",
+         "name": "Museum",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:contemporary_art",
+         "name": "contemporary art",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:design",
+         "name": "design-led",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:architecture",
+         "name": "architecture",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:waterfront",
+         "name": "waterfront",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.872
+      },
+      {
+       "id": "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6",
+       "name": "Science Fiction Bokhandeln",
+       "type": "urn:entity:place",
+       "address": "Västerlånggatan 48, Gamla stan, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.324,
+       "lon": 18.0711,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:bookshop",
+         "name": "Bookstore",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:comics",
+         "name": "comics & sci-fi",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:indie",
+         "name": "indie",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8330000000000001
+      },
+      {
+       "id": "A420122C-6D7C-46D9-AA42-6D7C6D9DA420",
+       "name": "Robyn",
+       "type": "urn:entity:artist",
+       "tags": [
+        {
+         "id": "urn:tag:keyword:place:pop",
+         "name": "pop",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:dance",
+         "name": "dance",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:electronic",
+         "name": "electronic",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:scandi",
+         "name": "Scandinavian",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.971
+      },
+      {
+       "id": "449D3CAE-9086-451F-A449-908651F7449D",
+       "name": "Akkurat",
+       "type": "urn:entity:place",
+       "address": "Hornsgatan 18, Södermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3203,
+       "lon": 18.0656,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:beer_bar",
+         "name": "Beer Bar",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:craft_beer",
+         "name": "craft beer",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:seafood",
+         "name": "seafood",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8480000000000001
+      }
+     ],
+     "matches": [
+      {
+       "source": {
+        "id": "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3",
+        "name": "Café Pascal",
+        "type": "urn:entity:place",
+        "address": "Norrtullsgatan 4, Vasastan, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3443,
+        "lon": 18.0478,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:cafe",
+          "name": "Café",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:specialty_coffee",
+          "name": "specialty coffee",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:brunch",
+          "name": "brunch",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:cozy",
+          "name": "cozy",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:pastries",
+          "name": "great pastries",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8180000000000001
+       },
+       "target": {
+        "id": "C8374496-E401-428E-AC83-E40128EFC837",
+        "name": "Five Elephant",
+        "type": "urn:entity:place",
+        "address": "Reichenberger Straße 101, Berlin",
+        "city": "Berlin",
+        "lat": 52.4966,
+        "lon": 13.4396,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:cafe",
+          "name": "Café",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:specialty_coffee",
+          "name": "specialty coffee",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:pastries",
+          "name": "great pastries",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:cozy",
+          "name": "cozy",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.9580000000000001,
+        "affinity": 0.718,
+        "explain": {
+         "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.8,
+         "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+         "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+         "449D3CAE-9086-451F-A449-908651F7449D": 0,
+         "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+         "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+        },
+        "neighbourhood": "Neukölln"
+       },
+       "sharedTags": [
+        "Café",
+        "specialty coffee",
+        "great pastries",
+        "cozy"
+       ],
+       "affinity": 0.718,
+       "why": "Like Café Pascal, Five Elephant combines meticulously sourced specialty coffee with extraordinary in-house baking in a warm, neighborhood-rooted setting.",
+       "alternatives": [
+        {
+         "id": "7ACB3C77-A1EF-4F83-A7AC-A1EFF83C7ACB",
+         "name": "Father Carpenter",
+         "type": "urn:entity:place",
+         "address": "Münzstraße 21, Berlin",
+         "city": "Berlin",
+         "lat": 52.525,
+         "lon": 13.408,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:cafe",
+           "name": "Café",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:brunch",
+           "name": "brunch",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:specialty_coffee",
+           "name": "specialty coffee",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:design",
+           "name": "design-led",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.887,
+         "affinity": 0.675,
+         "explain": {
+          "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.5
+         },
+         "neighbourhood": "Mitte"
+        },
+        {
+         "id": "66B9E02A-BF9B-4AE2-A66B-BF9BAE2B66B9",
+         "name": "Café Einstein Stammhaus",
+         "type": "urn:entity:place",
+         "address": "Kurfürstenstraße 58, Berlin",
+         "city": "Berlin",
+         "lat": 52.502,
+         "lon": 13.355,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:cafe",
+           "name": "Café",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:pastries",
+           "name": "great pastries",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:local_institution",
+           "name": "local institution",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:historic",
+           "name": "historic",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.89,
+         "affinity": 0.5619,
+         "explain": {
+          "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.286
+         },
+         "neighbourhood": "Tiergarten & Moabit"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "7F153658-8964-4C3A-A7F1-8964C3A17F15",
+        "name": "Under Bron",
+        "type": "urn:entity:place",
+        "address": "Hammarby Slussväg 2, Södermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3196,
+        "lon": 18.0817,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:nightclub",
+          "name": "Nightclub",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:techno",
+          "name": "techno",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:electronic",
+          "name": "electronic",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:late_night",
+          "name": "open late",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:industrial",
+          "name": "industrial space",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.98
+       },
+       "target": {
+        "id": "7D6844B3-FB23-4EEB-A7D6-FB23EEB07D68",
+        "name": "Berghain",
+        "type": "urn:entity:place",
+        "address": "Am Wriezener Bahnhof, Berlin",
+        "city": "Berlin",
+        "lat": 52.5111,
+        "lon": 13.443,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:nightclub",
+          "name": "Nightclub",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:techno",
+          "name": "techno",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:electronic",
+          "name": "electronic",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:late_night",
+          "name": "open late",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:industrial",
+          "name": "industrial space",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.803,
+        "affinity": 0.7991,
+        "explain": {
+         "7F153658-8964-4C3A-A7F1-8964C3A17F15": 1,
+         "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0.125,
+         "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+         "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+         "449D3CAE-9086-451F-A449-908651F7449D": 0,
+         "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0
+        },
+        "neighbourhood": "Friedrichshain"
+       },
+       "sharedTags": [
+        "Nightclub",
+        "techno",
+        "electronic",
+        "open late",
+        "industrial space"
+       ],
+       "affinity": 0.7991,
+       "why": "Berghain captures the uncompromising, industrial electronic music devotion and late-night stamina that define Under Bron.",
+       "alternatives": [
+        {
+         "id": "C9723E10-51D7-4EA4-AC97-51D7EA49C972",
+         "name": "Kater Blau",
+         "type": "urn:entity:place",
+         "address": "Holzmarktstraße 25, Berlin",
+         "city": "Berlin",
+         "lat": 52.513,
+         "lon": 13.425,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:nightclub",
+           "name": "Nightclub",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:techno",
+           "name": "techno",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:electronic",
+           "name": "electronic",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:waterfront",
+           "name": "waterfront",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:garden",
+           "name": "garden setting",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.8440000000000001,
+         "affinity": 0.6318,
+         "explain": {
+          "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0.429
+         },
+         "neighbourhood": "Friedrichshain"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007",
+        "name": "Moderna Museet",
+        "type": "urn:entity:place",
+        "address": "Exercisplan 4, Skeppsholmen, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.326,
+        "lon": 18.0848,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:museum",
+          "name": "Museum",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:contemporary_art",
+          "name": "contemporary art",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:design",
+          "name": "design-led",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:architecture",
+          "name": "architecture",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:waterfront",
+          "name": "waterfront",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.872
+       },
+       "target": {
+        "id": "B236C799-463C-469C-AB23-463C69CEB236",
+        "name": "Neue Nationalgalerie",
+        "type": "urn:entity:place",
+        "address": "Potsdamer Straße 50, Berlin",
+        "city": "Berlin",
+        "lat": 52.507,
+        "lon": 13.367,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:museum",
+          "name": "Museum",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:contemporary_art",
+          "name": "contemporary art",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:architecture",
+          "name": "architecture",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:design",
+          "name": "design-led",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.9850000000000001,
+        "affinity": 0.719,
+        "explain": {
+         "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.8,
+         "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+         "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+         "449D3CAE-9086-451F-A449-908651F7449D": 0,
+         "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+         "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+        },
+        "neighbourhood": "Tiergarten & Moabit"
+       },
+       "sharedTags": [
+        "Museum",
+        "contemporary art",
+        "architecture",
+        "design-led"
+       ],
+       "affinity": 0.719,
+       "why": "Both Moderna Museet and Neue Nationalgalerie pair world-class modern and contemporary art with monumental, design-led modernist architecture.",
+       "alternatives": [
+        {
+         "id": "ADE45A70-117A-430A-AADE-117A30A9ADE4",
+         "name": "Hamburger Bahnhof",
+         "type": "urn:entity:place",
+         "address": "Invalidenstraße 50-51, Berlin",
+         "city": "Berlin",
+         "lat": 52.5285,
+         "lon": 13.372,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:museum",
+           "name": "Museum",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:contemporary_art",
+           "name": "contemporary art",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:industrial",
+           "name": "industrial space",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.872,
+         "affinity": 0.5878,
+         "explain": {
+          "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.333
+         },
+         "neighbourhood": "Tiergarten & Moabit"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6",
+        "name": "Science Fiction Bokhandeln",
+        "type": "urn:entity:place",
+        "address": "Västerlånggatan 48, Gamla stan, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.324,
+        "lon": 18.0711,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:bookshop",
+          "name": "Bookstore",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:comics",
+          "name": "comics & sci-fi",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:indie",
+          "name": "indie",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8330000000000001
+       },
+       "target": {
+        "id": "EBD46928-4A61-45C5-AEBD-4A615C51EBD4",
+        "name": "Comic Combo Berlin",
+        "type": "urn:entity:place",
+        "address": "Wilmersdorfer Straße 61, Berlin",
+        "city": "Berlin",
+        "lat": 52.507,
+        "lon": 13.306,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:bookshop",
+          "name": "Bookstore",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:comics",
+          "name": "comics & sci-fi",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.984,
+        "affinity": 0.6928,
+        "explain": {
+         "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.667,
+         "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+         "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+         "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+         "449D3CAE-9086-451F-A449-908651F7449D": 0,
+         "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+        },
+        "neighbourhood": "Charlottenburg"
+       },
+       "sharedTags": [
+        "Bookstore",
+        "comics & sci-fi"
+       ],
+       "affinity": 0.6928,
+       "why": "Comic Combo Berlin serves as the city's dedicated indie sanctuary for speculative fiction, graphic storytelling, and comic culture.",
+       "alternatives": [
+        {
+         "id": "D3F12965-EAA3-4F93-AD3F-EAA3F932D3F1",
+         "name": "Do You Read Me?!",
+         "type": "urn:entity:place",
+         "address": "Auguststraße 28, Berlin",
+         "city": "Berlin",
+         "lat": 52.526,
+         "lon": 13.401,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:bookshop",
+           "name": "Bookstore",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:magazines",
+           "name": "independent magazines",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:design",
+           "name": "design-led",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:indie",
+           "name": "indie",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.9510000000000001,
+         "affinity": 0.635,
+         "explain": {
+          "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.4
+         },
+         "neighbourhood": "Mitte"
+        },
+        {
+         "id": "B1353411-28C1-42AB-AB13-28C12AB6B135",
+         "name": "Dussmann das KulturKaufhaus",
+         "type": "urn:entity:place",
+         "address": "Friedrichstraße 90, Berlin",
+         "city": "Berlin",
+         "lat": 52.518,
+         "lon": 13.389,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:bookshop",
+           "name": "Bookstore",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:design",
+           "name": "design-led",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:classical",
+           "name": "classical music",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.9750000000000001,
+         "affinity": 0.531,
+         "explain": {
+          "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.2
+         },
+         "neighbourhood": "Mitte"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "A420122C-6D7C-46D9-AA42-6D7C6D9DA420",
+        "name": "Robyn",
+        "type": "urn:entity:artist",
+        "tags": [
+         {
+          "id": "urn:tag:keyword:place:pop",
+          "name": "pop",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:dance",
+          "name": "dance",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:electronic",
+          "name": "electronic",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:scandi",
+          "name": "Scandinavian",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.971
+       },
+       "target": {
+        "id": "C9723E10-51D7-4EA4-AC97-51D7EA49C972",
+        "name": "Kater Blau",
+        "type": "urn:entity:place",
+        "address": "Holzmarktstraße 25, Berlin",
+        "city": "Berlin",
+        "lat": 52.513,
+        "lon": 13.425,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:nightclub",
+          "name": "Nightclub",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:techno",
+          "name": "techno",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:electronic",
+          "name": "electronic",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:waterfront",
+          "name": "waterfront",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:garden",
+          "name": "garden setting",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8440000000000001,
+        "affinity": 0.5931,
+        "explain": {
+         "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0.429,
+         "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0.125,
+         "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.111,
+         "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+         "449D3CAE-9086-451F-A449-908651F7449D": 0,
+         "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0
+        },
+        "neighbourhood": "Friedrichshain"
+       },
+       "sharedTags": [
+        "electronic"
+       ],
+       "affinity": 0.5931,
+       "why": "Kater Blau channels Robyn's vibrant, euphoric electronic energy with its colorful riverside dancefloors and playful club culture.",
+       "alternatives": [
+        {
+         "id": "7D6844B3-FB23-4EEB-A7D6-FB23EEB07D68",
+         "name": "Berghain",
+         "type": "urn:entity:place",
+         "address": "Am Wriezener Bahnhof, Berlin",
+         "city": "Berlin",
+         "lat": 52.5111,
+         "lon": 13.443,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:nightclub",
+           "name": "Nightclub",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:techno",
+           "name": "techno",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:electronic",
+           "name": "electronic",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:late_night",
+           "name": "open late",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:industrial",
+           "name": "industrial space",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.803,
+         "affinity": 0.4718,
+         "explain": {
+          "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0.125
+         },
+         "neighbourhood": "Friedrichshain"
+        },
+        {
+         "id": "ADE45A70-117A-430A-AADE-117A30A9ADE4",
+         "name": "Hamburger Bahnhof",
+         "type": "urn:entity:place",
+         "address": "Invalidenstraße 50-51, Berlin",
+         "city": "Berlin",
+         "lat": 52.5285,
+         "lon": 13.372,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:museum",
+           "name": "Museum",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:contemporary_art",
+           "name": "contemporary art",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:industrial",
+           "name": "industrial space",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.872,
+         "affinity": 0.438,
+         "explain": {
+          "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+         },
+         "neighbourhood": "Tiergarten & Moabit"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "449D3CAE-9086-451F-A449-908651F7449D",
+        "name": "Akkurat",
+        "type": "urn:entity:place",
+        "address": "Hornsgatan 18, Södermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3203,
+        "lon": 18.0656,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:beer_bar",
+          "name": "Beer Bar",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:craft_beer",
+          "name": "craft beer",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:seafood",
+          "name": "seafood",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8480000000000001
+       },
+       "target": {
+        "id": "78AA80C0-D768-4E55-A78A-D768E55978AA",
+        "name": "Markthalle Neun",
+        "type": "urn:entity:place",
+        "address": "Eisenbahnstraße 42/43, Berlin",
+        "city": "Berlin",
+        "lat": 52.502,
+        "lon": 13.431,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:market",
+          "name": "Market",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:street_food",
+          "name": "street food",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:craft_beer",
+          "name": "craft beer",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.808,
+        "affinity": 0.5412,
+        "explain": {
+         "449D3CAE-9086-451F-A449-908651F7449D": 0.333,
+         "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+         "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+         "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+         "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+         "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+        },
+        "neighbourhood": "Friedrichshain"
+       },
+       "sharedTags": [
+        "local institution",
+        "craft beer"
+       ],
+       "affinity": 0.5412,
+       "why": "Markthalle Neun matches Akkurat's status as a beloved communal gathering point anchored by excellent craft beer and artisanal fare.",
+       "alternatives": [
+        {
+         "id": "2F17C016-5763-4936-A2F1-5763936F2F17",
+         "name": "Prater Garten",
+         "type": "urn:entity:place",
+         "address": "Kastanienallee 7-9, Berlin",
+         "city": "Berlin",
+         "lat": 52.5398,
+         "lon": 13.4105,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:beer_garden",
+           "name": "Beer Garden",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:local_institution",
+           "name": "local institution",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:garden",
+           "name": "garden setting",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:craft_beer",
+           "name": "craft beer",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:historic",
+           "name": "historic",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.904,
+         "affinity": 0.5679,
+         "explain": {
+          "449D3CAE-9086-451F-A449-908651F7449D": 0.286
+         },
+         "neighbourhood": "Prenzlauer Berg"
+        },
+        {
+         "id": "6DE160E2-BACB-44FD-A6DE-BACB4FD36DE1",
+         "name": "Kino International",
+         "type": "urn:entity:place",
+         "address": "Karl-Marx-Allee 33, Berlin",
+         "city": "Berlin",
+         "lat": 52.52,
+         "lon": 13.423,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:cinema",
+           "name": "Movie Theater",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:architecture",
+           "name": "architecture",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:local_institution",
+           "name": "local institution",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.8340000000000001,
+         "affinity": 0.5092,
+         "explain": {
+          "449D3CAE-9086-451F-A449-908651F7449D": 0.167
+         },
+         "neighbourhood": "Mitte"
+        }
+       ]
+      }
+     ],
+     "neighbourhoods": [
+      {
+       "name": "Mitte",
+       "score": 96,
+       "lat": 52.525,
+       "lon": 13.4,
+       "highlights": [
+        "Father Carpenter",
+        "Do You Read Me?!",
+        "The Barn",
+        "Dussmann das KulturKaufhaus"
+       ],
+       "why": "galleries, cafés, central. 5 of your matches are here; heatmap affinity 80%."
+      },
+      {
+       "name": "Friedrichshain",
+       "score": 78,
+       "lat": 52.512,
+       "lon": 13.45,
+       "highlights": [
+        "Berghain",
+        "Kater Blau",
+        "Markthalle Neun"
+       ],
+       "why": "clubs, students, street art. 3 of your matches are here; heatmap affinity 59%."
+      },
+      {
+       "name": "Tiergarten & Moabit",
+       "score": 72,
+       "lat": 52.52,
+       "lon": 13.355,
+       "highlights": [
+        "Neue Nationalgalerie",
+        "Hamburger Bahnhof",
+        "Café Einstein Stammhaus"
+       ],
+       "why": "parks, museums, quiet. 3 of your matches are here; heatmap affinity 43%."
+      },
+      {
+       "name": "Prenzlauer Berg",
+       "score": 64,
+       "lat": 52.539,
+       "lon": 13.418,
+       "highlights": [
+        "Prater Garten",
+        "Bonanza Coffee Roasters"
+       ],
+       "why": "cafés, families, leafy streets. 2 of your matches are here; heatmap affinity 35%."
+      },
+      {
+       "name": "Neukölln",
+       "score": 61,
+       "lat": 52.481,
+       "lon": 13.435,
+       "highlights": [
+        "Five Elephant"
+       ],
+       "why": "young, bars, international. 1 of your matches is here; heatmap affinity 43%."
+      },
+      {
+       "name": "Charlottenburg",
+       "score": 60,
+       "lat": 52.505,
+       "lon": 13.31,
+       "highlights": [
+        "Comic Combo Berlin"
+       ],
+       "why": "classic, jazz, elegant. 1 of your matches is here; heatmap affinity 39%."
+      }
+     ],
+     "week": [
+      {
+       "day": "Mon",
+       "title": "Mitte Design & Coffee Kickoff",
+       "items": [
+        {
+         "time": "10:00",
+         "entity": {
+          "id": "7ACB3C77-A1EF-4F83-A7AC-A1EFF83C7ACB",
+          "name": "Father Carpenter",
+          "type": "urn:entity:place",
+          "address": "Münzstraße 21, Berlin",
+          "city": "Berlin",
+          "lat": 52.525,
+          "lon": 13.408,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:brunch",
+            "name": "brunch",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.887,
+          "affinity": 0.5966,
+          "explain": {
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.5,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.125,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Mitte"
+         },
+         "note": "Settle in with a flat white and brunch in this tranquil Mitte courtyard."
+        },
+        {
+         "time": "14:00",
+         "entity": {
+          "id": "D3F12965-EAA3-4F93-AD3F-EAA3F932D3F1",
+          "name": "Do You Read Me?!",
+          "type": "urn:entity:place",
+          "address": "Auguststraße 28, Berlin",
+          "city": "Berlin",
+          "lat": 52.526,
+          "lon": 13.401,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:bookshop",
+            "name": "Bookstore",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:magazines",
+            "name": "independent magazines",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:indie",
+            "name": "indie",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9510000000000001,
+          "affinity": 0.5811,
+          "explain": {
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.4,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.125,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Mitte"
+         },
+         "note": "Browse international art, architecture, and indie publications along Auguststraße."
+        }
+       ]
+      },
+      {
+       "day": "Tue",
+       "title": "Culture & Pages in Central Berlin",
+       "items": [
+        {
+         "time": "10:30",
+         "entity": {
+          "id": "596FDBF1-9D17-40B9-A596-9D170B96596F",
+          "name": "The Barn",
+          "type": "urn:entity:place",
+          "address": "Auguststraße 58, Mitte, Berlin",
+          "city": "Berlin",
+          "lat": 52.5276,
+          "lon": 13.3986,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:roastery",
+            "name": "in-house roastery",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:third_wave",
+            "name": "third wave",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:minimalist",
+            "name": "minimalist interior",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8450000000000001,
+          "affinity": 0.5082,
+          "explain": {
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.25,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Mitte"
+         },
+         "note": "Taste uncompromising third-wave single-origin roasts in the heart of Mitte."
+        },
+        {
+         "time": "15:00",
+         "entity": {
+          "id": "B1353411-28C1-42AB-AB13-28C12AB6B135",
+          "name": "Dussmann das KulturKaufhaus",
+          "type": "urn:entity:place",
+          "address": "Friedrichstraße 90, Berlin",
+          "city": "Berlin",
+          "lat": 52.518,
+          "lon": 13.389,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:bookshop",
+            "name": "Bookstore",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:classical",
+            "name": "classical music",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9750000000000001,
+          "affinity": 0.5066,
+          "explain": {
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.2,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.143,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Mitte"
+         },
+         "note": "Explore multi-story collections of literature, vinyl, and sheet music."
+        },
+        {
+         "time": "19:30",
+         "entity": {
+          "id": "CBF6F3B6-AAC1-4738-ACBF-AAC1738FCBF6",
+          "name": "Babylon",
+          "type": "urn:entity:place",
+          "address": "Rosa-Luxemburg-Straße 30, Berlin",
+          "city": "Berlin",
+          "lat": 52.526,
+          "lon": 13.411,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cinema",
+            "name": "Movie Theater",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:arthouse",
+            "name": "arthouse film",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:indie",
+            "name": "indie",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.928,
+          "affinity": 0.5049,
+          "explain": {
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.167,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0.143,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Mitte"
+         },
+         "note": "Catch an arthouse screening at this historic 1920s cinema on Rosa-Luxemburg-Platz."
+        }
+       ]
+      },
+      {
+       "day": "Wed",
+       "title": "Museums & Architecture in Tiergarten & Moabit",
+       "items": [
+        {
+         "time": "11:00",
+         "entity": {
+          "id": "66B9E02A-BF9B-4AE2-A66B-BF9BAE2B66B9",
+          "name": "Café Einstein Stammhaus",
+          "type": "urn:entity:place",
+          "address": "Kurfürstenstraße 58, Berlin",
+          "city": "Berlin",
+          "lat": 52.502,
+          "lon": 13.355,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:pastries",
+            "name": "great pastries",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:historic",
+            "name": "historic",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.89,
+          "affinity": 0.5267,
+          "explain": {
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.286,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0.143,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Tiergarten & Moabit"
+         },
+         "note": "Experience classic salon culture and traditional pastries in a grand 19th-century villa."
+        },
+        {
+         "time": "14:00",
+         "entity": {
+          "id": "B236C799-463C-469C-AB23-463C69CEB236",
+          "name": "Neue Nationalgalerie",
+          "type": "urn:entity:place",
+          "address": "Potsdamer Straße 50, Berlin",
+          "city": "Berlin",
+          "lat": 52.507,
+          "lon": 13.367,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:museum",
+            "name": "Museum",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:contemporary_art",
+            "name": "contemporary art",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:architecture",
+            "name": "architecture",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9850000000000001,
+          "affinity": 0.719,
+          "explain": {
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.8,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Tiergarten & Moabit"
+         },
+         "note": "Immerse yourself in 20th-century masterpieces within Mies van der Rohe's steel-and-glass temple."
+        },
+        {
+         "time": "17:00",
+         "entity": {
+          "id": "ADE45A70-117A-430A-AADE-117A30A9ADE4",
+          "name": "Hamburger Bahnhof",
+          "type": "urn:entity:place",
+          "address": "Invalidenstraße 50-51, Berlin",
+          "city": "Berlin",
+          "lat": 52.5285,
+          "lon": 13.372,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:museum",
+            "name": "Museum",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:contemporary_art",
+            "name": "contemporary art",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:industrial",
+            "name": "industrial space",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.872,
+          "affinity": 0.5608,
+          "explain": {
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.333,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0.143,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Tiergarten & Moabit"
+         },
+         "note": "Wander cutting-edge contemporary exhibits in Moabit's converted historic train terminus."
+        }
+       ]
+      },
+      {
+       "day": "Thu",
+       "title": "Leafy Streets & Breweries in Prenzlauer Berg",
+       "items": [
+        {
+         "time": "10:00",
+         "entity": {
+          "id": "BE963529-1075-47EB-ABE9-10757EBEBE96",
+          "name": "Bonanza Coffee Roasters",
+          "type": "urn:entity:place",
+          "address": "Oderberger Straße 35, Berlin",
+          "city": "Berlin",
+          "lat": 52.539,
+          "lon": 13.407,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:roastery",
+            "name": "in-house roastery",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:minimalist",
+            "name": "minimalist interior",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:third_wave",
+            "name": "third wave",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.935,
+          "affinity": 0.5192,
+          "explain": {
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.25,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Prenzlauer Berg"
+         },
+         "note": "Start the morning with specialty espresso along leafy Oderberger Straße."
+        },
+        {
+         "time": "18:00",
+         "entity": {
+          "id": "2F17C016-5763-4936-A2F1-5763936F2F17",
+          "name": "Prater Garten",
+          "type": "urn:entity:place",
+          "address": "Kastanienallee 7-9, Berlin",
+          "city": "Berlin",
+          "lat": 52.5398,
+          "lon": 13.4105,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:beer_garden",
+            "name": "Beer Garden",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:garden",
+            "name": "garden setting",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:craft_beer",
+            "name": "craft beer",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:historic",
+            "name": "historic",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.904,
+          "affinity": 0.5101,
+          "explain": {
+           "449D3CAE-9086-451F-A449-908651F7449D": 0.286,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Prenzlauer Berg"
+         },
+         "note": "Unwind under the chestnut trees at Berlin's oldest beer garden with local brews."
+        }
+       ]
+      },
+      {
+       "day": "Fri",
+       "title": "Sci-Fi & Graphic Lore in Charlottenburg",
+       "items": [
+        {
+         "time": "15:00",
+         "entity": {
+          "id": "EBD46928-4A61-45C5-AEBD-4A615C51EBD4",
+          "name": "Comic Combo Berlin",
+          "type": "urn:entity:place",
+          "address": "Wilmersdorfer Straße 61, Berlin",
+          "city": "Berlin",
+          "lat": 52.507,
+          "lon": 13.306,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:bookshop",
+            "name": "Bookstore",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:comics",
+            "name": "comics & sci-fi",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.984,
+          "affinity": 0.6928,
+          "explain": {
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.667,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Charlottenburg"
+         },
+         "note": "Comb through shelves of comics, graphic novels, and sci-fi imports in West Berlin."
+        }
+       ]
+      },
+      {
+       "day": "Sat",
+       "title": "Craft Beer & Nightlife in Friedrichshain",
+       "items": [
+        {
+         "time": "13:00",
+         "entity": {
+          "id": "78AA80C0-D768-4E55-A78A-D768E55978AA",
+          "name": "Markthalle Neun",
+          "type": "urn:entity:place",
+          "address": "Eisenbahnstraße 42/43, Berlin",
+          "city": "Berlin",
+          "lat": 52.502,
+          "lon": 13.431,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:market",
+            "name": "Market",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:street_food",
+            "name": "street food",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:craft_beer",
+            "name": "craft beer",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.808,
+          "affinity": 0.5412,
+          "explain": {
+           "449D3CAE-9086-451F-A449-908651F7449D": 0.333,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Friedrichshain"
+         },
+         "note": "Sample regional craft beers and market street food stalls in a lively historic hall."
+        },
+        {
+         "time": "23:30",
+         "entity": {
+          "id": "7D6844B3-FB23-4EEB-A7D6-FB23EEB07D68",
+          "name": "Berghain",
+          "type": "urn:entity:place",
+          "address": "Am Wriezener Bahnhof, Berlin",
+          "city": "Berlin",
+          "lat": 52.5111,
+          "lon": 13.443,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:nightclub",
+            "name": "Nightclub",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:techno",
+            "name": "techno",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:electronic",
+            "name": "electronic",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:late_night",
+            "name": "open late",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:industrial",
+            "name": "industrial space",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.803,
+          "affinity": 0.7991,
+          "explain": {
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 1,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0.125,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0
+          },
+          "neighbourhood": "Friedrichshain"
+         },
+         "note": "Dive into Berlin's ultimate temple of techno and electronic club culture."
+        }
+       ]
+      },
+      {
+       "day": "Sun",
+       "title": "Riverside Rhythms & Coffee Retreat",
+       "items": [
+        {
+         "time": "11:30",
+         "entity": {
+          "id": "C8374496-E401-428E-AC83-E40128EFC837",
+          "name": "Five Elephant",
+          "type": "urn:entity:place",
+          "address": "Reichenberger Straße 101, Berlin",
+          "city": "Berlin",
+          "lat": 52.4966,
+          "lon": 13.4396,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:pastries",
+            "name": "great pastries",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:cozy",
+            "name": "cozy",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9580000000000001,
+          "affinity": 0.718,
+          "explain": {
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.8,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+          },
+          "neighbourhood": "Neukölln"
+         },
+         "note": "Pair top-tier pour-over coffee with their iconic cheesecake in Neukölln."
+        },
+        {
+         "time": "17:00",
+         "entity": {
+          "id": "C9723E10-51D7-4EA4-AC97-51D7EA49C972",
+          "name": "Kater Blau",
+          "type": "urn:entity:place",
+          "address": "Holzmarktstraße 25, Berlin",
+          "city": "Berlin",
+          "lat": 52.513,
+          "lon": 13.425,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:nightclub",
+            "name": "Nightclub",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:techno",
+            "name": "techno",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:electronic",
+            "name": "electronic",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:waterfront",
+            "name": "waterfront",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:garden",
+            "name": "garden setting",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8440000000000001,
+          "affinity": 0.5931,
+          "explain": {
+           "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0.429,
+           "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0.125,
+           "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.111,
+           "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+           "449D3CAE-9086-451F-A449-908651F7449D": 0,
+           "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0
+          },
+          "neighbourhood": "Friedrichshain"
+         },
+         "note": "Dance to euphoric electronic sets along the Spree riverfront to close out the week."
+        }
+       ]
+      }
+     ],
+     "extras": [
+      {
+       "id": "7ACB3C77-A1EF-4F83-A7AC-A1EFF83C7ACB",
+       "name": "Father Carpenter",
+       "type": "urn:entity:place",
+       "address": "Münzstraße 21, Berlin",
+       "city": "Berlin",
+       "lat": 52.525,
+       "lon": 13.408,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:brunch",
+         "name": "brunch",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:design",
+         "name": "design-led",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.887,
+       "affinity": 0.5966,
+       "explain": {
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.5,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.125,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0,
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Mitte"
+      },
+      {
+       "id": "D3F12965-EAA3-4F93-AD3F-EAA3F932D3F1",
+       "name": "Do You Read Me?!",
+       "type": "urn:entity:place",
+       "address": "Auguststraße 28, Berlin",
+       "city": "Berlin",
+       "lat": 52.526,
+       "lon": 13.401,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:bookshop",
+         "name": "Bookstore",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:magazines",
+         "name": "independent magazines",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:design",
+         "name": "design-led",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:indie",
+         "name": "indie",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.9510000000000001,
+       "affinity": 0.5811,
+       "explain": {
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.4,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.125,
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Mitte"
+      },
+      {
+       "id": "ADE45A70-117A-430A-AADE-117A30A9ADE4",
+       "name": "Hamburger Bahnhof",
+       "type": "urn:entity:place",
+       "address": "Invalidenstraße 50-51, Berlin",
+       "city": "Berlin",
+       "lat": 52.5285,
+       "lon": 13.372,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:museum",
+         "name": "Museum",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:contemporary_art",
+         "name": "contemporary art",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:industrial",
+         "name": "industrial space",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.872,
+       "affinity": 0.5608,
+       "explain": {
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.333,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0.143,
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0,
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Tiergarten & Moabit"
+      },
+      {
+       "id": "66B9E02A-BF9B-4AE2-A66B-BF9BAE2B66B9",
+       "name": "Café Einstein Stammhaus",
+       "type": "urn:entity:place",
+       "address": "Kurfürstenstraße 58, Berlin",
+       "city": "Berlin",
+       "lat": 52.502,
+       "lon": 13.355,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:pastries",
+         "name": "great pastries",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:historic",
+         "name": "historic",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.89,
+       "affinity": 0.5267,
+       "explain": {
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.286,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0.143,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Tiergarten & Moabit"
+      },
+      {
+       "id": "BE963529-1075-47EB-ABE9-10757EBEBE96",
+       "name": "Bonanza Coffee Roasters",
+       "type": "urn:entity:place",
+       "address": "Oderberger Straße 35, Berlin",
+       "city": "Berlin",
+       "lat": 52.539,
+       "lon": 13.407,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:roastery",
+         "name": "in-house roastery",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:minimalist",
+         "name": "minimalist interior",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:third_wave",
+         "name": "third wave",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.935,
+       "affinity": 0.5192,
+       "explain": {
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.25,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0,
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Prenzlauer Berg"
+      },
+      {
+       "id": "2F17C016-5763-4936-A2F1-5763936F2F17",
+       "name": "Prater Garten",
+       "type": "urn:entity:place",
+       "address": "Kastanienallee 7-9, Berlin",
+       "city": "Berlin",
+       "lat": 52.5398,
+       "lon": 13.4105,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:beer_garden",
+         "name": "Beer Garden",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:garden",
+         "name": "garden setting",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:craft_beer",
+         "name": "craft beer",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:historic",
+         "name": "historic",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.904,
+       "affinity": 0.5101,
+       "explain": {
+        "449D3CAE-9086-451F-A449-908651F7449D": 0.286,
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Prenzlauer Berg"
+      },
+      {
+       "id": "596FDBF1-9D17-40B9-A596-9D170B96596F",
+       "name": "The Barn",
+       "type": "urn:entity:place",
+       "address": "Auguststraße 58, Mitte, Berlin",
+       "city": "Berlin",
+       "lat": 52.5276,
+       "lon": 13.3986,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:roastery",
+         "name": "in-house roastery",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:third_wave",
+         "name": "third wave",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:minimalist",
+         "name": "minimalist interior",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8450000000000001,
+       "affinity": 0.5082,
+       "explain": {
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0.25,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0,
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Mitte"
+      },
+      {
+       "id": "B1353411-28C1-42AB-AB13-28C12AB6B135",
+       "name": "Dussmann das KulturKaufhaus",
+       "type": "urn:entity:place",
+       "address": "Friedrichstraße 90, Berlin",
+       "city": "Berlin",
+       "lat": 52.518,
+       "lon": 13.389,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:bookshop",
+         "name": "Bookstore",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:design",
+         "name": "design-led",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:classical",
+         "name": "classical music",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.9750000000000001,
+       "affinity": 0.5066,
+       "explain": {
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.2,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0.143,
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Mitte"
+      },
+      {
+       "id": "CBF6F3B6-AAC1-4738-ACBF-AAC1738FCBF6",
+       "name": "Babylon",
+       "type": "urn:entity:place",
+       "address": "Rosa-Luxemburg-Straße 30, Berlin",
+       "city": "Berlin",
+       "lat": 52.526,
+       "lon": 13.411,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cinema",
+         "name": "Movie Theater",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:arthouse",
+         "name": "arthouse film",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:indie",
+         "name": "indie",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.928,
+       "affinity": 0.5049,
+       "explain": {
+        "4FA68C97-172F-47F5-A4FA-172F7F5C4FA6": 0.167,
+        "449D3CAE-9086-451F-A449-908651F7449D": 0.143,
+        "F0F311F2-1FA5-40C0-AF0F-1FA50C03F0F3": 0,
+        "F007FA52-4D8F-43FE-AF00-4D8F3FE3F007": 0,
+        "7F153658-8964-4C3A-A7F1-8964C3A17F15": 0,
+        "A420122C-6D7C-46D9-AA42-6D7C6D9DA420": 0
+       },
+       "neighbourhood": "Mitte"
+      }
+     ],
+     "provenance": {
+      "qlooCalls": 15,
+      "qlooMode": "mock",
+      "llm": "gemini-3.8-flash"
+     }
+    }
+   }
+  },
+  {
+   "at": 29001,
+   "e": {
+    "type": "done"
+   }
+  }
+ ]
+}

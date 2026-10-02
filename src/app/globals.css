@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f5efe4;
+  --paper-2: #ece3d3;
+  --card: #fffdf8;
+  --ink: #1d1a16;
+  --ink-2: #5b544a;
+  --ink-3: #8b8274;
+  --line: #ded3c0;
+  --accent: #d4532a;
+  --accent-soft: #f6d9cb;
+  --teal: #1f6b66;
+  --teal-soft: #d3e7e3;
+  --gold: #c9971c;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-teal: var(--teal);
+  --color-teal-soft: var(--teal-soft);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+  --font-mono: var(--font-mono);
+}
+
+html { color-scheme: light; }
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.grain {
+  background-image: radial-gradient(rgba(29, 26, 22, 0.05) 1px, transparent 1px);
+  background-size: 3px 3px;
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 0.35s ease-out both; }
+@keyframes pulse-dot { 0%, 100% { opacity: 0.35; } 50% { opacity: 1; } }
+.pulse-dot { animation: pulse-dot 1s ease-in-out infinite; }
+
+.maplibregl-popup-content { border-radius: 12px !important; padding: 10px 12px !important; font-family: var(--font-inter), sans-serif; box-shadow: 0 8px 24px rgba(0,0,0,.12) !important; }
+.tb-pin { width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; font: 600 12px/1 var(--font-inter), sans-serif; color: #fff; background: var(--accent); border: 2px solid #fff; box-shadow: 0 2px 8px rgba(0,0,0,.25); cursor: pointer; transition: transform .15s; }
+.tb-pin:hover, .tb-pin.on { transform: scale(1.25); }
+.tb-pin.extra { width: 14px; height: 14px; background: var(--teal); }
+.tb-pin.dim { opacity: .3; }
+
+@media (prefers-reduced-motion: reduce) { .rise, .pulse-dot { animation: none; } }

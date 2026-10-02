@@ -1,0 +1,2850 @@
+{
+ "id": "stockholm-lisbon",
+ "title": "Stockholm → Lisbon",
+ "persona": "Product designer starting a new job",
+ "fromCity": "Stockholm",
+ "toCity": "Lisbon",
+ "loves": [
+  "Drop Coffee",
+  "Fotografiska",
+  "Fasching",
+  "Tyge & Sessil",
+  "Bio Rio",
+  "Hornstulls Marknad"
+ ],
+ "recordedAt": "2026-10-02T12:54:57.233Z",
+ "events": [
+  {
+   "at": 2,
+   "e": {
+    "type": "start",
+    "qlooMode": "mock",
+    "llm": "gemini-3.8-flash",
+    "fromCity": "Stockholm",
+    "toCity": "Lisbon",
+    "loves": [
+     "Drop Coffee",
+     "Fotografiska",
+     "Fasching",
+     "Tyge & Sessil",
+     "Bio Rio",
+     "Hornstulls Marknad"
+    ]
+   }
+  },
+  {
+   "at": 3986,
+   "e": {
+    "type": "thought",
+    "text": "I am resolving your favorite Stockholm spots in the taste graph to map your cultural profile."
+   }
+  },
+  {
+   "at": 3988,
+   "e": {
+    "type": "tool_call",
+    "id": "t1",
+    "name": "search_entities",
+    "label": "Qloo /search · “Drop Coffee”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Drop Coffee"
+    }
+   }
+  },
+  {
+   "at": 4031,
+   "e": {
+    "type": "tool_result",
+    "id": "t1",
+    "name": "search_entities",
+    "summary": "5 candidates; best: Drop Coffee"
+   }
+  },
+  {
+   "at": 4032,
+   "e": {
+    "type": "tool_call",
+    "id": "t2",
+    "name": "search_entities",
+    "label": "Qloo /search · “Fotografiska”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Fotografiska"
+    }
+   }
+  },
+  {
+   "at": 4037,
+   "e": {
+    "type": "tool_result",
+    "id": "t2",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Fotografiska"
+   }
+  },
+  {
+   "at": 4038,
+   "e": {
+    "type": "tool_call",
+    "id": "t3",
+    "name": "search_entities",
+    "label": "Qloo /search · “Fasching”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Fasching"
+    }
+   }
+  },
+  {
+   "at": 4039,
+   "e": {
+    "type": "tool_result",
+    "id": "t3",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Fasching"
+   }
+  },
+  {
+   "at": 4039,
+   "e": {
+    "type": "tool_call",
+    "id": "t4",
+    "name": "search_entities",
+    "label": "Qloo /search · “Tyge & Sessil”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Tyge & Sessil"
+    }
+   }
+  },
+  {
+   "at": 4041,
+   "e": {
+    "type": "tool_result",
+    "id": "t4",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Tyge & Sessil"
+   }
+  },
+  {
+   "at": 4041,
+   "e": {
+    "type": "tool_call",
+    "id": "t5",
+    "name": "search_entities",
+    "label": "Qloo /search · “Bio Rio”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Bio Rio"
+    }
+   }
+  },
+  {
+   "at": 4042,
+   "e": {
+    "type": "tool_result",
+    "id": "t5",
+    "name": "search_entities",
+    "summary": "2 candidates; best: Bio Rio"
+   }
+  },
+  {
+   "at": 4042,
+   "e": {
+    "type": "tool_call",
+    "id": "t6",
+    "name": "search_entities",
+    "label": "Qloo /search · “Hornstulls Marknad”",
+    "args": {
+     "city": "Stockholm",
+     "query": "Hornstulls Marknad"
+    }
+   }
+  },
+  {
+   "at": 4045,
+   "e": {
+    "type": "tool_result",
+    "id": "t6",
+    "name": "search_entities",
+    "summary": "1 candidate; best: Hornstulls Marknad"
+   }
+  },
+  {
+   "at": 7210,
+   "e": {
+    "type": "thought",
+    "text": "I am discovering taste-equivalent venues in Lisbon for each of your favorite Stockholm spots."
+   }
+  },
+  {
+   "at": 7211,
+   "e": {
+    "type": "tool_call",
+    "id": "t7",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Drop Coffee in Lisbon",
+    "args": {
+     "source_entity_id": "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4"
+    }
+   }
+  },
+  {
+   "at": 7217,
+   "e": {
+    "type": "tool_result",
+    "id": "t7",
+    "name": "find_equivalents",
+    "summary": "5 places; top: Fábrica Coffee Roasters (93% affinity)"
+   }
+  },
+  {
+   "at": 7218,
+   "e": {
+    "type": "tool_call",
+    "id": "t8",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Fotografiska in Lisbon",
+    "args": {
+     "source_entity_id": "48B8F6DB-732C-4C86-A48B-732CC86848B8"
+    }
+   }
+  },
+  {
+   "at": 7220,
+   "e": {
+    "type": "tool_result",
+    "id": "t8",
+    "name": "find_equivalents",
+    "summary": "2 places; top: MAAT (60% affinity)"
+   }
+  },
+  {
+   "at": 7220,
+   "e": {
+    "type": "tool_call",
+    "id": "t9",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Fasching in Lisbon",
+    "args": {
+     "source_entity_id": "B3890E20-A3C1-40EB-AB38-A3C10EB9B389"
+    }
+   }
+  },
+  {
+   "at": 7221,
+   "e": {
+    "type": "tool_result",
+    "id": "t9",
+    "name": "find_equivalents",
+    "summary": "1 places; top: Hot Clube de Portugal (91% affinity)"
+   }
+  },
+  {
+   "at": 7221,
+   "e": {
+    "type": "tool_call",
+    "id": "t10",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Tyge & Sessil in Lisbon",
+    "args": {
+     "source_entity_id": "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE"
+    }
+   }
+  },
+  {
+   "at": 7222,
+   "e": {
+    "type": "tool_result",
+    "id": "t10",
+    "name": "find_equivalents",
+    "summary": "1 places; top: Senhor Uva (83% affinity)"
+   }
+  },
+  {
+   "at": 7223,
+   "e": {
+    "type": "tool_call",
+    "id": "t11",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Bio Rio in Lisbon",
+    "args": {
+     "source_entity_id": "D357B75D-3115-4DB5-AD35-3115DB5AD357"
+    }
+   }
+  },
+  {
+   "at": 7223,
+   "e": {
+    "type": "tool_result",
+    "id": "t11",
+    "name": "find_equivalents",
+    "summary": "2 places; top: Cinemateca Portuguesa (85% affinity)"
+   }
+  },
+  {
+   "at": 7223,
+   "e": {
+    "type": "tool_call",
+    "id": "t12",
+    "name": "find_equivalents",
+    "label": "Qloo /v2/insights · equivalents of Hornstulls Marknad in Lisbon",
+    "args": {
+     "source_entity_id": "45FE6CF5-0585-454E-A45F-058554E245FE"
+    }
+   }
+  },
+  {
+   "at": 7224,
+   "e": {
+    "type": "tool_result",
+    "id": "t12",
+    "name": "find_equivalents",
+    "summary": "3 places; top: Feira da Ladra (67% affinity)"
+   }
+  },
+  {
+   "at": 9305,
+   "e": {
+    "type": "thought",
+    "text": "I am retrieving broader taste matches across Lisbon tailored to your combined cultural profile."
+   }
+  },
+  {
+   "at": 9306,
+   "e": {
+    "type": "tool_call",
+    "id": "t13",
+    "name": "find_taste_matches",
+    "label": "Qloo /v2/insights · whole-profile picks in Lisbon",
+    "args": {
+     "take": 15
+    }
+   }
+  },
+  {
+   "at": 9311,
+   "e": {
+    "type": "tool_result",
+    "id": "t13",
+    "name": "find_taste_matches",
+    "summary": "15 profile-wide picks (9 new)"
+   }
+  },
+  {
+   "at": 10472,
+   "e": {
+    "type": "thought",
+    "text": "I am ranking Lisbon's neighbourhoods based on your taste affinities and place concentrations."
+   }
+  },
+  {
+   "at": 10472,
+   "e": {
+    "type": "tool_call",
+    "id": "t14",
+    "name": "rank_neighbourhoods",
+    "label": "Qloo heatmap · neighbourhood fit in Lisbon",
+    "args": {}
+   }
+  },
+  {
+   "at": 10495,
+   "e": {
+    "type": "tool_result",
+    "id": "t14",
+    "name": "rank_neighbourhoods",
+    "summary": "Best fit: Bairro Alto 96, Príncipe Real 76, Cais do Sodré 63"
+   }
+  },
+  {
+   "at": 33503,
+   "e": {
+    "type": "thought",
+    "text": "I am compiling your Lisbon relocation plan with taste-matched equivalents and a curated first-week itinerary."
+   }
+  },
+  {
+   "at": 33504,
+   "e": {
+    "type": "tool_call",
+    "id": "t15",
+    "name": "submit_plan",
+    "label": "Composing then → now matches and first-week plan",
+    "args": {
+     "summary": "Your Stockholm favorites highlight a love for precision third-wave coffee, natural wine bars, iconic live music institutions, and independent community-rooted culture. In Lisbon, your cultural gravity centers strongly on Bairro Alto and neighboring Príncipe Real, where artisan hubs and historic late-night venues thrive side-by-side. Start your journey in Bairro Alto to immediately feel at home with craft brews, cozy arthouse screenings, and golden-hour miradouro views.",
+     "matches": [
+      {
+       "target_id": "8278781F-9FA5-4467-A827-9FA546748278",
+       "source_id": "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4",
+       "why": "Fábrica Coffee Roasters mirrors Drop Coffee's third-wave dedication to in-house artisan roasting, meticulous specialty coffee, and minimalist aesthetic."
+      },
+      {
+       "source_id": "48B8F6DB-732C-4C86-A48B-732CC86848B8",
+       "target_id": "C51BC15F-C6B1-4963-AC51-C6B19634C51B",
+       "why": "MAAT reflects Fotografiska's sweeping waterfront positioning, striking architecture, and cutting-edge contemporary visual art exhibitions."
+      },
+      {
+       "why": "Hot Clube de Portugal matches Fasching's legendary institutional status, intimate late-night basement atmosphere, and premier live jazz performances.",
+       "target_id": "74AE3F27-B24D-4334-A74A-B24D334C74AE",
+       "source_id": "B3890E20-A3C1-40EB-AB38-A3C10EB9B389"
+      },
+      {
+       "why": "Senhor Uva captures Tyge & Sessil's low-intervention natural wine passion paired with inventive seasonal small plates and intimate ambiance.",
+       "target_id": "120108C9-41A1-4085-A120-41A1085E1201",
+       "source_id": "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE"
+      },
+      {
+       "source_id": "D357B75D-3115-4DB5-AD35-3115DB5AD357",
+       "why": "Cinemateca Portuguesa shares Bio Rio's beloved institution status, arthouse repertory programming, and dedicated cinephile community.",
+       "target_id": "985B33BD-7592-441B-A985-759241BA985B"
+      },
+      {
+       "target_id": "0F4200F4-DBE7-4527-A0F4-DBE752750F42",
+       "source_id": "45FE6CF5-0585-454E-A45F-058554E245FE",
+       "why": "Feira da Ladra embodies Hornstulls Marknad's open-air treasure-hunting vibe with an eclectic mix of vintage goods, antiques, and lively outdoor energy."
+      }
+     ],
+     "week": [
+      {
+       "title": "Settling into Bairro Alto",
+       "items": [
+        {
+         "note": "Start your move with an exceptional single-origin pour-over at Lisbon's premier roastery.",
+         "entity_id": "8278781F-9FA5-4467-A827-9FA546748278",
+         "time": "09:30"
+        },
+        {
+         "entity_id": "2673957E-E4F4-4216-A267-E4F421672673",
+         "note": "Catch an evening independent screening at Lisbon's oldest and coziest arthouse cinema.",
+         "time": "18:30"
+        },
+        {
+         "entity_id": "C1FB1A3A-774A-4155-AC1F-774A155BC1FB",
+         "time": "21:00",
+         "note": "Wind down with a glass of wine overlooking panoramic views of the Tagus river."
+        }
+       ],
+       "day": "Monday"
+      },
+      {
+       "day": "Tuesday",
+       "items": [
+        {
+         "time": "10:30",
+         "entity_id": "0F4200F4-DBE7-4527-A0F4-DBE752750F42",
+         "note": "Rummage for vintage books, vinyl, and ceramics at Lisbon's storied Tuesday flea market."
+        },
+        {
+         "note": "Enjoy petiscos and spontaneous live fado vadio in an atmospheric traditional tavern.",
+         "time": "20:30",
+         "entity_id": "C99116C1-3167-405C-AC99-316705C6C991"
+        }
+       ],
+       "title": "Treasures & Traditional Sounds in Graça"
+      },
+      {
+       "items": [
+        {
+         "time": "11:00",
+         "note": "Sip Nordic-style filter coffee and fresh cardamom pastries in leafy Príncipe Real.",
+         "entity_id": "2130E1A3-BFF2-4FC8-A213-BFF2FC802130"
+        },
+        {
+         "note": "Attend a curated classic film retrospective at Portugal's national film sanctuary.",
+         "time": "18:30",
+         "entity_id": "985B33BD-7592-441B-A985-759241BA985B"
+        },
+        {
+         "note": "Experience late-night live jazz sets at Europe's oldest surviving jazz club.",
+         "entity_id": "74AE3F27-B24D-4334-A74A-B24D334C74AE",
+         "time": "21:30"
+        }
+       ],
+       "title": "Príncipe Real Culture & Jazz",
+       "day": "Wednesday"
+      },
+      {
+       "title": "Design & Natural Wine in Santos & Estrela",
+       "items": [
+        {
+         "entity_id": "CCADC8C6-1A93-4407-ACCA-1A93407FCCAD",
+         "time": "10:00",
+         "note": "Browse international indie magazines over specialty batch brew in the design quarter."
+        },
+        {
+         "entity_id": "120108C9-41A1-4085-A120-41A1085E1201",
+         "time": "19:30",
+         "note": "Delight in natural low-intervention wines paired with creative plant-forward small plates."
+        }
+       ],
+       "day": "Thursday"
+      },
+      {
+       "title": "Chiado Flavors & Cais do Sodré Nightlife",
+       "day": "Friday",
+       "items": [
+        {
+         "note": "Dine on creative chalkboard-menu Portuguese small plates in a warm, historic setting.",
+         "entity_id": "9180913B-2564-468C-A918-256468C89180",
+         "time": "19:30"
+        },
+        {
+         "time": "23:00",
+         "entity_id": "9C6C417E-9B6A-4E56-A9C6-9B6AE5679C6C",
+         "note": "Take in an eclectic live gig followed by indie electronic sets under the railway arch."
+        }
+       ]
+      },
+      {
+       "day": "Saturday",
+       "title": "Riverside Art & Industrial Spaces",
+       "items": [
+        {
+         "time": "14:00",
+         "note": "Explore contemporary art and walk the undulating roof above the Belém waterfront.",
+         "entity_id": "C51BC15F-C6B1-4963-AC51-C6B19634C51B"
+        },
+        {
+         "entity_id": "5E590442-E721-4E4B-A5E5-E721E4B35E59",
+         "time": "17:30",
+         "note": "Wander through converted industrial warehouses filled with design stalls, vintage finds, and art studios."
+        }
+       ]
+      },
+      {
+       "items": [
+        {
+         "time": "12:30",
+         "entity_id": "D00C909B-3BC7-4D1A-AD00-3BC7D1A8D00C",
+         "note": "Graze through a vibrant hall celebrating Lisbon's leading chefs, bakers, and regional foods."
+        }
+       ],
+       "day": "Sunday",
+       "title": "Culinary Exploration along the Tagus"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "at": 33505,
+   "e": {
+    "type": "tool_result",
+    "id": "t15",
+    "name": "submit_plan",
+    "summary": "6 matches, 7-day plan"
+   }
+  },
+  {
+   "at": 33505,
+   "e": {
+    "type": "result",
+    "plan": {
+     "fromCity": "Stockholm",
+     "toCity": "Lisbon",
+     "summary": "Your Stockholm favorites highlight a love for precision third-wave coffee, natural wine bars, iconic live music institutions, and independent community-rooted culture. In Lisbon, your cultural gravity centers strongly on Bairro Alto and neighboring Príncipe Real, where artisan hubs and historic late-night venues thrive side-by-side. Start your journey in Bairro Alto to immediately feel at home with craft brews, cozy arthouse screenings, and golden-hour miradouro views.",
+     "sources": [
+      {
+       "id": "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4",
+       "name": "Drop Coffee",
+       "type": "urn:entity:place",
+       "address": "Wollmar Yxkullsgatan 10, Södermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3176,
+       "lon": 18.0637,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:third_wave",
+         "name": "third wave",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:roastery",
+         "name": "in-house roastery",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:minimalist",
+         "name": "minimalist interior",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8420000000000001
+      },
+      {
+       "id": "48B8F6DB-732C-4C86-A48B-732CC86848B8",
+       "name": "Fotografiska",
+       "type": "urn:entity:place",
+       "address": "Stadsgårdshamnen 22, Södermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3178,
+       "lon": 18.0855,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:museum",
+         "name": "Museum",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:photography",
+         "name": "photography",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:contemporary_art",
+         "name": "contemporary art",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:waterfront",
+         "name": "waterfront",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:late_night",
+         "name": "open late",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:views",
+         "name": "city views",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.873
+      },
+      {
+       "id": "B3890E20-A3C1-40EB-AB38-A3C10EB9B389",
+       "name": "Fasching",
+       "type": "urn:entity:place",
+       "address": "Kungsgatan 63, Norrmalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3346,
+       "lon": 18.0559,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:jazz_club",
+         "name": "Jazz Club",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:jazz",
+         "name": "jazz",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:live_music",
+         "name": "live music",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:late_night",
+         "name": "open late",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.872
+      },
+      {
+       "id": "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE",
+       "name": "Tyge & Sessil",
+       "type": "urn:entity:place",
+       "address": "Brahegatan 4, Östermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3401,
+       "lon": 18.0757,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:wine_bar",
+         "name": "Wine Bar",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:natural_wine",
+         "name": "natural wine",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:small_plates",
+         "name": "small plates",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:minimalist",
+         "name": "minimalist interior",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.9670000000000001
+      },
+      {
+       "id": "D357B75D-3115-4DB5-AD35-3115DB5AD357",
+       "name": "Bio Rio",
+       "type": "urn:entity:place",
+       "address": "Hornstulls strand 3, Södermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3157,
+       "lon": 18.0335,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cinema",
+         "name": "Movie Theater",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:arthouse",
+         "name": "arthouse film",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:indie",
+         "name": "indie",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:cozy",
+         "name": "cozy",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8330000000000001
+      },
+      {
+       "id": "45FE6CF5-0585-454E-A45F-058554E245FE",
+       "name": "Hornstulls Marknad",
+       "type": "urn:entity:place",
+       "address": "Hornstulls strand 4, Södermalm, Stockholm",
+       "city": "Stockholm",
+       "lat": 59.3149,
+       "lon": 18.0337,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:market",
+         "name": "Market",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:vintage",
+         "name": "vintage",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:street_food",
+         "name": "street food",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:waterfront",
+         "name": "waterfront",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:flea_market",
+         "name": "flea market",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.803
+      }
+     ],
+     "matches": [
+      {
+       "source": {
+        "id": "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4",
+        "name": "Drop Coffee",
+        "type": "urn:entity:place",
+        "address": "Wollmar Yxkullsgatan 10, Södermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3176,
+        "lon": 18.0637,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:cafe",
+          "name": "Café",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:specialty_coffee",
+          "name": "specialty coffee",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:third_wave",
+          "name": "third wave",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:roastery",
+          "name": "in-house roastery",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:minimalist",
+          "name": "minimalist interior",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8420000000000001
+       },
+       "target": {
+        "id": "8278781F-9FA5-4467-A827-9FA546748278",
+        "name": "Fábrica Coffee Roasters",
+        "type": "urn:entity:place",
+        "address": "Rua das Portas de Santo Antão 136, Lisbon",
+        "city": "Lisbon",
+        "lat": 38.7175,
+        "lon": -9.1418,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:cafe",
+          "name": "Café",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:specialty_coffee",
+          "name": "specialty coffee",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:roastery",
+          "name": "in-house roastery",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:third_wave",
+          "name": "third wave",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:minimalist",
+          "name": "minimalist interior",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8680000000000001,
+        "affinity": 0.7971,
+        "explain": {
+         "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 1,
+         "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.125,
+         "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+         "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+         "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+         "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+        },
+        "neighbourhood": "Bairro Alto"
+       },
+       "sharedTags": [
+        "Café",
+        "specialty coffee",
+        "in-house roastery",
+        "third wave",
+        "minimalist interior"
+       ],
+       "affinity": 0.7971,
+       "why": "Fábrica Coffee Roasters mirrors Drop Coffee's third-wave dedication to in-house artisan roasting, meticulous specialty coffee, and minimalist aesthetic.",
+       "alternatives": [
+        {
+         "id": "CCADC8C6-1A93-4407-ACCA-1A93407FCCAD",
+         "name": "Hello, Kristof",
+         "type": "urn:entity:place",
+         "address": "Rua do Poço dos Negros 103, Lisbon",
+         "city": "Lisbon",
+         "lat": 38.711,
+         "lon": -9.15,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:cafe",
+           "name": "Café",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:specialty_coffee",
+           "name": "specialty coffee",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:magazines",
+           "name": "independent magazines",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:minimalist",
+           "name": "minimalist interior",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:design",
+           "name": "design-led",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.9730000000000001,
+         "affinity": 0.6348,
+         "explain": {
+          "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.429
+         },
+         "neighbourhood": "Santos & Madragoa"
+        },
+        {
+         "id": "2130E1A3-BFF2-4FC8-A213-BFF2FC802130",
+         "name": "Copenhagen Coffee Lab",
+         "type": "urn:entity:place",
+         "address": "Rua Nova da Piedade 10, Lisbon",
+         "city": "Lisbon",
+         "lat": 38.7135,
+         "lon": -9.152,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:cafe",
+           "name": "Café",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:specialty_coffee",
+           "name": "specialty coffee",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:scandi",
+           "name": "Scandinavian",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:pastries",
+           "name": "great pastries",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:brunch",
+           "name": "brunch",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:third_wave",
+           "name": "third wave",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.8220000000000001,
+         "affinity": 0.6023,
+         "explain": {
+          "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.375
+         },
+         "neighbourhood": "Príncipe Real"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "48B8F6DB-732C-4C86-A48B-732CC86848B8",
+        "name": "Fotografiska",
+        "type": "urn:entity:place",
+        "address": "Stadsgårdshamnen 22, Södermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3178,
+        "lon": 18.0855,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:museum",
+          "name": "Museum",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:photography",
+          "name": "photography",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:contemporary_art",
+          "name": "contemporary art",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:waterfront",
+          "name": "waterfront",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:late_night",
+          "name": "open late",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:views",
+          "name": "city views",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.873
+       },
+       "target": {
+        "id": "C51BC15F-C6B1-4963-AC51-C6B19634C51B",
+        "name": "MAAT",
+        "type": "urn:entity:place",
+        "address": "Avenida Brasília, Belém, Lisbon",
+        "city": "Lisbon",
+        "lat": 38.696,
+        "lon": -9.194,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:museum",
+          "name": "Museum",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:contemporary_art",
+          "name": "contemporary art",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:design",
+          "name": "design-led",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:architecture",
+          "name": "architecture",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:waterfront",
+          "name": "waterfront",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.93,
+        "affinity": 0.5632,
+        "explain": {
+         "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.375,
+         "45FE6CF5-0585-454E-A45F-058554E245FE": 0.111,
+         "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+         "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+         "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+         "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+        },
+        "neighbourhood": "Belém"
+       },
+       "sharedTags": [
+        "Museum",
+        "contemporary art",
+        "waterfront"
+       ],
+       "affinity": 0.5632,
+       "why": "MAAT reflects Fotografiska's sweeping waterfront positioning, striking architecture, and cutting-edge contemporary visual art exhibitions.",
+       "alternatives": [
+        {
+         "id": "8FCBBBE1-1FB8-4926-A8FC-1FB892668FCB",
+         "name": "Museu Calouste Gulbenkian",
+         "type": "urn:entity:place",
+         "address": "Avenida de Berna 45A, Lisbon",
+         "city": "Lisbon",
+         "lat": 38.7372,
+         "lon": -9.1545,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:museum",
+           "name": "Museum",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:garden",
+           "name": "garden setting",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:classical",
+           "name": "classical music",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:architecture",
+           "name": "architecture",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.886,
+         "affinity": 0.4806,
+         "explain": {
+          "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.111
+         },
+         "neighbourhood": "Avenidas Novas"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "B3890E20-A3C1-40EB-AB38-A3C10EB9B389",
+        "name": "Fasching",
+        "type": "urn:entity:place",
+        "address": "Kungsgatan 63, Norrmalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3346,
+        "lon": 18.0559,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:jazz_club",
+          "name": "Jazz Club",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:jazz",
+          "name": "jazz",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:live_music",
+          "name": "live music",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:late_night",
+          "name": "open late",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.872
+       },
+       "target": {
+        "id": "74AE3F27-B24D-4334-A74A-B24D334C74AE",
+        "name": "Hot Clube de Portugal",
+        "type": "urn:entity:place",
+        "address": "Praça da Alegria 48, Lisbon",
+        "city": "Lisbon",
+        "lat": 38.719,
+        "lon": -9.144,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:jazz_club",
+          "name": "Jazz Club",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:jazz",
+          "name": "jazz",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:live_music",
+          "name": "live music",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:late_night",
+          "name": "open late",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.928,
+        "affinity": 0.8273,
+        "explain": {
+         "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 1,
+         "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.111,
+         "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.1,
+         "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+         "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+         "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+        },
+        "neighbourhood": "Príncipe Real"
+       },
+       "sharedTags": [
+        "Jazz Club",
+        "jazz",
+        "live music",
+        "open late",
+        "local institution"
+       ],
+       "affinity": 0.8273,
+       "why": "Hot Clube de Portugal matches Fasching's legendary institutional status, intimate late-night basement atmosphere, and premier live jazz performances.",
+       "alternatives": []
+      },
+      {
+       "source": {
+        "id": "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE",
+        "name": "Tyge & Sessil",
+        "type": "urn:entity:place",
+        "address": "Brahegatan 4, Östermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3401,
+        "lon": 18.0757,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:wine_bar",
+          "name": "Wine Bar",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:natural_wine",
+          "name": "natural wine",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:small_plates",
+          "name": "small plates",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:minimalist",
+          "name": "minimalist interior",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.9670000000000001
+       },
+       "target": {
+        "id": "120108C9-41A1-4085-A120-41A1085E1201",
+        "name": "Senhor Uva",
+        "type": "urn:entity:place",
+        "address": "Rua de Santo Amaro 1, Lisbon",
+        "city": "Lisbon",
+        "lat": 38.714,
+        "lon": -9.1585,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:wine_bar",
+          "name": "Wine Bar",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:natural_wine",
+          "name": "natural wine",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:small_plates",
+          "name": "small plates",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:vegetarian",
+          "name": "vegetarian-friendly",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:minimalist",
+          "name": "minimalist interior",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8440000000000001,
+        "affinity": 0.7488,
+        "explain": {
+         "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.8,
+         "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.111,
+         "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+         "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+         "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+         "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+        },
+        "neighbourhood": "Estrela"
+       },
+       "sharedTags": [
+        "Wine Bar",
+        "natural wine",
+        "small plates",
+        "minimalist interior"
+       ],
+       "affinity": 0.7488,
+       "why": "Senhor Uva captures Tyge & Sessil's low-intervention natural wine passion paired with inventive seasonal small plates and intimate ambiance.",
+       "alternatives": []
+      },
+      {
+       "source": {
+        "id": "D357B75D-3115-4DB5-AD35-3115DB5AD357",
+        "name": "Bio Rio",
+        "type": "urn:entity:place",
+        "address": "Hornstulls strand 3, Södermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3157,
+        "lon": 18.0335,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:cinema",
+          "name": "Movie Theater",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:arthouse",
+          "name": "arthouse film",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:indie",
+          "name": "indie",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:cozy",
+          "name": "cozy",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8330000000000001
+       },
+       "target": {
+        "id": "985B33BD-7592-441B-A985-759241BA985B",
+        "name": "Cinemateca Portuguesa",
+        "type": "urn:entity:place",
+        "address": "Rua Barata Salgueiro 39, Lisbon",
+        "city": "Lisbon",
+        "lat": 38.7205,
+        "lon": -9.147,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:cinema",
+          "name": "Movie Theater",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:arthouse",
+          "name": "arthouse film",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:indie",
+          "name": "indie",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.8620000000000001,
+        "affinity": 0.7341,
+        "explain": {
+         "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.8,
+         "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.125,
+         "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+         "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+         "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+         "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+        },
+        "neighbourhood": "Príncipe Real"
+       },
+       "sharedTags": [
+        "Movie Theater",
+        "arthouse film",
+        "indie",
+        "local institution"
+       ],
+       "affinity": 0.7341,
+       "why": "Cinemateca Portuguesa shares Bio Rio's beloved institution status, arthouse repertory programming, and dedicated cinephile community.",
+       "alternatives": [
+        {
+         "id": "2673957E-E4F4-4216-A267-E4F421672673",
+         "name": "Cinema Ideal",
+         "type": "urn:entity:place",
+         "address": "Rua do Loreto 15, Lisbon",
+         "city": "Lisbon",
+         "lat": 38.7108,
+         "lon": -9.1455,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:cinema",
+           "name": "Movie Theater",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:arthouse",
+           "name": "arthouse film",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:indie",
+           "name": "indie",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:cozy",
+           "name": "cozy",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.8150000000000001,
+         "affinity": 0.818,
+         "explain": {
+          "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.8
+         },
+         "neighbourhood": "Bairro Alto"
+        }
+       ]
+      },
+      {
+       "source": {
+        "id": "45FE6CF5-0585-454E-A45F-058554E245FE",
+        "name": "Hornstulls Marknad",
+        "type": "urn:entity:place",
+        "address": "Hornstulls strand 4, Södermalm, Stockholm",
+        "city": "Stockholm",
+        "lat": 59.3149,
+        "lon": 18.0337,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:market",
+          "name": "Market",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:vintage",
+          "name": "vintage",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:street_food",
+          "name": "street food",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:waterfront",
+          "name": "waterfront",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:flea_market",
+          "name": "flea market",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.803
+       },
+       "target": {
+        "id": "0F4200F4-DBE7-4527-A0F4-DBE752750F42",
+        "name": "Feira da Ladra",
+        "type": "urn:entity:place",
+        "address": "Campo de Santa Clara, Lisbon",
+        "city": "Lisbon",
+        "lat": 38.715,
+        "lon": -9.1255,
+        "tags": [
+         {
+          "id": "urn:tag:genre:place:market",
+          "name": "Market",
+          "kind": "category"
+         },
+         {
+          "id": "urn:tag:keyword:place:flea_market",
+          "name": "flea market",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:vintage",
+          "name": "vintage",
+          "kind": "keyword"
+         },
+         {
+          "id": "urn:tag:keyword:place:local_institution",
+          "name": "local institution",
+          "kind": "keyword"
+         }
+        ],
+        "popularity": 0.9450000000000001,
+        "affinity": 0.6058,
+        "explain": {
+         "45FE6CF5-0585-454E-A45F-058554E245FE": 0.5,
+         "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.125,
+         "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.125,
+         "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+         "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+         "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0
+        },
+        "neighbourhood": "Graça"
+       },
+       "sharedTags": [
+        "Market",
+        "flea market",
+        "vintage"
+       ],
+       "affinity": 0.6058,
+       "why": "Feira da Ladra embodies Hornstulls Marknad's open-air treasure-hunting vibe with an eclectic mix of vintage goods, antiques, and lively outdoor energy.",
+       "alternatives": [
+        {
+         "id": "5E590442-E721-4E4B-A5E5-E721E4B35E59",
+         "name": "LX Factory",
+         "type": "urn:entity:place",
+         "address": "Rua Rodrigues de Faria 103, Lisbon",
+         "city": "Lisbon",
+         "lat": 38.7036,
+         "lon": -9.1782,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:market",
+           "name": "Market",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:vintage",
+           "name": "vintage",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:street_food",
+           "name": "street food",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:design",
+           "name": "design-led",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:industrial",
+           "name": "industrial space",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.8350000000000001,
+         "affinity": 0.6508,
+         "explain": {
+          "45FE6CF5-0585-454E-A45F-058554E245FE": 0.429
+         },
+         "neighbourhood": "Alcântara"
+        },
+        {
+         "id": "D00C909B-3BC7-4D1A-AD00-3BC7D1A8D00C",
+         "name": "Time Out Market",
+         "type": "urn:entity:place",
+         "address": "Avenida 24 de Julho 49, Lisbon",
+         "city": "Lisbon",
+         "lat": 38.7068,
+         "lon": -9.1458,
+         "tags": [
+          {
+           "id": "urn:tag:genre:place:market",
+           "name": "Market",
+           "kind": "category"
+          },
+          {
+           "id": "urn:tag:keyword:place:street_food",
+           "name": "street food",
+           "kind": "keyword"
+          },
+          {
+           "id": "urn:tag:keyword:place:seafood",
+           "name": "seafood",
+           "kind": "keyword"
+          }
+         ],
+         "popularity": 0.93,
+         "affinity": 0.6018,
+         "explain": {
+          "45FE6CF5-0585-454E-A45F-058554E245FE": 0.333
+         },
+         "neighbourhood": "Cais do Sodré"
+        }
+       ]
+      }
+     ],
+     "neighbourhoods": [
+      {
+       "name": "Bairro Alto",
+       "score": 96,
+       "lat": 38.713,
+       "lon": -9.146,
+       "highlights": [
+        "Fábrica Coffee Roasters",
+        "Cinema Ideal",
+        "Tasca do Chico",
+        "Kiosk & Miradouro de Santa Catarina"
+       ],
+       "why": "narrow streets, bars, late nights. 4 of your matches are here; heatmap affinity 100%."
+      },
+      {
+       "name": "Príncipe Real",
+       "score": 76,
+       "lat": 38.717,
+       "lon": -9.149,
+       "highlights": [
+        "Hot Clube de Portugal",
+        "Cinemateca Portuguesa",
+        "Copenhagen Coffee Lab"
+       ],
+       "why": "leafy squares, design shops, wine bars. 3 of your matches are here; heatmap affinity 56%."
+      },
+      {
+       "name": "Cais do Sodré",
+       "score": 63,
+       "lat": 38.7068,
+       "lon": -9.1445,
+       "highlights": [
+        "Time Out Market",
+        "Musicbox Lisboa"
+       ],
+       "why": "riverside, nightlife, markets. 2 of your matches are here; heatmap affinity 34%."
+      },
+      {
+       "name": "Baixa",
+       "score": 53,
+       "lat": 38.7115,
+       "lon": -9.1375,
+       "highlights": [],
+       "why": "grid streets, landmarks, central. Strong taste affinity in the heatmap; heatmap affinity 39%."
+      },
+      {
+       "name": "Santos & Madragoa",
+       "score": 52,
+       "lat": 38.7085,
+       "lon": -9.153,
+       "highlights": [
+        "Hello, Kristof"
+       ],
+       "why": "design district, quiet lanes. 1 of your matches is here; heatmap affinity 19%."
+      },
+      {
+       "name": "Estrela",
+       "score": 51,
+       "lat": 38.7137,
+       "lon": -9.1597,
+       "highlights": [
+        "Senhor Uva"
+       ],
+       "why": "gardens, family-friendly, calm. 1 of your matches is here; heatmap affinity 16%."
+      }
+     ],
+     "week": [
+      {
+       "day": "Monday",
+       "title": "Settling into Bairro Alto",
+       "items": [
+        {
+         "time": "09:30",
+         "entity": {
+          "id": "8278781F-9FA5-4467-A827-9FA546748278",
+          "name": "Fábrica Coffee Roasters",
+          "type": "urn:entity:place",
+          "address": "Rua das Portas de Santo Antão 136, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7175,
+          "lon": -9.1418,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:roastery",
+            "name": "in-house roastery",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:third_wave",
+            "name": "third wave",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:minimalist",
+            "name": "minimalist interior",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8680000000000001,
+          "affinity": 0.7971,
+          "explain": {
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 1,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.125,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Bairro Alto"
+         },
+         "note": "Start your move with an exceptional single-origin pour-over at Lisbon's premier roastery."
+        },
+        {
+         "time": "18:30",
+         "entity": {
+          "id": "2673957E-E4F4-4216-A267-E4F421672673",
+          "name": "Cinema Ideal",
+          "type": "urn:entity:place",
+          "address": "Rua do Loreto 15, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7108,
+          "lon": -9.1455,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cinema",
+            "name": "Movie Theater",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:arthouse",
+            "name": "arthouse film",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:indie",
+            "name": "indie",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:cozy",
+            "name": "cozy",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8150000000000001,
+          "affinity": 0.746,
+          "explain": {
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.8,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Bairro Alto"
+         },
+         "note": "Catch an evening independent screening at Lisbon's oldest and coziest arthouse cinema."
+        },
+        {
+         "time": "21:00",
+         "entity": {
+          "id": "C1FB1A3A-774A-4155-AC1F-774A155BC1FB",
+          "name": "Kiosk & Miradouro de Santa Catarina",
+          "type": "urn:entity:place",
+          "address": "Rua de Santa Catarina, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7096,
+          "lon": -9.1475,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:bar",
+            "name": "Bar",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:views",
+            "name": "city views",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:waterfront",
+            "name": "waterfront",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.801,
+          "affinity": 0.5297,
+          "explain": {
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.286,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0.143,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+          },
+          "neighbourhood": "Bairro Alto"
+         },
+         "note": "Wind down with a glass of wine overlooking panoramic views of the Tagus river."
+        }
+       ]
+      },
+      {
+       "day": "Tuesday",
+       "title": "Treasures & Traditional Sounds in Graça",
+       "items": [
+        {
+         "time": "10:30",
+         "entity": {
+          "id": "0F4200F4-DBE7-4527-A0F4-DBE752750F42",
+          "name": "Feira da Ladra",
+          "type": "urn:entity:place",
+          "address": "Campo de Santa Clara, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.715,
+          "lon": -9.1255,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:market",
+            "name": "Market",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:flea_market",
+            "name": "flea market",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:vintage",
+            "name": "vintage",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9450000000000001,
+          "affinity": 0.6058,
+          "explain": {
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0.5,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.125,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.125,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0
+          },
+          "neighbourhood": "Graça"
+         },
+         "note": "Rummage for vintage books, vinyl, and ceramics at Lisbon's storied Tuesday flea market."
+        },
+        {
+         "time": "20:30",
+         "entity": {
+          "id": "C99116C1-3167-405C-AC99-316705C6C991",
+          "name": "Tasca do Chico",
+          "type": "urn:entity:place",
+          "address": "Rua do Diário de Notícias 39, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7128,
+          "lon": -9.1452,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:bar",
+            "name": "Bar",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:fado",
+            "name": "fado",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:live_music",
+            "name": "live music",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:traditional",
+            "name": "traditional cuisine",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:late_night",
+            "name": "open late",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9600000000000001,
+          "affinity": 0.5732,
+          "explain": {
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.375,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.1,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.091,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Bairro Alto"
+         },
+         "note": "Enjoy petiscos and spontaneous live fado vadio in an atmospheric traditional tavern."
+        }
+       ]
+      },
+      {
+       "day": "Wednesday",
+       "title": "Príncipe Real Culture & Jazz",
+       "items": [
+        {
+         "time": "11:00",
+         "entity": {
+          "id": "2130E1A3-BFF2-4FC8-A213-BFF2FC802130",
+          "name": "Copenhagen Coffee Lab",
+          "type": "urn:entity:place",
+          "address": "Rua Nova da Piedade 10, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7135,
+          "lon": -9.152,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:scandi",
+            "name": "Scandinavian",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:pastries",
+            "name": "great pastries",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:brunch",
+            "name": "brunch",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:third_wave",
+            "name": "third wave",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8220000000000001,
+          "affinity": 0.5524,
+          "explain": {
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.375,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Príncipe Real"
+         },
+         "note": "Sip Nordic-style filter coffee and fresh cardamom pastries in leafy Príncipe Real."
+        },
+        {
+         "time": "18:30",
+         "entity": {
+          "id": "985B33BD-7592-441B-A985-759241BA985B",
+          "name": "Cinemateca Portuguesa",
+          "type": "urn:entity:place",
+          "address": "Rua Barata Salgueiro 39, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7205,
+          "lon": -9.147,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cinema",
+            "name": "Movie Theater",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:arthouse",
+            "name": "arthouse film",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:indie",
+            "name": "indie",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8620000000000001,
+          "affinity": 0.7341,
+          "explain": {
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.8,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.125,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Príncipe Real"
+         },
+         "note": "Attend a curated classic film retrospective at Portugal's national film sanctuary."
+        },
+        {
+         "time": "21:30",
+         "entity": {
+          "id": "74AE3F27-B24D-4334-A74A-B24D334C74AE",
+          "name": "Hot Clube de Portugal",
+          "type": "urn:entity:place",
+          "address": "Praça da Alegria 48, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.719,
+          "lon": -9.144,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:jazz_club",
+            "name": "Jazz Club",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:jazz",
+            "name": "jazz",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:live_music",
+            "name": "live music",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:late_night",
+            "name": "open late",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.928,
+          "affinity": 0.8273,
+          "explain": {
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 1,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.111,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.1,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Príncipe Real"
+         },
+         "note": "Experience late-night live jazz sets at Europe's oldest surviving jazz club."
+        }
+       ]
+      },
+      {
+       "day": "Thursday",
+       "title": "Design & Natural Wine in Santos & Estrela",
+       "items": [
+        {
+         "time": "10:00",
+         "entity": {
+          "id": "CCADC8C6-1A93-4407-ACCA-1A93407FCCAD",
+          "name": "Hello, Kristof",
+          "type": "urn:entity:place",
+          "address": "Rua do Poço dos Negros 103, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.711,
+          "lon": -9.15,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:cafe",
+            "name": "Café",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:specialty_coffee",
+            "name": "specialty coffee",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:magazines",
+            "name": "independent magazines",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:minimalist",
+            "name": "minimalist interior",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.9730000000000001,
+          "affinity": 0.6053,
+          "explain": {
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.429,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.125,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Santos & Madragoa"
+         },
+         "note": "Browse international indie magazines over specialty batch brew in the design quarter."
+        },
+        {
+         "time": "19:30",
+         "entity": {
+          "id": "120108C9-41A1-4085-A120-41A1085E1201",
+          "name": "Senhor Uva",
+          "type": "urn:entity:place",
+          "address": "Rua de Santo Amaro 1, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.714,
+          "lon": -9.1585,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:wine_bar",
+            "name": "Wine Bar",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:natural_wine",
+            "name": "natural wine",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:small_plates",
+            "name": "small plates",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:vegetarian",
+            "name": "vegetarian-friendly",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:minimalist",
+            "name": "minimalist interior",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8440000000000001,
+          "affinity": 0.7488,
+          "explain": {
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.8,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.111,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Estrela"
+         },
+         "note": "Delight in natural low-intervention wines paired with creative plant-forward small plates."
+        }
+       ]
+      },
+      {
+       "day": "Friday",
+       "title": "Chiado Flavors & Cais do Sodré Nightlife",
+       "items": [
+        {
+         "time": "19:30",
+         "entity": {
+          "id": "9180913B-2564-468C-A918-256468C89180",
+          "name": "Taberna da Rua das Flores",
+          "type": "urn:entity:place",
+          "address": "Rua das Flores 103, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7105,
+          "lon": -9.1438,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:restaurant",
+            "name": "Restaurant",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:traditional",
+            "name": "traditional cuisine",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:small_plates",
+            "name": "small plates",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:local_institution",
+            "name": "local institution",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:cozy",
+            "name": "cozy",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.982,
+          "affinity": 0.5272,
+          "explain": {
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.25,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.125,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.111,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Chiado"
+         },
+         "note": "Dine on creative chalkboard-menu Portuguese small plates in a warm, historic setting."
+        },
+        {
+         "time": "23:00",
+         "entity": {
+          "id": "9C6C417E-9B6A-4E56-A9C6-9B6AE5679C6C",
+          "name": "Musicbox Lisboa",
+          "type": "urn:entity:place",
+          "address": "Rua Nova do Carvalho 24, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7068,
+          "lon": -9.144,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:music_venue",
+            "name": "Music Venue",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:live_music",
+            "name": "live music",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:indie",
+            "name": "indie",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:late_night",
+            "name": "open late",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:electronic",
+            "name": "electronic",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.873,
+          "affinity": 0.5275,
+          "explain": {
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.25,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.111,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.1,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+          },
+          "neighbourhood": "Cais do Sodré"
+         },
+         "note": "Take in an eclectic live gig followed by indie electronic sets under the railway arch."
+        }
+       ]
+      },
+      {
+       "day": "Saturday",
+       "title": "Riverside Art & Industrial Spaces",
+       "items": [
+        {
+         "time": "14:00",
+         "entity": {
+          "id": "C51BC15F-C6B1-4963-AC51-C6B19634C51B",
+          "name": "MAAT",
+          "type": "urn:entity:place",
+          "address": "Avenida Brasília, Belém, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.696,
+          "lon": -9.194,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:museum",
+            "name": "Museum",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:contemporary_art",
+            "name": "contemporary art",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:architecture",
+            "name": "architecture",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:waterfront",
+            "name": "waterfront",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.93,
+          "affinity": 0.5632,
+          "explain": {
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.375,
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0.111,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+          },
+          "neighbourhood": "Belém"
+         },
+         "note": "Explore contemporary art and walk the undulating roof above the Belém waterfront."
+        },
+        {
+         "time": "17:30",
+         "entity": {
+          "id": "5E590442-E721-4E4B-A5E5-E721E4B35E59",
+          "name": "LX Factory",
+          "type": "urn:entity:place",
+          "address": "Rua Rodrigues de Faria 103, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7036,
+          "lon": -9.1782,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:market",
+            "name": "Market",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:vintage",
+            "name": "vintage",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:street_food",
+            "name": "street food",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:design",
+            "name": "design-led",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:industrial",
+            "name": "industrial space",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.8350000000000001,
+          "affinity": 0.5752,
+          "explain": {
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0.429,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+          },
+          "neighbourhood": "Alcântara"
+         },
+         "note": "Wander through converted industrial warehouses filled with design stalls, vintage finds, and art studios."
+        }
+       ]
+      },
+      {
+       "day": "Sunday",
+       "title": "Culinary Exploration along the Tagus",
+       "items": [
+        {
+         "time": "12:30",
+         "entity": {
+          "id": "D00C909B-3BC7-4D1A-AD00-3BC7D1A8D00C",
+          "name": "Time Out Market",
+          "type": "urn:entity:place",
+          "address": "Avenida 24 de Julho 49, Lisbon",
+          "city": "Lisbon",
+          "lat": 38.7068,
+          "lon": -9.1458,
+          "tags": [
+           {
+            "id": "urn:tag:genre:place:market",
+            "name": "Market",
+            "kind": "category"
+           },
+           {
+            "id": "urn:tag:keyword:place:street_food",
+            "name": "street food",
+            "kind": "keyword"
+           },
+           {
+            "id": "urn:tag:keyword:place:seafood",
+            "name": "seafood",
+            "kind": "keyword"
+           }
+          ],
+          "popularity": 0.93,
+          "affinity": 0.5382,
+          "explain": {
+           "45FE6CF5-0585-454E-A45F-058554E245FE": 0.333,
+           "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+           "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+           "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+           "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+           "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+          },
+          "neighbourhood": "Cais do Sodré"
+         },
+         "note": "Graze through a vibrant hall celebrating Lisbon's leading chefs, bakers, and regional foods."
+        }
+       ]
+      }
+     ],
+     "extras": [
+      {
+       "id": "2673957E-E4F4-4216-A267-E4F421672673",
+       "name": "Cinema Ideal",
+       "type": "urn:entity:place",
+       "address": "Rua do Loreto 15, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7108,
+       "lon": -9.1455,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cinema",
+         "name": "Movie Theater",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:arthouse",
+         "name": "arthouse film",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:indie",
+         "name": "indie",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:cozy",
+         "name": "cozy",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8150000000000001,
+       "affinity": 0.746,
+       "explain": {
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.8,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+       },
+       "neighbourhood": "Bairro Alto"
+      },
+      {
+       "id": "CCADC8C6-1A93-4407-ACCA-1A93407FCCAD",
+       "name": "Hello, Kristof",
+       "type": "urn:entity:place",
+       "address": "Rua do Poço dos Negros 103, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.711,
+       "lon": -9.15,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:magazines",
+         "name": "independent magazines",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:minimalist",
+         "name": "minimalist interior",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:design",
+         "name": "design-led",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.9730000000000001,
+       "affinity": 0.6053,
+       "explain": {
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.429,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.125,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+       },
+       "neighbourhood": "Santos & Madragoa"
+      },
+      {
+       "id": "5E590442-E721-4E4B-A5E5-E721E4B35E59",
+       "name": "LX Factory",
+       "type": "urn:entity:place",
+       "address": "Rua Rodrigues de Faria 103, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7036,
+       "lon": -9.1782,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:market",
+         "name": "Market",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:vintage",
+         "name": "vintage",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:street_food",
+         "name": "street food",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:design",
+         "name": "design-led",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:industrial",
+         "name": "industrial space",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8350000000000001,
+       "affinity": 0.5752,
+       "explain": {
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0.429,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+       },
+       "neighbourhood": "Alcântara"
+      },
+      {
+       "id": "C99116C1-3167-405C-AC99-316705C6C991",
+       "name": "Tasca do Chico",
+       "type": "urn:entity:place",
+       "address": "Rua do Diário de Notícias 39, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7128,
+       "lon": -9.1452,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:bar",
+         "name": "Bar",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:fado",
+         "name": "fado",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:live_music",
+         "name": "live music",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:traditional",
+         "name": "traditional cuisine",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:late_night",
+         "name": "open late",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.9600000000000001,
+       "affinity": 0.5732,
+       "explain": {
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.375,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.1,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.091,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+       },
+       "neighbourhood": "Bairro Alto"
+      },
+      {
+       "id": "2130E1A3-BFF2-4FC8-A213-BFF2FC802130",
+       "name": "Copenhagen Coffee Lab",
+       "type": "urn:entity:place",
+       "address": "Rua Nova da Piedade 10, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7135,
+       "lon": -9.152,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:cafe",
+         "name": "Café",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:specialty_coffee",
+         "name": "specialty coffee",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:scandi",
+         "name": "Scandinavian",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:pastries",
+         "name": "great pastries",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:brunch",
+         "name": "brunch",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:third_wave",
+         "name": "third wave",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.8220000000000001,
+       "affinity": 0.5524,
+       "explain": {
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0.375,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+       },
+       "neighbourhood": "Príncipe Real"
+      },
+      {
+       "id": "D00C909B-3BC7-4D1A-AD00-3BC7D1A8D00C",
+       "name": "Time Out Market",
+       "type": "urn:entity:place",
+       "address": "Avenida 24 de Julho 49, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7068,
+       "lon": -9.1458,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:market",
+         "name": "Market",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:street_food",
+         "name": "street food",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:seafood",
+         "name": "seafood",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.93,
+       "affinity": 0.5382,
+       "explain": {
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0.333,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+       },
+       "neighbourhood": "Cais do Sodré"
+      },
+      {
+       "id": "C1FB1A3A-774A-4155-AC1F-774A155BC1FB",
+       "name": "Kiosk & Miradouro de Santa Catarina",
+       "type": "urn:entity:place",
+       "address": "Rua de Santa Catarina, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7096,
+       "lon": -9.1475,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:bar",
+         "name": "Bar",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:views",
+         "name": "city views",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:waterfront",
+         "name": "waterfront",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.801,
+       "affinity": 0.5297,
+       "explain": {
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.286,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0.143,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0
+       },
+       "neighbourhood": "Bairro Alto"
+      },
+      {
+       "id": "9C6C417E-9B6A-4E56-A9C6-9B6AE5679C6C",
+       "name": "Musicbox Lisboa",
+       "type": "urn:entity:place",
+       "address": "Rua Nova do Carvalho 24, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7068,
+       "lon": -9.144,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:music_venue",
+         "name": "Music Venue",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:live_music",
+         "name": "live music",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:indie",
+         "name": "indie",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:late_night",
+         "name": "open late",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:electronic",
+         "name": "electronic",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.873,
+       "affinity": 0.5275,
+       "explain": {
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.25,
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.111,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0.1,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+       },
+       "neighbourhood": "Cais do Sodré"
+      },
+      {
+       "id": "9180913B-2564-468C-A918-256468C89180",
+       "name": "Taberna da Rua das Flores",
+       "type": "urn:entity:place",
+       "address": "Rua das Flores 103, Lisbon",
+       "city": "Lisbon",
+       "lat": 38.7105,
+       "lon": -9.1438,
+       "tags": [
+        {
+         "id": "urn:tag:genre:place:restaurant",
+         "name": "Restaurant",
+         "kind": "category"
+        },
+        {
+         "id": "urn:tag:keyword:place:traditional",
+         "name": "traditional cuisine",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:small_plates",
+         "name": "small plates",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:local_institution",
+         "name": "local institution",
+         "kind": "keyword"
+        },
+        {
+         "id": "urn:tag:keyword:place:cozy",
+         "name": "cozy",
+         "kind": "keyword"
+        }
+       ],
+       "popularity": 0.982,
+       "affinity": 0.5272,
+       "explain": {
+        "D357B75D-3115-4DB5-AD35-3115DB5AD357": 0.25,
+        "C1AE1225-EB06-45F7-AC1A-EB065F72C1AE": 0.125,
+        "B3890E20-A3C1-40EB-AB38-A3C10EB9B389": 0.111,
+        "69D4196A-E1E3-4CDE-A69D-E1E3CDEB69D4": 0,
+        "48B8F6DB-732C-4C86-A48B-732CC86848B8": 0,
+        "45FE6CF5-0585-454E-A45F-058554E245FE": 0
+       },
+       "neighbourhood": "Chiado"
+      }
+     ],
+     "provenance": {
+      "qlooCalls": 14,
+      "qlooMode": "mock",
+      "llm": "gemini-3.8-flash"
+     }
+    }
+   }
+  },
+  {
+   "at": 33505,
+   "e": {
+    "type": "done"
+   }
+  }
+ ]
+}
