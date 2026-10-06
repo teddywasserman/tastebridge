@@ -1,0 +1,60 @@
+{
+ "duration": 66,
+ "success": true,
+ "results": {
+  "tags": [
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:resy:collection:place",
+    "id": "urn:tag:resy:collection:place:natural_wine",
+    "name": "Natural Wine",
+    "popularity": 0.9923438,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:genre:place",
+    "id": "urn:tag:genre:place:restaurant:natural_wine",
+    "name": "Natural Wine",
+    "popularity": 0.95990765,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:cuisine:qloo",
+    "id": "urn:tag:cuisine:qloo:natural_wine",
+    "name": "Natural Wine",
+    "popularity": 0.92695063,
+    "properties": {},
+    "tags": []
+   },
+   {
+    "parents": [
+     {
+      "type": "urn:entity:place"
+     }
+    ],
+    "type": "urn:tag:menu_highlight:qloo",
+    "id": "urn:tag:menu_highlight:qloo:natural_wine",
+    "name": "Natural Wine",
+    "popularity": 0.81468993,
+    "properties": {},
+    "tags": []
+   }
+  ]
+ }
+}

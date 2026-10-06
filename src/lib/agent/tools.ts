@@ -2,7 +2,7 @@
 // in a TasteSession, so the final plan can be validated against real evidence
 // (the model only ever references entity ids it has actually seen).
 
-import { City, getCity, nearestNeighbourhood } from "../cities";
+import { City, cityCentre, getCity, haversineKm, nearestNeighbourhood } from "../cities";
 import { QlooClient } from "../qloo/client";
 import type { Entity, Match, NeighbourhoodFit, PlanDay, TastePlan, Tag } from "../types";
 
@@ -24,10 +24,18 @@ export class TasteSession {
     this.city = c;
   }
 
+  /** True when an entity sits inside the target city (not a home-city source). */
+  inTargetCity(e: Entity): boolean {
+    return e.lat !== undefined && e.lon !== undefined && haversineKm(e.lat, e.lon, this.city.lat, this.city.lon) < 25;
+  }
+
   remember(e: Entity): Entity {
-    if (e.lat !== undefined && e.lon !== undefined && e.city?.toLowerCase() === this.city.name.toLowerCase()) {
-      const { hood, km } = nearestNeighbourhood(this.city, e.lat, e.lon);
-      if (km < 3) e.neighbourhood = hood.name;
+    if (this.inTargetCity(e)) {
+      // Prefer our named areas (they carry a "vibe" line); fall back to Qloo's own label.
+      const { hood, km } = nearestNeighbourhood(this.city, e.lat!, e.lon!);
+      const qloo = e.qlooNeighbourhood?.toLowerCase();
+      const named = this.city.neighbourhoods.find((h) => qloo && (h.name.toLowerCase() === qloo || h.name.toLowerCase().startsWith(qloo + " ")));
+      e.neighbourhood = km < 1.6 ? hood.name : named?.name ?? (km < 2.5 ? hood.name : e.qlooNeighbourhood);
     }
     const prev = this.entities.get(e.id);
     const merged = prev ? { ...prev, ...e, tags: e.tags.length ? e.tags : prev.tags } : e;
@@ -43,12 +51,27 @@ const brief = (e: Entity) => ({
   id: e.id, name: e.name, type: e.type.replace("urn:entity:", ""), address: e.address,
   neighbourhood: e.neighbourhood, affinity: e.affinity !== undefined ? Number(e.affinity.toFixed(3)) : undefined,
   tags: e.tags.slice(0, 8).map((t) => t.name),
+  ...(e.description ? { qloo_description: e.description.slice(0, 140) } : {}),
 });
+
+/** For non-place favourites (artists, films) keep place results to venues where that taste lives. */
+const CULTURE_VENUES = [
+  "urn:tag:genre:place:live_music_venue", "urn:tag:genre:place:night_club", "urn:tag:genre:place:restaurant:bar",
+  "urn:tag:genre:place:jazz_club", "urn:tag:genre:place:movie_theater", "urn:tag:genre:place:art_gallery",
+  "urn:tag:genre:place:museum", "urn:tag:genre:place:book_store",
+];
+
+/** Genres so broad that sharing them says nothing ("Place", "Restaurant"). */
+const GENERIC_TAG = /:(place|restaurant|tourist_attraction|point_of_interest|establishment|food|store|bar)$/;
 
 export function sharedTags(a: Entity, b: Entity): string[] {
   const names = new Set(a.tags.map((t) => t.name.toLowerCase()));
   const ids = new Set(a.tags.map((t) => t.id));
-  return b.tags.filter((t) => ids.has(t.id) || names.has(t.name.toLowerCase())).map((t) => t.name);
+  const shared = b.tags.filter((t) => (ids.has(t.id) || names.has(t.name.toLowerCase())) && !GENERIC_TAG.test(t.id));
+  // one or two genre chips, then the characterful tags (ambience, decor, cuisine...)
+  const genres = shared.filter((t) => t.kind === "category").slice(0, 2);
+  const rest = shared.filter((t) => t.kind !== "category");
+  return [...genres, ...rest].map((t) => t.name);
 }
 
 // ---------------- tool declarations (Gemini function-calling schema) ----------------
@@ -164,7 +187,7 @@ export async function runTool(name: string, args: Record<string, unknown>, s: Ta
 }
 
 export async function searchEntities(s: TasteSession, query: string, city?: string): Promise<ToolOutput> {
-  const found = (await s.client.search(query, { take: 5, city })).map((e) => s.remember(e));
+  const found = (await s.client.search(query, { take: 5, city, near: cityCentre(city) })).map((e) => s.remember(e));
   return {
     result: { candidates: found.map(brief) },
     summary: found.length ? `${found.length} candidate${found.length > 1 ? "s" : ""}; best: ${found[0].name}` : "No entity found",
@@ -194,7 +217,9 @@ export async function findEquivalents(s: TasteSession, args: Record<string, unkn
     const label = rawLabel.startsWith("concept:") ? s.concepts.get(rawLabel)?.label ?? rawLabel.slice(8).replace(/-/g, " ") : rawLabel;
     const id = `concept:${label.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
     const known = s.concepts.get(id);
-    const ids = (args.tag_ids as string[] | undefined)?.length ? (args.tag_ids as string[]) : known?.tags.map((t) => t.id) ?? [];
+    // The model sometimes passes only a subset of the tags it saw; keep its picks first, then the rest.
+    const ids = [...new Set([...((args.tag_ids as string[] | undefined) ?? []), ...(known?.tags.map((t) => t.id) ?? [])])]
+      .filter((t) => !/:(nearby_attraction|neighborhood_characteristics?):/.test(t));
     if (!ids.length) return { result: { error: "Need tag_ids from lookup_tags for a concept." }, summary: "No tags for concept" };
     const tags = known?.tags ?? ids.map((t) => ({ id: t, name: t.split(":").pop()!.replace(/_/g, " "), kind: "keyword" as const }));
     s.concepts.set(id, { id, label, tags });
@@ -202,16 +227,24 @@ export async function findEquivalents(s: TasteSession, args: Record<string, unkn
     tagIds = ids;
   }
   s.sources.set(source.id, source);
-  const category = source.type === "urn:entity:place" ? source.tags.find((t) => t.kind === "category") : undefined;
-  const ask = (filter?: string[]) => s.client.placeInsights({
+  // Translate like for like: filter to the source's own place genre (a wine bar
+  // maps to wine bars). Artists and films map to culture venues instead.
+  const category = source.type === "urn:entity:place" ? source.primaryGenre ?? source.tags.find((t) => t.kind === "category") : undefined;
+  const filter = category ? [category.id] : source.type.startsWith("urn:entity:") && s.client.mode === "live" ? CULTURE_VENUES : undefined;
+  const live = s.client.mode === "live";
+  // Concepts (live): places carrying the concept's tags, ranked by affinity with
+  // the places the user already loves. (Tag signals alone are slow and noisy for places.)
+  const profile = s.profileEntityIds().slice(0, 8);
+  const ask = (f?: string[]) => s.client.placeInsights({
     city: s.city.name,
-    entityIds: tagIds ? undefined : [source!.id],
-    tagIds,
-    filterTags: filter,
+    center: { lat: s.city.lat, lon: s.city.lon },
+    entityIds: tagIds ? (live && profile.length ? profile : undefined) : [source!.id],
+    tagIds: tagIds && !live ? tagIds : undefined,
+    filterTags: tagIds && live ? tagIds.slice(0, 6) : f,
     take: 6,
   });
-  let found = await ask(category ? [category.id] : undefined);
-  if (!found.length && category) found = await ask(undefined);
+  let found = await ask(filter);
+  if (found.length < 2 && filter && !tagIds) found = [...found, ...(await ask(undefined))].filter((e, i, a) => a.findIndex((x) => x.id === e.id) === i);
   found = found.map((e) => s.remember(e));
   s.equivalents.set(source.id, found);
   const top = found[0];
@@ -227,8 +260,9 @@ export async function findEquivalents(s: TasteSession, args: Record<string, unkn
 export async function findTasteMatches(s: TasteSession, take: number): Promise<ToolOutput> {
   const found = (await s.client.placeInsights({
     city: s.city.name,
+    center: { lat: s.city.lat, lon: s.city.lon },
     entityIds: s.profileEntityIds().slice(0, 10),
-    tagIds: s.profileTagIds(),
+    tagIds: s.profileEntityIds().length && s.client.mode === "live" ? undefined : s.profileTagIds(),
     take: Math.min(Math.max(take, 5), 15),
   })).map((e) => s.remember(e));
   const used = new Set([...s.equivalents.values()].flatMap((l) => l.slice(0, 1).map((e) => e.id)));
@@ -242,7 +276,8 @@ export async function findTasteMatches(s: TasteSession, take: number): Promise<T
 export async function rankNeighbourhoods(s: TasteSession): Promise<ToolOutput> {
   let cells: { lat: number; lon: number; affinity: number }[] = [];
   try {
-    cells = await s.client.heatmap({ city: s.city.name, entityIds: s.profileEntityIds().slice(0, 10), tagIds: s.profileTagIds() });
+    const ids = s.profileEntityIds().slice(0, 10);
+    cells = await s.client.heatmap({ city: s.city.name, entityIds: ids, tagIds: ids.length && s.client.mode === "live" ? undefined : s.profileTagIds() });
   } catch {
     cells = [];
   }
@@ -288,18 +323,24 @@ const DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 function buildMatches(s: TasteSession, picks: { source_id: string; target_id: string; why: string }[]): Match[] {
   const out: Match[] = [];
+  const used = new Set<string>();
   for (const [sid, list] of s.equivalents) {
     const source = s.sources.get(sid);
     if (!source || !list.length) continue;
-    const pick = picks.find((p) => p.source_id === sid && s.entities.has(p.target_id));
-    const target = pick ? s.entities.get(pick.target_id)! : list[0];
+    // one place per favourite: if the model's pick is already taken, use the next unused equivalent
+    let pick = picks.find((p) => p.source_id === sid && s.entities.has(p.target_id) && !used.has(p.target_id));
+    const fallback = list.find((e) => !used.has(e.id));
+    if (!pick && !fallback) continue;
+    const target = pick ? s.entities.get(pick.target_id)! : fallback!;
+    if (!pick || pick.target_id !== target.id) pick = undefined;
+    used.add(target.id);
     const shared = sharedTags(source, target);
     out.push({
       source,
       target,
       sharedTags: shared,
       affinity: target.affinity ?? 0,
-      why: ((target.affinity ?? 0) < 0.5 ? "Weak signal — treat as a starting point. " : "") + (pick?.why || defaultWhy(source, target, shared)),
+      why: (!target.affinity ? "Matched on place type; Qloo gave no affinity score for this one. " : target.affinity < 0.5 ? "Weak signal, so treat it as a starting point. " : "") + (pick?.why || defaultWhy(source, target, shared)),
       alternatives: list.filter((e) => e.id !== target.id).slice(0, 2),
     });
   }
@@ -307,14 +348,21 @@ function buildMatches(s: TasteSession, picks: { source_id: string; target_id: st
 }
 
 export function defaultWhy(source: Entity, target: Entity, shared: string[]): string {
+  if (source.type === "concept") {
+    const tag = shared[0] ?? source.tags[0]?.name ?? source.name;
+    return `Tagged "${tag}" in Qloo, and ranked ${target.affinity ? `${Math.round(target.affinity * 100)}% ` : ""}by affinity with the places you already love.`;
+  }
   const ex = target.explain?.[source.id];
   if (shared.length) return `Shares ${shared.slice(0, 3).join(", ")} with ${source.name}${ex ? ` (explainability score ${ex.toFixed(2)})` : ""}.`;
-  return `Qloo affinity ${Math.round((target.affinity ?? 0) * 100)}% for people who love ${source.name}.`;
+  if (!target.affinity) return `The closest ${target.primaryGenre?.name.toLowerCase() ?? "place"} Qloo found for ${source.name}.`;
+  return `Qloo affinity ${Math.round(target.affinity * 100)}% for people who love ${source.name}.`;
 }
 
 function timeFor(e: Entity): string {
   const cat = e.tags.find((t) => t.kind === "category")?.id ?? "";
-  if (/cafe|bakery/.test(cat)) return "09:00";
+  if (/cafe|coffee|bakery|brunch|breakfast/.test(cat)) return "09:00";
+  if (/gelato|ice_cream|dessert|tea/.test(cat)) return "15:00";
+  if (/movie|theater/.test(cat)) return "20:30";
   if (/market|park|garden/.test(cat)) return "11:00";
   if (/museum|gallery|bookshop/.test(cat)) return "14:00";
   if (/restaurant|wine_bar/.test(cat)) return "19:30";
@@ -329,10 +377,12 @@ export function defaultWeek(s: TasteSession, matches: Match[]): PlanDay[] {
   const day = (i: number) => pool.filter((_, j) => j % 7 === i);
   return DAYS.map((d, i) => {
     const items = day(i).slice(0, 2).sort((a, b) => timeFor(a).localeCompare(timeFor(b)));
+    const times = items.map(timeFor);
+    if (times[1] && times[1] === times[0]) times[1] = `${String((Number(times[0].slice(0, 2)) + 2) % 24).padStart(2, "0")}${times[0].slice(2)}`;
     return {
       day: d,
-      title: items.length ? `${items[0].neighbourhood ?? s.city.name}${items[1] ? ` → ${items[1].neighbourhood ?? ""}` : ""}` : "Free day",
-      items: items.map((e) => ({ time: timeFor(e), entity: e, note: e.tags.slice(1, 3).map((t) => t.name).join(" · ") })),
+      title: items.length ? `${items[0].neighbourhood ?? s.city.name}${items[1] && items[1].neighbourhood !== items[0].neighbourhood ? ` → ${items[1].neighbourhood ?? ""}` : ""}` : "Free day",
+      items: items.map((e, j) => ({ time: times[j], entity: e, note: e.tags.filter((t) => t.kind !== "category").slice(0, 2).map((t) => t.name).join(" · ") || (e.primaryGenre?.name ?? "") })),
     };
   }).filter((d) => d.items.length);
 }
@@ -342,8 +392,8 @@ export function submitPlan(s: TasteSession, args: Record<string, unknown>): Tool
   const matches = buildMatches(s, picks);
   const weekIn = (args.week as { day: string; title: string; items: { time: string; entity_id: string; note: string }[] }[] | undefined) ?? [];
   let week: PlanDay[] = weekIn
-    .map((d) => ({
-      day: d.day,
+    .map((d, i) => ({
+      day: DAYS.find((x) => String(d.day ?? "").toLowerCase().startsWith(x.toLowerCase())) ?? DAYS[i % 7],
       title: d.title,
       items: (d.items ?? []).filter((it) => s.entities.has(it.entity_id)).map((it) => ({ time: it.time, entity: s.entities.get(it.entity_id)!, note: it.note })),
     }))

@@ -1,0 +1,1775 @@
+{
+ "success": true,
+ "results": {
+  "entities": [
+   {
+    "name": "Copenhagen Coffee Lab & Bakery",
+    "tags": [
+     {
+      "id": "urn:tag:menu_highlight:qloo:coffee_danish_swirl",
+      "name": "Coffee danish swirl",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:afternoon",
+      "name": "Afternoon",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:beverage_offering:qloo:cocktails",
+      "name": "Cocktails",
+      "type": "urn:tag:beverage_offering:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dietary_option:qloo:vegetarian",
+      "name": "Vegetarian",
+      "type": "urn:tag:dietary_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:cozy",
+      "name": "Cozy",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:breakfast",
+      "name": "Breakfast",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:dine_in",
+      "name": "Dine in",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:stylish",
+      "name": "Stylish",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:plant_based_milk_options",
+      "name": "Plant based milk options",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:street_level_interior",
+      "name": "Street level interior",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:bakery",
+      "name": "Bakery",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:rye_bread",
+      "name": "Rye bread",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:high_speed_internet",
+      "name": "High speed internet",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:age_range:qloo:30_34",
+      "name": "30 34",
+      "type": "urn:tag:age_range:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:delivery",
+      "name": "Delivery",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:noise_level:qloo:moderate",
+      "name": "Moderate",
+      "type": "urn:tag:noise_level:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:nfc_mobile_payments",
+      "name": "Nfc mobile payments",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:takeout",
+      "name": "Takeout",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+      "name": "Trendy",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:price_level",
+      "name": "Price level",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:offerings:place:hot_tea",
+      "name": "Hot tea",
+      "type": "urn:tag:offerings:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:takeout",
+      "name": "Takeout",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:breakfast_restaurant",
+      "name": "Breakfast restaurant",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:coffee_shop",
+      "name": "Coffee shop",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:street_views",
+      "name": "Street views",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:culinary_style:qloo:contemporary",
+      "name": "Contemporary",
+      "type": "urn:tag:culinary_style:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:credit_cards",
+      "name": "Credit cards",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dietary_option:qloo:dairy_free",
+      "name": "Dairy free",
+      "type": "urn:tag:dietary_option:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "tripadvisor": [
+      {
+       "id": "d8724299",
+       "rating": 4,
+       "rating_count": 514
+      }
+     ],
+     "google_place": [
+      {
+       "id": "562b04c8053b8cb3",
+       "place_id": "ChIJs-eizX0zGQ0Rs4w7BcgEK1Y"
+      }
+     ]
+    },
+    "location": {
+     "lat": 38.7147619,
+     "lon": -9.1519371,
+     "geohash": "eyckpxzcb7hb"
+    },
+    "entity_id": "CF97D629-0D5D-4187-A0CE-101A76469DF4",
+    "popularity": 0.939018446930483,
+    "properties": {
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmC8ti9EHnMZ-wT7i10DiE7K_8tWD35gQU5j3FAX9NUJb5T-zx6_N9r8rEHkpYr-TiQbBFXUdsLhA6uJJIvWRSHPpjDJ2BWFCaA3utiQ0bTYPlWTwYsX5JmoCtQxy4VNtL2bk4=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "R. Nova da Piedade 10 1200-192 Lisboa Portugal",
+     "geocode": {
+      "city": "Lisbon",
+      "name": "Mercês",
+      "metro": "Lisbon",
+      "country": "Portugal",
+      "country_code": "PT",
+      "admin1_region": null,
+      "admin2_region": "Lisbon"
+     },
+     "parking": false,
+     "good_for": null,
+     "keywords": null,
+     "locality": {
+      "city": {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": null,
+      "county": {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      "neighborhood": {
+       "name": "Mercês",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "1A369A49-A153-46D2-BD14-5D7496C6D970",
+       "admin_level": 10,
+       "locality_id": "n4360242983",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": false,
+     "localities": [
+      {
+       "name": "Mercês",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "1A369A49-A153-46D2-BD14-5D7496C6D970",
+       "admin_level": 10,
+       "locality_id": "n4360242983",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      {
+       "name": "Misericórdia",
+       "place": "freguesia",
+       "boundary": "administrative",
+       "entity_id": "82136BB7-0216-4628-8498-781A9A050119",
+       "admin_level": 8,
+       "locality_id": "r6427493",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      }
+     ],
+     "description": "Danish-owned café and bakery in Lisbon serving freshly roasted specialty coffee, pastries, and breakfast in a cozy setting.",
+     "hotel_class": null,
+     "price_level": 1,
+     "star_rating": null,
+     "event_spaces": false,
+     "neighborhood": "Mercês",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:restaurant:cafe",
+      "name": "Cafe",
+      "type": "urn:tag:genre:place"
+     },
+     "check_out_time": null,
+     "business_rating": 4.199999809265137,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": [
+      {
+       "id": "urn:tag:specialty_dish:place:breakfast_plate",
+       "name": "Breakfast Plate",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 1
+      },
+      {
+       "id": "urn:tag:specialty_dish:place:cinnamon_bun",
+       "name": "Cinnamon Bun",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 0.6666666666666666
+      },
+      {
+       "id": "urn:tag:specialty_dish:place:coffee_danish_swirl",
+       "name": "Coffee Danish Swirl",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 0.3333333333333333
+      }
+     ],
+     "short_description": "Danish-owned café and bakery in Lisbon serving freshly roasted specialty coffee, pastries, and breakfast in a cozy setting.",
+     "number_of_stations": null,
+     "cuisine_description": "Copenhagen Coffee Lab & Bakery is a Danish-owned establishment specializing in freshly roasted specialty coffee and traditional Danish baked goods. The menu features a variety of high-quality pastries, including signature cinnamon and cardamom buns, alongside hearty breakfast and brunch options such as scrambled eggs on rye bread, avocado toast, and breakfast plates. The cafe offers diverse non-alcoholic and alcoholic beverage options and provides several vegan and gluten-free alternatives.",
+     "overall_description": "This Danish-owned café and bakery serves as a popular destination for those seeking high-quality, freshly roasted specialty coffee and traditional Scandinavian baked goods in the heart of the city. With a menu featuring signature items like cinnamon and cardamom buns, along with wholesome breakfast plates, it caters to both health-conscious individuals and those looking for a comforting treat. The interior design strikes a balance between minimalist Scandinavian style and cozy, functional comfort, making it a favorite spot for locals and travelers alike to work, socialize, or start their day.",
+     "service_description": "The restaurant provides dine-in, takeout, and delivery services, with some locations offering outdoor seating and drive-through options. It is an ideal spot for a casual breakfast, a quick coffee break, or a productive space for remote work in a contemporary and cozy environment.",
+     "ambience_description": "The atmosphere is defined by its clean, contemporary aesthetic and welcoming vibe, making it an ideal space for social interactions or solitary work.",
+     "amenities_description": "The establishment provides a range of seating options, high-quality Wi-Fi for professionals, and a diverse menu that accommodates various dietary preferences including vegan and dairy-free needs.",
+     "unique_selling_points": "The cafe is renowned for its signature Danish-inspired cinnamon buns and cardamom rolls, paired with high-quality specialty coffee roasted in-house. It seamlessly combines a traditional bakery approach with the modern, minimalist aesthetics of Danish culture.",
+     "neighborhood_description": "Situated in a vibrant and historic part of the city, the surrounding area is highly walkable and popular for both its rich cultural heritage and modern, trendy lifestyle appeal.",
+     "physical_setting_description": "Located in the heart of the city, this establishment features an elegantly designed, cozy interior that often sits slightly below street level. It offers a contemporary, Scandinavian-inspired environment within a historic urban setting.",
+     "customer_demographics_description": "The cafe attracts a mix of locals and tourists, including young professionals and digital nomads who frequent the space to work on laptops or meet with friends in a relaxed, cozy setting."
+    },
+    "references": null,
+    "disambiguation": "R. Nova da Piedade 10 1200-192 Lisboa Portugal",
+    "query": {
+     "affinity": 0.8777803574496872,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+        "score": 1
+       }
+      ]
+     }
+    }
+   },
+   {
+    "name": "Fábrica Coffee Roasters",
+    "tags": [
+     {
+      "id": "urn:tag:credit_card:place:visa",
+      "name": "Visa",
+      "type": "urn:tag:credit_card:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:dine_in",
+      "name": "Dine in",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenity:qloo:coffee_roastery",
+      "name": "Coffee roastery",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:brunch_restaurant",
+      "name": "Brunch restaurant",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:customer_identity:qloo:foodies",
+      "name": "Foodies",
+      "type": "urn:tag:customer_identity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:oat_latte",
+      "name": "Oat latte",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:espresso",
+      "name": "Espresso",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:pastry_shop",
+      "name": "Pastry shop",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:outdoor_seating",
+      "name": "Outdoor seating",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:nfc_mobile_payments",
+      "name": "Nfc mobile payments",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:onsite_services",
+      "name": "Onsite services",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:touristic",
+      "name": "Touristic",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:counter_service",
+      "name": "Counter service",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:culinary_style:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:culinary_style:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:cafeteria",
+      "name": "Cafeteria",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:delivery",
+      "name": "Delivery",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:delivery",
+      "name": "Delivery",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:coffee_shop",
+      "name": "Coffee shop",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:beverage_offering:qloo:fresh_juices",
+      "name": "Fresh juices",
+      "type": "urn:tag:beverage_offering:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:destination",
+      "name": "Destination",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:beverage_offering:qloo:beer",
+      "name": "Beer",
+      "type": "urn:tag:beverage_offering:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:age_range:qloo:25_29",
+      "name": "25 29",
+      "type": "urn:tag:age_range:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:time_of_day_fit:qloo:morning",
+      "name": "Morning",
+      "type": "urn:tag:time_of_day_fit:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:debit_cards",
+      "name": "Debit cards",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:choco_and_orange_cake",
+      "name": "Choco and orange cake",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:takeout",
+      "name": "Takeout",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "tripadvisor": [
+      {
+       "id": "d8404111",
+       "rating": 4.5,
+       "rating_count": 755
+      }
+     ],
+     "google_place": [
+      {
+       "id": "95972650bbc167fe",
+       "place_id": "ChIJM9Q0OYEzGQ0R_mfBu1Aml5U"
+      }
+     ]
+    },
+    "location": {
+     "lat": 38.7176419,
+     "lon": -9.141682099999999,
+     "geohash": "eyckrbr4x7uj"
+    },
+    "entity_id": "33599CEA-6935-4030-8B82-079A0A1488D2",
+    "popularity": 0.981154867517972,
+    "properties": {
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWm9uMQa7FxXRl6IfBJPxwT0I8TBuYxFbQRnLG0UIJfDUSZV5nQzGfYPb44eNsdtf1_xhcX1eizpcyaNspXeTtr53RlNZLrkLZTZ05YEyw5yT04SOCbUVPPbq8ctZ7s7Qf3EJ7A0Gw=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "R. das Portas de Santo Antão 136 1150-269 Lisboa Portugal",
+     "geocode": {
+      "city": "Lisbon",
+      "name": "São José",
+      "metro": "Lisbon",
+      "country": "Portugal",
+      "country_code": "PT",
+      "admin1_region": null,
+      "admin2_region": "Lisbon"
+     },
+     "parking": false,
+     "good_for": null,
+     "keywords": [
+      {
+       "name": "aeropress",
+       "count": 16
+      },
+      {
+       "name": "3rd wave coffee",
+       "count": 10
+      },
+      {
+       "name": "banana bread",
+       "count": 28
+      },
+      {
+       "name": "no wifi",
+       "count": 86
+      },
+      {
+       "name": "specialty coffee",
+       "count": 66
+      },
+      {
+       "name": "matcha latte",
+       "count": 7
+      },
+      {
+       "name": "espresso",
+       "count": 87
+      },
+      {
+       "name": "friendly staff",
+       "count": 192
+      },
+      {
+       "name": "natas",
+       "count": 5
+      },
+      {
+       "name": "quiche",
+       "count": 5
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": null,
+      "county": {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      "neighborhood": {
+       "name": "São José",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "527B19BD-6601-4248-AA1C-EC266F176279",
+       "admin_level": 10,
+       "locality_id": "n4360243201",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": false,
+     "localities": [
+      {
+       "name": "São José",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "527B19BD-6601-4248-AA1C-EC266F176279",
+       "admin_level": 10,
+       "locality_id": "n4360243201",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      {
+       "name": "Arroios",
+       "place": "freguesia",
+       "boundary": "administrative",
+       "entity_id": "8859AB96-9C2A-47B4-BED6-75CC4BF8715E",
+       "admin_level": 8,
+       "locality_id": "r6384187",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      }
+     ],
+     "description": "Specialty coffee roaster and café in central Lisbon offering freshly roasted beans, espresso drinks, pastries, subscriptions, and retail brewing gear.",
+     "hotel_class": null,
+     "price_level": 2,
+     "star_rating": null,
+     "event_spaces": false,
+     "neighborhood": "São José",
+     "pet_friendly": true,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:restaurant:coffee_roastery",
+      "name": "Coffee roastery",
+      "type": "urn:tag:genre:place"
+     },
+     "check_out_time": null,
+     "business_rating": 4.400000095367432,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": [
+      {
+       "id": "urn:tag:specialty_dish:place:croissant",
+       "name": "Croissant",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 1
+      },
+      {
+       "id": "urn:tag:specialty_dish:place:croissant_custard_tart",
+       "name": "Croissant And Custard Tart",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 0.5
+      },
+      {
+       "id": "urn:tag:specialty_dish:place:oat_latte_choco_orange_cake",
+       "name": "Oat Latte With Choco And Orange Cake",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 0
+      }
+     ],
+     "short_description": "Specialty coffee roaster and café in central Lisbon offering freshly roasted beans, espresso drinks, pastries, subscriptions, and retail brewing gear.",
+     "number_of_stations": null,
+     "cuisine_description": "Fábrica Coffee Roasters is a specialty coffee roaster and café that focuses on freshly roasted, high-quality beans and expertly prepared espresso drinks, including flat whites, lattes, and V60 pour-overs. Their menu features a selection of coffee-friendly baked goods and snacks such as croissants, pastel de nata, and various cakes. They emphasize artisanal roasting techniques and offer a range of coffee-related products, including retail brewing gear and coffee subscriptions.",
+     "overall_description": "Fábrica Coffee Roasters is a prominent specialty coffee destination in central Lisbon, recognized for its commitment to high-quality, in-house roasted beans. The venue provides a modern, minimalist setting where patrons can enjoy precision-crafted espresso and filter coffee paired with a selection of fresh pastries. It serves as both a functional coffee shop for morning rituals and a retail hub for enthusiasts looking to purchase premium beans and brewing equipment to continue the experience at home.",
+     "service_description": "The establishment operates as a cafe with counter service for ordering, offering options for dine-in, takeout, and delivery. It features both indoor and outdoor seating, providing a space suitable for solo diners, friends catching up over coffee, or those looking for a quick morning bite before exploring the city.",
+     "ambience_description": "The atmosphere is defined by a clean, modern, and contemporary aesthetic that feels open and efficient, creating a focused environment for coffee enthusiasts.",
+     "amenities_description": "The establishment provides a range of specialty coffee products, including house-roasted beans and brewing gear, alongside freshly baked pastries and various milk alternatives.",
+     "unique_selling_points": "As a dedicated specialty coffee roaster, the venue distinguishes itself by offering expertly crafted espresso and pour-over drinks made from beans roasted in-house, ensuring a high level of freshness and quality control.",
+     "neighborhood_description": "The neighborhood is a central, highly walkable area that attracts many visitors and locals alike, buzzing with urban energy and historic character.",
+     "physical_setting_description": "Located in the heart of the city on a side street, this venue features both cozy indoor seating and an outdoor terrace for people-watching.",
+     "customer_demographics_description": "The customer base consists of a mix of locals and tourists exploring Lisbon, with a strong presence of coffee enthusiasts, young professionals, and solo visitors looking for a high-quality specialty coffee experience in a relaxed, modern setting."
+    },
+    "references": null,
+    "disambiguation": "R. das Portas de Santo Antão 136 1150-269 Lisboa Portugal",
+    "query": {
+     "affinity": 0.8716982330816984,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": -1.7320508075688774
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+        "score": 1
+       }
+      ]
+     }
+    }
+   },
+   {
+    "name": "Hello, Kristof",
+    "tags": [
+     {
+      "id": "urn:tag:amenity:qloo:takeout",
+      "name": "Takeout",
+      "type": "urn:tag:amenity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:cozy",
+      "name": "Cozy",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:chiado",
+      "name": "Chiado",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:nearby_attraction:qloo:praca_do_comercio",
+      "name": "Praca do comercio",
+      "type": "urn:tag:nearby_attraction:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:customer_identity:qloo:lgbtq_",
+      "name": "Lgbtq+",
+      "type": "urn:tag:customer_identity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:modern_interior_design",
+      "name": "Modern interior design",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:outdoor_seating",
+      "name": "Outdoor seating",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:routine_visit",
+      "name": "Routine visit",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:age_range:qloo:25_29",
+      "name": "25 29",
+      "type": "urn:tag:age_range:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:comfortable",
+      "name": "Comfortable",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:lively",
+      "name": "Lively",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:aesthetically_pleasing",
+      "name": "Aesthetically pleasing",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:debit_cards",
+      "name": "Debit cards",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:cost_description:place:€5_to_€15",
+      "name": "€5 to €15",
+      "type": "urn:tag:cost_description:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:cuisine:qloo:cafe_food",
+      "name": "Cafe food",
+      "type": "urn:tag:cuisine:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:culinary_style:qloo:contemporary",
+      "name": "Contemporary",
+      "type": "urn:tag:culinary_style:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:customer_identity:qloo:locals",
+      "name": "Locals",
+      "type": "urn:tag:customer_identity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dining_options:place:lunch",
+      "name": "Lunch",
+      "type": "urn:tag:dining_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:carrot_orange_cake",
+      "name": "Carrot orange cake",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:wi_fi",
+      "name": "Wi fi",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:amenities:place:bar_onsite",
+      "name": "Bar onsite",
+      "type": "urn:tag:amenities:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:dine_in",
+      "name": "Dine in",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:central",
+      "name": "Central",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:credit_card:place:mastercard",
+      "name": "Mastercard",
+      "type": "urn:tag:credit_card:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:coffee_shop",
+      "name": "Coffee shop",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_type:qloo:counter_service",
+      "name": "Counter service",
+      "type": "urn:tag:service_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dietary_option:qloo:vegan",
+      "name": "Vegan",
+      "type": "urn:tag:dietary_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:neighborhood_characteristic:qloo:walkable",
+      "name": "Walkable",
+      "type": "urn:tag:neighborhood_characteristic:qloo",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "tripadvisor": [
+      {
+       "id": "d13803784",
+       "rating": 4,
+       "rating_count": 61
+      }
+     ],
+     "google_place": [
+      {
+       "id": "1a5b48838895077b",
+       "place_id": "ChIJs2QPK4I0GQ0ReweViINIWxo"
+      }
+     ]
+    },
+    "location": {
+     "lat": 38.709899799999995,
+     "lon": -9.1513223,
+     "geohash": "eyckpybjw8r7"
+    },
+    "entity_id": "88FF43DB-D427-40BB-B8A8-D44F2B39E2C3",
+    "popularity": 0.9577032956787283,
+    "properties": {
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlhyO_r2FNUUvkZi_ydmmo4GEpqcEvCDcUf0VIn5bw9jziTv6hdyycTSOoAP1KJ0TOvHsFr8o4QpzGbygWwmFRgSECiGoyhsLX8qq1M7p2xlJXmtvWmCAG4IspDDr7KV9_XhSg1BDi0CBtF=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "R. do Poço dos Negros 103 1200-336 Lisboa Portugal",
+     "geocode": {
+      "city": "Lisbon",
+      "name": "São Bento",
+      "metro": "Lisbon",
+      "country": "Portugal",
+      "country_code": "PT",
+      "admin1_region": null,
+      "admin2_region": "Lisbon"
+     },
+     "parking": false,
+     "good_for": [
+      {
+       "id": "urn:tag:children:place:good_kids",
+       "name": "Good for kids",
+       "type": "urn:tag:children:place",
+       "weight": 0.5555555555555556
+      }
+     ],
+     "keywords": null,
+     "locality": {
+      "city": {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": null,
+      "county": {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      "neighborhood": {
+       "name": "São Bento",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "7232AA5F-11FC-40F3-AEBD-DDB4E6562A47",
+       "admin_level": 10,
+       "locality_id": "n1148841800",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": false,
+     "localities": [
+      {
+       "name": "São Bento",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "7232AA5F-11FC-40F3-AEBD-DDB4E6562A47",
+       "admin_level": 10,
+       "locality_id": "n1148841800",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      {
+       "name": "Misericórdia",
+       "place": "freguesia",
+       "boundary": "administrative",
+       "entity_id": "82136BB7-0216-4628-8498-781A9A050119",
+       "admin_level": 8,
+       "locality_id": "r6427493",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      }
+     ],
+     "description": "Casual Bica coffee and brunch spot serving organic small plates, pastries, wines, cocktails, and vegan options in a stylish, LGBTQ+ friendly setting.",
+     "hotel_class": null,
+     "price_level": 1,
+     "star_rating": null,
+     "event_spaces": false,
+     "neighborhood": "São Bento",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:restaurant:coffee_shop",
+      "name": "Coffee shop",
+      "type": "urn:tag:genre:place"
+     },
+     "check_out_time": null,
+     "business_rating": 4.5,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": [
+      {
+       "id": "urn:tag:specialty_dish:place:smashed_avocado_lemon_toast",
+       "name": "Smashed Avocado With Lemon Toast",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 1
+      },
+      {
+       "id": "urn:tag:specialty_dish:place:carrot_orange_cake",
+       "name": "Carrot And Orange Cake",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 0.6666666666666666
+      },
+      {
+       "id": "urn:tag:specialty_dish:place:pastries",
+       "name": "And Pastries",
+       "type": "urn:tag:specialty_dish:place",
+       "weight": 0.3333333333333333
+      }
+     ],
+     "short_description": "Casual Bica coffee and brunch spot serving organic small plates, pastries, wines, cocktails, and vegan options in a stylish, LGBTQ+ friendly setting.",
+     "number_of_stations": null,
+     "cuisine_description": "Hello, Kristof is a stylish cafe and brunch spot offering an artisanal menu of organic small plates and pastries alongside a variety of vegan options. The menu features signature dishes like smashed avocado toast, yogurt bowls, and house-made cakes. Guests can enjoy a selection of specialty coffee, iced tea, wines, and cocktails in a cozy, modern setting.",
+     "overall_description": "Hello Kristof is a stylish and popular brunch destination in the heart of Lisbon, celebrated for its high-quality, fresh food and carefully prepared specialty coffee. The café features a modern, design-forward interior that hosts a curated collection of independent magazines, encouraging guests to relax and read. While the space is compact and can get busy, the friendly service and generous portions of favorites like avocado toast, yogurt bowls, and carrot cake make it a consistent local staple. It serves as a social, aesthetic hub for coffee enthusiasts and brunch lovers looking for a flavorful, plant-forward meal in an inviting atmosphere.",
+     "service_description": "The cafe provides dine-in, outdoor seating, and takeout services, with delivery options available. It is well-suited for solo diners, casual dates, and those looking for a relaxing environment to read or enjoy a quick, flavorful meal.",
+     "ambience_description": "The atmosphere is cozy and modern, featuring an aesthetic that blends a love for print media with a relaxed, social café vibe.",
+     "amenities_description": "The establishment offers outdoor seating and a selection of curated independent magazines for guests to enjoy with their meal.",
+     "unique_selling_points": "A distinctive combination of specialty coffee, hearty brunch plates, and a curated library of magazines creates a unique, design-forward environment.",
+     "neighborhood_description": "The neighborhood is a vibrant and walkable part of the city known for its historic charm mixed with a modern, bustling urban energy.",
+     "physical_setting_description": "Located in a busy, central urban neighborhood in Lisbon, this compact establishment is known for its stylish decor and inviting street-level presence.",
+     "customer_demographics_description": "The restaurant attracts a diverse crowd including local residents, tourists, and young professionals. The cozy, stylish atmosphere is popular among foodies, solo diners, and members of the LGBTQ+ community who appreciate the cafe's modern aesthetic and social environment."
+    },
+    "references": null,
+    "disambiguation": "R. do Poço dos Negros 103 1200-336 Lisboa Portugal",
+    "query": {
+     "affinity": 0.8618074713363939,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+        "score": 1
+       }
+      ]
+     }
+    }
+   },
+   {
+    "name": "FÁBRICA COFFEE ROASTERS",
+    "tags": [
+     {
+      "id": "urn:tag:genre:place:restaurant:cafe",
+      "name": "Cafe",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:culinary_style:qloo:artisanal",
+      "name": "Artisanal",
+      "type": "urn:tag:culinary_style:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:coffee_roastery",
+      "name": "Coffee roastery",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:minimalist",
+      "name": "Minimalist",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:flat_white",
+      "name": "Flat white",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:view:qloo:street_view",
+      "name": "Street view",
+      "type": "urn:tag:view:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:beverage_offering:qloo:fresh_juices",
+      "name": "Fresh juices",
+      "type": "urn:tag:beverage_offering:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:cuisine:qloo:american",
+      "name": "American",
+      "type": "urn:tag:cuisine:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:city_center",
+      "name": "City center",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant",
+      "name": "Restaurant",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:genre:place:restaurant:cafeteria",
+      "name": "Cafeteria",
+      "type": "urn:tag:genre:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:age_range:qloo:25_29",
+      "name": "25 29",
+      "type": "urn:tag:age_range:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:category:place:pastry_shop",
+      "name": "Pastry shop",
+      "type": "urn:tag:category:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:artisanal_baking",
+      "name": "Artisanal baking",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:home_brewing",
+      "name": "Home brewing",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:decor:qloo:modern",
+      "name": "Modern",
+      "type": "urn:tag:decor:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:ambience:qloo:industrial",
+      "name": "Industrial",
+      "type": "urn:tag:ambience:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:activity_type:qloo:shopping",
+      "name": "Shopping",
+      "type": "urn:tag:activity_type:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:cash_only",
+      "name": "Cash only",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:customer_identity:qloo:tourists",
+      "name": "Tourists",
+      "type": "urn:tag:customer_identity:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:dietary_option:qloo:vegan",
+      "name": "Vegan",
+      "type": "urn:tag:dietary_option:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:service_options:place:dine_in",
+      "name": "Dine in",
+      "type": "urn:tag:service_options:place",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:setting:qloo:historic",
+      "name": "Historic",
+      "type": "urn:tag:setting:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:homemade_cakes",
+      "name": "Homemade cakes",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:specialty_coffee",
+      "name": "Specialty coffee",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:menu_highlight:qloo:cold_brew",
+      "name": "Cold brew",
+      "type": "urn:tag:menu_highlight:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:interests:qloo:cafe_culture",
+      "name": "Cafe culture",
+      "type": "urn:tag:interests:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:visit_intent:qloo:convenience_stop",
+      "name": "Convenience stop",
+      "type": "urn:tag:visit_intent:qloo",
+      "weight": null
+     },
+     {
+      "id": "urn:tag:payments:place:credit_cards",
+      "name": "Credit cards",
+      "type": "urn:tag:payments:place",
+      "weight": null
+     }
+    ],
+    "type": "urn:entity",
+    "enabled": true,
+    "subtype": "urn:entity:place",
+    "external": {
+     "google_place": [
+      {
+       "id": "ca94b47f0c895561",
+       "place_id": "ChIJ52dsQ340GQ0RYVWJDH-0lMo"
+      }
+     ]
+    },
+    "location": {
+     "lat": 38.7094216,
+     "lon": -9.1436251,
+     "geohash": "eyckpyvfdp6y"
+    },
+    "entity_id": "F33301DB-650E-44EB-937E-7DA862AE72AD",
+    "popularity": 0.8523708805873182,
+    "properties": {
+     "images": [
+      {
+       "url": "https://lh3.googleusercontent.com/gps-cs-s/AHRPTWklV3t3hWRXf-IdK-QwOBcNYCVDG_Rqzvj6NHK0xUNvHZ1Z0GzpCIZicl-Kovn1gMgAs-AgiPmQYxFWTU96QnST6THUCdnUCpZJI_e0-K1C5khWNny2pRn-HAcdStDCokTI_Kqqbw=w1900-h1900-k-no",
+       "type": "urn:image:place:unknown"
+      }
+     ],
+     "address": "Rua das Flores 63 1200-193 Lisboa Portugal",
+     "geocode": {
+      "city": "Lisbon",
+      "name": "Encarnação",
+      "metro": "Lisbon",
+      "country": "Portugal",
+      "country_code": "PT",
+      "admin1_region": null,
+      "admin2_region": "Lisbon"
+     },
+     "parking": false,
+     "good_for": null,
+     "keywords": [
+      {
+       "name": "flat white",
+       "count": 31
+      },
+      {
+       "name": "no wifi",
+       "count": 65
+      },
+      {
+       "name": "banana bread",
+       "count": 18
+      },
+      {
+       "name": "pastel de nata",
+       "count": 13
+      },
+      {
+       "name": "aeropress",
+       "count": 17
+      },
+      {
+       "name": "oat milk",
+       "count": 20
+      },
+      {
+       "name": "specialty coffee",
+       "count": 32
+      },
+      {
+       "name": "espresso",
+       "count": 72
+      },
+      {
+       "name": "friendly staff",
+       "count": 173
+      },
+      {
+       "name": "chocolate cookie",
+       "count": 4
+      }
+     ],
+     "locality": {
+      "city": {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "metro": {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "state": null,
+      "county": {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      "country": {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      "neighborhood": {
+       "name": "Encarnação",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "5A287FFA-1E51-492E-AC0B-97D5DB17E979",
+       "admin_level": 10,
+       "locality_id": "n4360242980",
+       "abbreviation": null,
+       "country_code": null
+      }
+     },
+     "menu_url": null,
+     "is_closed": false,
+     "live_music": false,
+     "localities": [
+      {
+       "name": "Encarnação",
+       "place": "neighbourhood",
+       "boundary": null,
+       "entity_id": "5A287FFA-1E51-492E-AC0B-97D5DB17E979",
+       "admin_level": 10,
+       "locality_id": "n4360242980",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Portugal",
+       "place": "country",
+       "boundary": "administrative",
+       "entity_id": "194581AB-5819-4E95-BA7F-317059A6793F",
+       "admin_level": 2,
+       "locality_id": "r295480",
+       "abbreviation": null,
+       "country_code": "PT"
+      },
+      {
+       "name": "Misericórdia",
+       "place": "freguesia",
+       "boundary": "administrative",
+       "entity_id": "82136BB7-0216-4628-8498-781A9A050119",
+       "admin_level": 8,
+       "locality_id": "r6427493",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "city",
+       "boundary": "administrative",
+       "entity_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "admin_level": 7,
+       "locality_id": "r5400890",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "distrito",
+       "boundary": "administrative",
+       "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+       "admin_level": 6,
+       "locality_id": "r2897141",
+       "abbreviation": null,
+       "country_code": null
+      },
+      {
+       "name": "Lisbon",
+       "place": "metro",
+       "boundary": "metro",
+       "entity_id": "8811AE53-6D57-49FA-8530-CD1292B706C9",
+       "admin_level": 12,
+       "locality_id": "0A6150D0-E4CE-4CA6-A67B-78F9C9CD7405",
+       "abbreviation": null,
+       "country_code": null
+      }
+     ],
+     "description": "Specialty coffee roastery and café in Lisbon offering freshly roasted beans, subscriptions, retail brew gear, and on-site service.",
+     "hotel_class": null,
+     "price_level": 2,
+     "star_rating": null,
+     "event_spaces": false,
+     "neighborhood": "Encarnação",
+     "pet_friendly": null,
+     "check_in_time": null,
+     "primary_genre": {
+      "id": "urn:tag:genre:place:restaurant:coffee_roastery",
+      "name": "Coffee roastery",
+      "type": "urn:tag:genre:place"
+     },
+     "check_out_time": null,
+     "business_rating": 4.5,
+     "loyalty_program": null,
+     "number_of_rooms": null,
+     "cost_description": null,
+     "specialty_dishes": null,
+     "short_description": "Specialty coffee roastery and café in Lisbon offering freshly roasted beans, subscriptions, retail brew gear, and on-site service.",
+     "number_of_stations": null,
+     "cuisine_description": "Fábrica Coffee Roasters is a specialty coffee roastery and cafe that focuses on high-quality, freshly roasted beans for espresso and filter brewing methods. They offer a variety of single-origin and house blend coffees along with brewing gear, pantry items, and specialty drinks like espresso and tonic. Food offerings include light breakfast and snack options such as avocado toast, homemade cakes, pastries, and granola.",
+     "overall_description": "A prominent specialty coffee roastery in the heart of Lisbon, celebrated for its rigorous focus on high-quality beans and diverse brewing methods. The establishment intentionally fosters a social, tech-free environment, making it a favorite destination for coffee purists over digital nomads. While known for its industrial-minimalist aesthetic and occasional inconsistency, it remains a pillar of the local specialty coffee scene for those seeking an authentic, handcrafted cup.",
+     "service_description": "The establishment provides a casual, minimalist environment suited for quick bites, coffee breaks, and relaxed social meetups. They offer dine-in, takeout, and delivery services, with an emphasis on in-house roasting and expert coffee preparation. It is primarily a daytime venue and does not provide Wi-Fi, encouraging face-to-face conversation.",
+     "ambience_description": "The atmosphere is stripped-back, trendy, and unpretentious, designed to foster real-life conversation and coffee appreciation by intentionally omitting WiFi.",
+     "amenities_description": "The venue offers on-site roasting, a selection of curated food items such as sandwiches and pastries, and a retail shop for brewing gear and specialty beans.",
+     "unique_selling_points": "As a dedicated specialty coffee roaster, the establishment stands out for its in-house roasting process, commitment to high-quality single-origin beans, and an intentionally disconnected, tech-free environment.",
+     "neighborhood_description": "Situated in a central, highly walkable historic district of Lisbon, serving as a popular stop for tourists and locals wandering through the city center.",
+     "physical_setting_description": "Located in a historic urban setting with a shop front that hides a surprisingly spacious and cozy interior. The space is often noted for its minimal, raw, and industrial design aesthetic.",
+     "customer_demographics_description": "The café attracts a mix of local residents, coffee enthusiasts, and tourists exploring Lisbon. It is popular among young professionals and casual diners who appreciate high-quality specialty coffee and a trendy, laid-back atmosphere."
+    },
+    "references": null,
+    "disambiguation": "Rua das Flores 63 1200-193 Lisboa Portugal",
+    "query": {
+     "affinity": 0.8563330318998364,
+     "distance": 0,
+     "measurements": {
+      "audience_growth": 0
+     },
+     "explainability": {
+      "signal.interests.entities": [
+       {
+        "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+        "score": 1
+       }
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "query": {
+  "localities": {
+   "filter": [
+    {
+     "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+     "name": "Lisbon",
+     "subtype": "urn:entity:locality",
+     "location": {
+      "lat": 38.998115626607856,
+      "lon": -9.163541913466197
+     },
+     "popularity": 0.99969244,
+     "disambiguation": "Lisbon, Portugal"
+    }
+   ]
+  },
+  "explainability": {
+   "signal.interests.entities": {
+    "effect_on_top3_recs": [
+     {
+      "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+      "avg_score": 1
+     }
+    ],
+    "effect_on_top5_recs": [
+     {
+      "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+      "avg_score": 1
+     }
+    ],
+    "effect_on_top10_recs": [
+     {
+      "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+      "avg_score": 1
+     }
+    ],
+    "effect_on_all_recs": [
+     {
+      "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+      "avg_score": 1
+     }
+    ]
+   }
+  }
+ }
+}

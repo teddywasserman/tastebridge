@@ -127,7 +127,25 @@ export const TARGET_CITIES: City[] = [
   },
 ];
 
-export const SOURCE_CITIES = ["Stockholm", "Gothenburg", "Malmö", "Oslo", "Helsinki", "Other"];
+export const SOURCE_CITIES = ["Stockholm", "Gothenburg", "Malmö", "Oslo", "Helsinki", "Copenhagen", "Other"];
+
+/** Centres of the home cities, used to bias Qloo /search toward the right "Drop Coffee". */
+const HOME_CENTRES: Record<string, { lat: number; lon: number }> = {
+  stockholm: { lat: 59.3293, lon: 18.0686 },
+  gothenburg: { lat: 57.7089, lon: 11.9746 },
+  "göteborg": { lat: 57.7089, lon: 11.9746 },
+  "malmö": { lat: 55.605, lon: 13.0038 },
+  malmo: { lat: 55.605, lon: 13.0038 },
+  oslo: { lat: 59.9139, lon: 10.7522 },
+  helsinki: { lat: 60.1699, lon: 24.9384 },
+};
+
+export function cityCentre(name?: string): { lat: number; lon: number } | undefined {
+  if (!name) return undefined;
+  const key = name.trim().toLowerCase();
+  const t = TARGET_CITIES.find((c) => c.name.toLowerCase() === key);
+  return t ? { lat: t.lat, lon: t.lon } : HOME_CENTRES[key];
+}
 
 export function getCity(name: string): City | undefined {
   return TARGET_CITIES.find((c) => c.name.toLowerCase() === name.trim().toLowerCase());

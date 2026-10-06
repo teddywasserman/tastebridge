@@ -1,0 +1,441 @@
+{
+ "results": [
+  {
+   "name": "Drop Coffee",
+   "entity_id": "61FF937C-C1A6-498D-9823-4109E4C186EF",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "address": "Bağlar Sipahi Sk. No:3 54100 Erenler/Sakarya Türkiye",
+    "business_rating": 4,
+    "description": "Casual cafe-bar in Erenler offering specialty coffee, cocktails, and outdoor seating with takeout and delivery.",
+    "geocode": {
+     "name": "Kemalpaşa",
+     "city": "Adapazari",
+     "admin1_region": "Sakarya",
+     "admin2_region": "Serdivan",
+     "country_code": "TR",
+     "country": "Turkey"
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/61FF937C-C1A6-498D-9823-4109E4C186EF-420x-auto.jpg"
+    },
+    "is_closed": false,
+    "neighborhood": "Kemalpaşa",
+    "price_level": 2,
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant:cafe",
+     "name": "Cafe",
+     "type": "urn:tag:genre:place"
+    }
+   },
+   "popularity": 0.744793936037318,
+   "disambiguation": "Bağlar Sipahi Sk. No:3 54100 Erenler/Sakarya Türkiye",
+   "location": {
+    "lat": 40.762087,
+    "lon": 30.360415099999997
+   },
+   "tags": [
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_options:place:outdoor_seating",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:outdoor_seating"
+    },
+    {
+     "name": "Trendy",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:trendy"
+    },
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Mastercard",
+     "tag_id": "urn:tag:credit_card:place:mastercard",
+     "type": "urn:tag:credit_card:place",
+     "value": "urn:tag:credit_card:place:mastercard"
+    },
+    {
+     "name": "Social",
+     "tag_id": "urn:tag:ambience:qloo:social",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:social"
+    },
+    {
+     "name": "Bohemian",
+     "tag_id": "urn:tag:ambience:qloo:bohemian",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:bohemian"
+    },
+    {
+     "name": "Mixology",
+     "tag_id": "urn:tag:interests:qloo:mixology",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:mixology"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:amenity:qloo:takeout",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:takeout"
+    },
+    {
+     "name": "Central",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:central",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:central"
+    },
+    {
+     "name": "Alcohol service",
+     "tag_id": "urn:tag:amenity:qloo:alcohol_service",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:alcohol_service"
+    },
+    {
+     "name": "Stylish",
+     "tag_id": "urn:tag:ambience:qloo:stylish",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:stylish"
+    },
+    {
+     "name": "Chic",
+     "tag_id": "urn:tag:decor:qloo:chic",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:chic"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:service_type:qloo:outdoor_seating",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:outdoor_seating"
+    },
+    {
+     "name": "Restroom",
+     "tag_id": "urn:tag:amenities:place:restroom",
+     "type": "urn:tag:amenities:place",
+     "value": "urn:tag:amenities:place:restroom"
+    },
+    {
+     "name": "Modern",
+     "tag_id": "urn:tag:decor:qloo:modern",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:modern"
+    },
+    {
+     "name": "Free street parking",
+     "tag_id": "urn:tag:parking:place:free_street_parking",
+     "type": "urn:tag:parking:place",
+     "value": "urn:tag:parking:place:free_street_parking"
+    },
+    {
+     "name": "Cafe",
+     "tag_id": "urn:tag:genre:place:restaurant:cafe",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:cafe"
+    },
+    {
+     "name": "Garden view",
+     "tag_id": "urn:tag:view:qloo:garden_view",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:garden_view"
+    },
+    {
+     "name": "Nfc mobile payments",
+     "tag_id": "urn:tag:payments:place:nfc_mobile_payments",
+     "type": "urn:tag:payments:place",
+     "value": "urn:tag:payments:place:nfc_mobile_payments"
+    },
+    {
+     "name": "Artistic",
+     "tag_id": "urn:tag:ambience:qloo:artistic",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:artistic"
+    },
+    {
+     "name": "No contact delivery",
+     "tag_id": "urn:tag:service_options:place:no_contact_delivery",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:no_contact_delivery"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Groups of friends",
+     "tag_id": "urn:tag:customer_identity:qloo:groups_of_friends",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:groups_of_friends"
+    },
+    {
+     "name": "Foodies",
+     "tag_id": "urn:tag:customer_identity:qloo:foodies",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:foodies"
+    },
+    {
+     "name": "Specialty coffee",
+     "tag_id": "urn:tag:interests:qloo:specialty_coffee",
+     "type": "urn:tag:interests:qloo",
+     "value": "urn:tag:interests:qloo:specialty_coffee"
+    },
+    {
+     "name": "Artistic",
+     "tag_id": "urn:tag:decor:qloo:artistic",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:artistic"
+    },
+    {
+     "name": "Table service",
+     "tag_id": "urn:tag:dining_options:place:table_service",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:table_service"
+    },
+    {
+     "name": "Welcoming",
+     "tag_id": "urn:tag:ambience:qloo:welcoming",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:welcoming"
+    },
+    {
+     "name": "Beer",
+     "tag_id": "urn:tag:beverage_offering:qloo:beer",
+     "type": "urn:tag:beverage_offering:qloo",
+     "value": "urn:tag:beverage_offering:qloo:beer"
+    }
+   ]
+  },
+  {
+   "name": "Drop Coffee Roasters",
+   "entity_id": "64BF58F0-9C5D-47C6-B759-5ABD37F708AD",
+   "types": [
+    "urn:entity:place"
+   ],
+   "properties": {
+    "address": "Wollmar Yxkullsgatan 10 118 50 Stockholm Sweden",
+    "business_rating": 4.4,
+    "description": "Specialty coffee roastery and café offering small-batch roasted single-origin coffees, sandwiches, pastries, and a shop with a terrace in Stockholm.",
+    "geocode": {
+     "name": "Södermalm",
+     "city": "Stockholm Municipality",
+     "admin1_region": "Stockholm County",
+     "country_code": "SE",
+     "country": "Sweden"
+    },
+    "image": {
+     "url": "https://images.qloo.com/i/64BF58F0-9C5D-47C6-B759-5ABD37F708AD-420x-auto.jpg"
+    },
+    "is_closed": false,
+    "neighborhood": "Södermalm",
+    "price_level": 1,
+    "primary_genre": {
+     "id": "urn:tag:genre:place:restaurant:coffee_shop",
+     "name": "Coffee shop",
+     "type": "urn:tag:genre:place"
+    }
+   },
+   "popularity": 0.9863736538859427,
+   "disambiguation": "Wollmar Yxkullsgatan 10 118 50 Stockholm Sweden",
+   "location": {
+    "lat": 59.316913,
+    "lon": 18.0627939
+   },
+   "tags": [
+    {
+     "name": "Dine in",
+     "tag_id": "urn:tag:service_type:qloo:dine_in",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:dine_in"
+    },
+    {
+     "name": "Onsite services",
+     "tag_id": "urn:tag:service_options:place:onsite_services",
+     "type": "urn:tag:service_options:place",
+     "value": "urn:tag:service_options:place:onsite_services"
+    },
+    {
+     "name": "Pain au chocolat",
+     "tag_id": "urn:tag:menu_highlight:qloo:pain_au_chocolat",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:pain_au_chocolat"
+    },
+    {
+     "name": "Dogs allowed outside",
+     "tag_id": "urn:tag:pets:place:dogs_allowed_outside",
+     "type": "urn:tag:pets:place",
+     "value": "urn:tag:pets:place:dogs_allowed_outside"
+    },
+    {
+     "name": "Artisanal",
+     "tag_id": "urn:tag:culinary_style:qloo:artisanal",
+     "type": "urn:tag:culinary_style:qloo",
+     "value": "urn:tag:culinary_style:qloo:artisanal"
+    },
+    {
+     "name": "Coffee shop",
+     "tag_id": "urn:tag:genre:place:restaurant:coffee_shop",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:coffee_shop"
+    },
+    {
+     "name": "Street view",
+     "tag_id": "urn:tag:view:qloo:street_view",
+     "type": "urn:tag:view:qloo",
+     "value": "urn:tag:view:qloo:street_view"
+    },
+    {
+     "name": "Industrial",
+     "tag_id": "urn:tag:decor:qloo:industrial",
+     "type": "urn:tag:decor:qloo",
+     "value": "urn:tag:decor:qloo:industrial"
+    },
+    {
+     "name": "Expats",
+     "tag_id": "urn:tag:customer_identity:qloo:expats",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:expats"
+    },
+    {
+     "name": "Takeout",
+     "tag_id": "urn:tag:service_type:qloo:takeout",
+     "type": "urn:tag:service_type:qloo",
+     "value": "urn:tag:service_type:qloo:takeout"
+    },
+    {
+     "name": "Midday",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:midday",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:midday"
+    },
+    {
+     "name": "Outdoor seating",
+     "tag_id": "urn:tag:amenity:qloo:outdoor_seating",
+     "type": "urn:tag:amenity:qloo",
+     "value": "urn:tag:amenity:qloo:outdoor_seating"
+    },
+    {
+     "name": "Breakfast",
+     "tag_id": "urn:tag:dining_options:place:breakfast",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:breakfast"
+    },
+    {
+     "name": "Tourists",
+     "tag_id": "urn:tag:customer_identity:qloo:tourists",
+     "type": "urn:tag:customer_identity:qloo",
+     "value": "urn:tag:customer_identity:qloo:tourists"
+    },
+    {
+     "name": "Trendy",
+     "tag_id": "urn:tag:neighborhood_characteristic:qloo:trendy",
+     "type": "urn:tag:neighborhood_characteristic:qloo",
+     "value": "urn:tag:neighborhood_characteristic:qloo:trendy"
+    },
+    {
+     "name": "Urban",
+     "tag_id": "urn:tag:setting:qloo:urban",
+     "type": "urn:tag:setting:qloo",
+     "value": "urn:tag:setting:qloo:urban"
+    },
+    {
+     "name": "Seating",
+     "tag_id": "urn:tag:dining_options:place:seating",
+     "type": "urn:tag:dining_options:place",
+     "value": "urn:tag:dining_options:place:seating"
+    },
+    {
+     "name": "Ginger tea",
+     "tag_id": "urn:tag:menu_highlight:qloo:ginger_tea",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:ginger_tea"
+    },
+    {
+     "name": "Restaurant",
+     "tag_id": "urn:tag:genre:place:restaurant",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant"
+    },
+    {
+     "name": "Vegetarian",
+     "tag_id": "urn:tag:dietary_option:qloo:vegetarian",
+     "type": "urn:tag:dietary_option:qloo",
+     "value": "urn:tag:dietary_option:qloo:vegetarian"
+    },
+    {
+     "name": "35 44",
+     "tag_id": "urn:tag:age_range:qloo:35_44",
+     "type": "urn:tag:age_range:qloo",
+     "value": "urn:tag:age_range:qloo:35_44"
+    },
+    {
+     "name": "Coffee",
+     "tag_id": "urn:tag:offerings:place:coffee",
+     "type": "urn:tag:offerings:place",
+     "value": "urn:tag:offerings:place:coffee"
+    },
+    {
+     "name": "Coffee roastery",
+     "tag_id": "urn:tag:genre:place:restaurant:coffee_roastery",
+     "type": "urn:tag:genre:place",
+     "value": "urn:tag:genre:place:restaurant:coffee_roastery"
+    },
+    {
+     "name": "Afternoon",
+     "tag_id": "urn:tag:time_of_day_fit:qloo:afternoon",
+     "type": "urn:tag:time_of_day_fit:qloo",
+     "value": "urn:tag:time_of_day_fit:qloo:afternoon"
+    },
+    {
+     "name": "Social community",
+     "tag_id": "urn:tag:activity_type:qloo:social_community",
+     "type": "urn:tag:activity_type:qloo",
+     "value": "urn:tag:activity_type:qloo:social_community"
+    },
+    {
+     "name": "Routine visit",
+     "tag_id": "urn:tag:visit_intent:qloo:routine_visit",
+     "type": "urn:tag:visit_intent:qloo",
+     "value": "urn:tag:visit_intent:qloo:routine_visit"
+    },
+    {
+     "name": "Comfortable",
+     "tag_id": "urn:tag:ambience:qloo:comfortable",
+     "type": "urn:tag:ambience:qloo",
+     "value": "urn:tag:ambience:qloo:comfortable"
+    },
+    {
+     "name": "Cardamom bun",
+     "tag_id": "urn:tag:menu_highlight:qloo:cardamom_bun",
+     "type": "urn:tag:menu_highlight:qloo",
+     "value": "urn:tag:menu_highlight:qloo:cardamom_bun"
+    },
+    {
+     "name": "Coffee shop",
+     "tag_id": "urn:tag:category:place:coffee_shop",
+     "type": "urn:tag:category:place",
+     "value": "urn:tag:category:place:coffee_shop"
+    },
+    {
+     "name": "Wheelchair accessible entrance",
+     "tag_id": "urn:tag:accessibility:place:wheelchair_accessible_entrance",
+     "type": "urn:tag:accessibility:place",
+     "value": "urn:tag:accessibility:place:wheelchair_accessible_entrance"
+    }
+   ]
+  }
+ ]
+}

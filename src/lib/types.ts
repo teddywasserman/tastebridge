@@ -6,6 +6,8 @@ export interface Tag {
   name: string;
   /** "category" for place genres (urn:tag:genre:place:*), otherwise "keyword" */
   kind: "category" | "keyword";
+  /** Qloo tag family, e.g. urn:tag:genre:place, urn:tag:ambience:qloo */
+  type?: string;
 }
 
 export interface Entity {
@@ -15,6 +17,13 @@ export interface Entity {
   type: string;
   address?: string;
   city?: string;
+  /** neighbourhood label as reported by Qloo (properties.neighborhood) */
+  qlooNeighbourhood?: string;
+  /** short Qloo description of the place */
+  description?: string;
+  image?: string;
+  /** properties.primary_genre, e.g. urn:tag:genre:place:restaurant:wine_bar */
+  primaryGenre?: Tag;
   lat?: number;
   lon?: number;
   tags: Tag[];

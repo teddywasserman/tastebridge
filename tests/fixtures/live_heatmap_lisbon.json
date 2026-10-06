@@ -1,0 +1,94 @@
+{
+ "success": true,
+ "results": {
+  "heatmap": [
+   {
+    "location": {
+     "latitude": 38.72406,
+     "longitude": -9.135132,
+     "geohash": "eycs21"
+    },
+    "query": {
+     "affinity": 1,
+     "affinity_rank": 0.8367030249999999,
+     "popularity": 1,
+     "entity_place_affinity_rank": 0.8367030249999999,
+     "entity_place_affinity": 1
+    }
+   },
+   {
+    "location": {
+     "latitude": 38.713074,
+     "longitude": -9.146118,
+     "geohash": "eyckpz"
+    },
+    "query": {
+     "affinity": 0.994535519125683,
+     "affinity_rank": 0.7798689750000001,
+     "popularity": 0.9836065573770492,
+     "entity_place_affinity_rank": 0.7798689750000001,
+     "entity_place_affinity": 0.994535519125683
+    }
+   },
+   {
+    "location": {
+     "latitude": 38.702087,
+     "longitude": -9.179077,
+     "geohash": "eyckpj"
+    },
+    "query": {
+     "affinity": 0.9890710382513661,
+     "affinity_rank": 0.7579974736842106,
+     "popularity": 0.994535519125683,
+     "entity_place_affinity_rank": 0.7579974736842106,
+     "entity_place_affinity": 0.9890710382513661
+    }
+   },
+   {
+    "location": {
+     "latitude": 38.713074,
+     "longitude": -9.135132,
+     "geohash": "eycs0p"
+    },
+    "query": {
+     "affinity": 0.9836065573770492,
+     "affinity_rank": 0.7566458,
+     "popularity": 0.9890710382513661,
+     "entity_place_affinity_rank": 0.7566458,
+     "entity_place_affinity": 0.9836065573770492
+    }
+   },
+   {
+    "location": {
+     "latitude": 38.70758,
+     "longitude": -9.146118,
+     "geohash": "eyckpy"
+    },
+    "query": {
+     "affinity": 0.9781420765027322,
+     "affinity_rank": 0.750419947368421,
+     "popularity": 0.9781420765027322,
+     "entity_place_affinity_rank": 0.750419947368421,
+     "entity_place_affinity": 0.9781420765027322
+    }
+   }
+  ]
+ },
+ "query": {
+  "localities": {
+   "filter": [
+    {
+     "entity_id": "C4874F9D-BD5C-41E7-A895-99B6FD02A665",
+     "name": "Lisbon",
+     "subtype": "urn:entity:locality",
+     "location": {
+      "lat": 38.998115626607856,
+      "lon": -9.163541913466197
+     },
+     "popularity": 0.99969244,
+     "disambiguation": "Lisbon, Portugal"
+    }
+   ]
+  }
+ }
+}
