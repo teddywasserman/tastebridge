@@ -12,7 +12,7 @@ import {
 export const GEMINI_MODEL = process.env.GEMINI_MODEL || "gemini-3.8-flash";
 /** Free-tier Gemini quotas are per model and small, so on a 429 the agent moves
  * down this chain (all support function calling) before giving up to autopilot. */
-export const GEMINI_CHAIN = [GEMINI_MODEL, ...(process.env.GEMINI_FALLBACKS ?? "gemini-3.7-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-flash-lite-latest")
+export const GEMINI_CHAIN = [GEMINI_MODEL, ...(process.env.GEMINI_FALLBACKS ?? "gemini-3.5-flash,gemini-3.7-flash,gemini-3.5-flash-lite,gemini-3.1-flash-lite,gemini-flash-lite-latest")
   .split(",").map((m) => m.trim()).filter((m) => m && m !== GEMINI_MODEL)];
 const exhaustedUntil = new Map<string, number>();
 export function currentGeminiModel(): string | undefined {
