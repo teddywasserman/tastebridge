@@ -36,7 +36,8 @@
    "at": 852,
    "e": {
     "type": "thought",
-    "text": "Next: looking up 4 favourites in the Qloo taste graph."
+    "text": "Next: looking up 4 favourites in the Qloo taste graph.",
+    "auto": true
    }
   },
   {
@@ -131,7 +132,8 @@
    "at": 3845,
    "e": {
     "type": "thought",
-    "text": "Next: looking up 1 favourite in the Qloo taste graph, then turning 1 habit into Qloo taste tags."
+    "text": "Next: looking up 1 favourite in the Qloo taste graph, then turning 1 habit into Qloo taste tags.",
+    "auto": true
    }
   },
   {
@@ -181,7 +183,8 @@
    "at": 5399,
    "e": {
     "type": "thought",
-    "text": "Next: translating 4 favourites into Berlin equivalents of the same kind."
+    "text": "Next: translating 4 favourites into Berlin equivalents of the same kind.",
+    "auto": true
    }
   },
   {
@@ -272,7 +275,8 @@
    "at": 7929,
    "e": {
     "type": "thought",
-    "text": "Next: translating 2 favourites into Berlin equivalents of the same kind."
+    "text": "Next: translating 2 favourites into Berlin equivalents of the same kind.",
+    "auto": true
    }
   },
   {
@@ -325,7 +329,8 @@
    "at": 9834,
    "e": {
     "type": "thought",
-    "text": "Next: widening the search to the whole taste profile."
+    "text": "Next: widening the search to the whole taste profile.",
+    "auto": true
    }
   },
   {
@@ -353,7 +358,8 @@
    "at": 11877,
    "e": {
     "type": "thought",
-    "text": "Next: scoring neighbourhoods with the Qloo heatmap."
+    "text": "Next: scoring neighbourhoods with the Qloo heatmap.",
+    "auto": true
    }
   },
   {
@@ -379,7 +385,8 @@
    "at": 19446,
    "e": {
     "type": "thought",
-    "text": "Next: choosing the best match per favourite and drafting the first week."
+    "text": "Next: choosing the best match per favourite and drafting the first week.",
+    "auto": true
    }
   },
   {

@@ -21,6 +21,8 @@ export default function AgentTrail({ events, running }: { events: AgentEvent[]; 
   const results = new Map<string, string>();
   for (const e of events) if (e.type === "tool_result") results.set(e.id, e.summary);
   const start = events.find((e) => e.type === "start") as Extract<AgentEvent, { type: "start" }> | undefined;
+  const result = events.find((e) => e.type === "result") as Extract<AgentEvent, { type: "result" }> | undefined;
+  const llm = result?.plan.provenance.llm ?? start?.llm;
   const calls = events.filter((e) => e.type === "tool_call").length;
 
   return (
@@ -29,7 +31,7 @@ export default function AgentTrail({ events, running }: { events: AgentEvent[]; 
         <div>
           <div className="font-display text-lg font-semibold">Agent reasoning</div>
           <div className="text-xs text-white/50">
-            {start ? `${start.llm === "autopilot" ? "autopilot" : start.llm} · Qloo ${start.qlooMode}` : "starting…"} · {calls} steps
+            {start ? `${llm} · Qloo ${start.qlooMode}` : "starting…"} · {calls} steps
           </div>
         </div>
         {running ? (
@@ -40,6 +42,11 @@ export default function AgentTrail({ events, running }: { events: AgentEvent[]; 
       </div>
       <ol ref={box} className="flex-1 space-y-2.5 overflow-y-auto px-4 py-4 text-sm" aria-live="polite">
         {events.map((e, i) => {
+          if (e.type === "thought" && e.auto) {
+            return (
+              <li key={i} className="rise px-1 text-xs uppercase tracking-wider text-white/45">{e.text}</li>
+            );
+          }
           if (e.type === "thought") {
             return (
               <li key={i} className="rise rounded-xl bg-white/5 px-3 py-2 italic leading-snug text-white/85">“{e.text}”</li>

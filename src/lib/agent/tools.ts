@@ -344,6 +344,8 @@ function buildMatches(s: TasteSession, picks: { source_id: string; target_id: st
       alternatives: list.filter((e) => e.id !== target.id).slice(0, 2),
     });
   }
+  // "Also try" should not repeat a place that is already another favourite's match
+  for (const m of out) m.alternatives = s.equivalents.get(m.source.id)!.filter((e) => !used.has(e.id)).slice(0, 2);
   return out;
 }
 

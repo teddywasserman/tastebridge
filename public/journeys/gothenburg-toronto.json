@@ -36,7 +36,8 @@
    "at": 965,
    "e": {
     "type": "thought",
-    "text": "Next: looking up 6 favourites in the Qloo taste graph."
+    "text": "Next: looking up 6 favourites in the Qloo taste graph.",
+    "auto": true
    }
   },
   {
@@ -175,7 +176,8 @@
    "at": 5972,
    "e": {
     "type": "thought",
-    "text": "Next: translating 6 favourites into Toronto equivalents of the same kind."
+    "text": "Next: translating 6 favourites into Toronto equivalents of the same kind.",
+    "auto": true
    }
   },
   {
@@ -308,7 +310,8 @@
    "at": 9744,
    "e": {
     "type": "thought",
-    "text": "Next: widening the search to the whole taste profile."
+    "text": "Next: widening the search to the whole taste profile.",
+    "auto": true
    }
   },
   {
@@ -336,7 +339,8 @@
    "at": 12309,
    "e": {
     "type": "thought",
-    "text": "Next: scoring neighbourhoods with the Qloo heatmap."
+    "text": "Next: scoring neighbourhoods with the Qloo heatmap.",
+    "auto": true
    }
   },
   {
@@ -362,7 +366,8 @@
    "at": 20470,
    "e": {
     "type": "thought",
-    "text": "Next: choosing the best match per favourite and drafting the first week."
+    "text": "Next: choosing the best match per favourite and drafting the first week.",
+    "auto": true
    }
   },
   {

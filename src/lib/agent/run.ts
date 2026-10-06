@@ -112,7 +112,7 @@ export async function runAgent(input: AgentInput, emit: Emit, opts: { useLlm?: b
         for (const p of parts) if (p.text && !p.thought && p.text.trim()) emit({ type: "thought", text: p.text.trim() });
         const calls = parts.filter((p) => p.functionCall);
         // Small models often call tools silently; narrate the step from the calls so the trail stays readable.
-        if (!said && calls.length) emit({ type: "thought", text: narrate(calls.map((p) => p.functionCall!), s) });
+        if (!said && calls.length) emit({ type: "thought", text: narrate(calls.map((p) => p.functionCall!), s), auto: true });
         if (!calls.length) {
           if (nudged) break;
           nudged = true;

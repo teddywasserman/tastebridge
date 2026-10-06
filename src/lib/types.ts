@@ -79,7 +79,7 @@ export interface TastePlan {
 
 export type AgentEvent =
   | { type: "start"; qlooMode: "live" | "mock"; llm: string; fromCity: string; toCity: string; loves: string[] }
-  | { type: "thought"; text: string }
+  | { type: "thought"; text: string; /** narrated by the app from the tool calls, not written by the model */ auto?: boolean }
   | { type: "tool_call"; id: string; name: string; label: string; args: Record<string, unknown> }
   | { type: "tool_result"; id: string; name: string; summary: string }
   | { type: "result"; plan: TastePlan }
