@@ -195,7 +195,14 @@ export async function searchEntities(s: TasteSession, query: string, city?: stri
 }
 
 export async function lookupTags(s: TasteSession, concept: string): Promise<ToolOutput> {
-  const tags = await s.client.findTags(concept, 6);
+  // "sunday flea markets" has no exact tag, but "flea markets" does: retry with fewer words.
+  const words = concept.trim().split(/\s+/);
+  const tries = [...new Set([concept, words.slice(1).join(" "), words.slice(-1)[0]].filter((q) => q && q.length > 2))];
+  let tags: Tag[] = [];
+  for (const q of tries) {
+    tags = (await s.client.findTags(q, 6)).filter((t) => !/:(nearby_attraction|neighborhood_characteristics?):/.test(t.id));
+    if (tags.length) break;
+  }
   if (tags.length) {
     const id = `concept:${concept.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
     s.concepts.set(id, { id, label: concept, tags });
@@ -235,15 +242,17 @@ export async function findEquivalents(s: TasteSession, args: Record<string, unkn
   // Concepts (live): places carrying the concept's tags, ranked by affinity with
   // the places the user already loves. (Tag signals alone are slow and noisy for places.)
   const profile = s.profileEntityIds().slice(0, 8);
-  const ask = (f?: string[]) => s.client.placeInsights({
+  const ask = (f?: string[], unranked = false) => s.client.placeInsights({
     city: s.city.name,
     center: { lat: s.city.lat, lon: s.city.lon },
-    entityIds: tagIds ? (live && profile.length ? profile : undefined) : [source!.id],
+    entityIds: tagIds ? (live && profile.length && !unranked ? profile : undefined) : [source!.id],
     tagIds: tagIds && !live ? tagIds : undefined,
     filterTags: tagIds && live ? tagIds.slice(0, 6) : f,
     take: 6,
   });
   let found = await ask(filter);
+  // Places with little affinity data (e.g. flea markets) vanish once taste signals are added; fall back to Qloo's tag match alone.
+  if (!found.length && tagIds && live && profile.length) found = await ask(undefined, true);
   if (found.length < 2 && filter && !tagIds) found = [...found, ...(await ask(undefined))].filter((e, i, a) => a.findIndex((x) => x.id === e.id) === i);
   found = found.map((e) => s.remember(e));
   s.equivalents.set(source.id, found);
@@ -340,7 +349,7 @@ function buildMatches(s: TasteSession, picks: { source_id: string; target_id: st
       target,
       sharedTags: shared,
       affinity: target.affinity ?? 0,
-      why: (!target.affinity ? "Matched on place type; Qloo gave no affinity score for this one. " : target.affinity < 0.5 ? "Weak signal, so treat it as a starting point. " : "") + (pick?.why || defaultWhy(source, target, shared)),
+      why: (!target.affinity ? (source.type === "concept" ? "" : "Matched on place type; Qloo gave no affinity score for this one. ") : target.affinity < 0.5 ? "Weak signal, so treat it as a starting point. " : "") + (pick?.why || defaultWhy(source, target, shared)),
       alternatives: list.filter((e) => e.id !== target.id).slice(0, 2),
     });
   }
@@ -352,7 +361,9 @@ function buildMatches(s: TasteSession, picks: { source_id: string; target_id: st
 export function defaultWhy(source: Entity, target: Entity, shared: string[]): string {
   if (source.type === "concept") {
     const tag = shared[0] ?? source.tags[0]?.name ?? source.name;
-    return `Tagged "${tag}" in Qloo, and ranked ${target.affinity ? `${Math.round(target.affinity * 100)}% ` : ""}by affinity with the places you already love.`;
+    return target.affinity
+      ? `Tagged "${tag}" in Qloo, and ranked ${Math.round(target.affinity * 100)}% by affinity with the places you already love.`
+      : `Tagged "${tag}" in Qloo. Qloo has little taste data for places like this, so this is its top tag match, not a taste ranking.`;
   }
   const ex = target.explain?.[source.id];
   if (shared.length) return `Shares ${shared.slice(0, 3).join(", ")} with ${source.name}${ex ? ` (explainability score ${ex.toFixed(2)})` : ""}.`;

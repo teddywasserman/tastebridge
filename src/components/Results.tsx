@@ -46,7 +46,7 @@ export function MatchCards({ plan, onSelect }: { plan: TastePlan; onSelect: (id:
               <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-paper-2">
                 <div className="h-full rounded-full bg-accent" style={{ width: `${Math.round(m.affinity * 100)}%` }} />
               </div>
-              <span className="w-24 text-right text-xs font-medium text-ink-2">{Math.round(m.affinity * 100)}% affinity</span>
+              <span className="w-24 text-right text-xs font-medium text-ink-2">{m.affinity ? `${Math.round(m.affinity * 100)}% affinity` : "no affinity score"}</span>
             </div>
             {m.sharedTags.length > 0 && (
               <div className="mt-3 flex flex-wrap gap-1.5">
