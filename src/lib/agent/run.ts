@@ -65,7 +65,7 @@ async function geminiOnce(model: string, contents: Content[], system: string): P
       contents,
       tools: [{ functionDeclarations: TOOL_DECLARATIONS }],
       toolConfig: { functionCallingConfig: { mode: "AUTO" } },
-      generationConfig: { temperature: 0.4 },
+      generationConfig: { thinkingConfig: { thinkingLevel: "low" } },
     }),
     signal: AbortSignal.timeout(45000),
   });
